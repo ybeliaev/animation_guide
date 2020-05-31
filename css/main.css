@@ -2,21 +2,39 @@
     text-align: center;
 }
 .box{
-    width: 50px;
-    height: 50px;
-    background-color: #a71d2a;
-    color: #171a1d;
-    line-height: 50px;
+    margin-bottom: 5px;
+    width: 80px;
+    height: 80px;
+    background-color: var(--indigo);
+    color: var(--white);
+    line-height: 80px;
     text-align: center;
     font-size: 20px;
     cursor: pointer;
 }
+
 /*******************/
 /****** move-1 *****/
 /*******************/
 .move-1{
     transition: transform 1s;
 }
+/*must be below class "move-1"*/
+.ease-out{
+    transition-timing-function: ease-out;
+}
 .move-1:hover{
     transform: translate(20rem, 0);
+}
+/*******************/
+/****** move-2 *****/
+/*******************/
+.move-2{
+    background-color: var(--cyan);
+    transition: width .3s, color .5s 1s;
+
+}
+.move-2:hover{
+    width: 150px;
+    color: var(--yellow);
 }
