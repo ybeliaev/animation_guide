@@ -9,4 +9,14 @@
     line-height: 50px;
     text-align: center;
     font-size: 20px;
+    cursor: pointer;
+}
+/*******************/
+/****** move-1 *****/
+/*******************/
+.move-1{
+    transition: transform 1s;
+}
+.move-1:hover{
+    transform: translate(20rem, 0);
 }
