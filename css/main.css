@@ -39,3 +39,25 @@ h3 {
   width: 150px;
   color: var(--yellow);
 }
+/************************/
+/****** move-3,4,5 ******/
+/***********************/
+.move-3 {
+  background-color: rgb(29, 206, 13);
+  transform-origin: right;
+  transition: transform 0.3s;
+}
+
+.move-3:hover {
+  transform: rotate(45deg);
+}
+.move-4 {
+  background-color: rgb(29, 206, 13);
+  font-size: 14px;
+  transform-origin: right top;
+  transition: transform 0.3s;
+}
+
+.move-4:hover {
+  transform: rotate(-45deg);
+}
