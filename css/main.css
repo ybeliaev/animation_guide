@@ -7,6 +7,7 @@
 .container-fluid {
   text-align: center;
 }
+
 .box {
   margin-bottom: 5px;
   width: 80px;
@@ -35,6 +36,9 @@ h3 {
 a:hover {
   text-decoration: none;
 }
+.hidden {
+  overflow: hidden;
+}
 /*******************/
 /****** move-1 *****/
 /*******************/
@@ -60,7 +64,7 @@ a:hover {
   color: var(--yellow);
 }
 /************************/
-/****** move-3,4,5 ******/
+/****** move-3,4,5,6,7 ******/
 /***********************/
 .move-3 {
   background-color: rgb(29, 206, 13);
@@ -99,7 +103,7 @@ a:hover {
   transform: rotateY(45deg);
 }
 /************************/
-/****** move-6 ******/
+/****** move-8 ******/
 /***********************/
 .move-8 {
   /* контейнер для  position: relative; */
@@ -135,4 +139,25 @@ a:hover {
   to {
     top: -100%;
   }
+}
+/************************/
+/********hover-1 *******/
+/***********************/
+
+.hover-1:before {
+  content: "";
+  position: absolute;
+  background-color: #fff200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+  transition: transform 1s;
+}
+
+.hover-1:hover:before {
+  transform: rotate(0deg);
 }
