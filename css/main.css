@@ -1,3 +1,9 @@
+/* body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+} */
 .container-fluid {
   text-align: center;
 }
@@ -14,6 +20,20 @@
 }
 h3 {
   margin-top: 1.5rem;
+}
+.link-style {
+  /* без display ссылки накрывают соседей */
+  display: inline-block;
+  text-decoration: none;
+  color: #272727;
+  font-family: serif;
+  font-size: 45px;
+  border: 5px solid #272727;
+  padding: 40px 80px;
+  position: relative;
+}
+a:hover {
+  text-decoration: none;
 }
 /*******************/
 /****** move-1 *****/
@@ -61,10 +81,28 @@ h3 {
 .move-4:hover {
   transform: rotate(-45deg);
 }
+.move-5,
+.move-6,
+.move-7 {
+  background-color: rgb(29, 206, 13);
+  transition: transform 0.3s;
+}
+.move-5:hover {
+  transform: rotateX(90deg);
+}
+
+.move-6:hover {
+  transform: rotateZ(45deg);
+}
+
+.move-7:hover {
+  transform: rotateY(45deg);
+}
 /************************/
 /****** move-6 ******/
 /***********************/
-.move-6 {
+.move-8 {
+  /* контейнер для  position: relative; */
   position: relative;
   background: #000;
   color: #2c2c2c;
@@ -80,7 +118,7 @@ h3 {
   line-height: 1.5;
   text-align: justify;
   transform-origin: 50% 100%;
-  /* rotateX(25deg) разворачивает плоскость. При 90deg будет развёрнута перпен. глазу и не видно  */
+  /* rotateX(25deg) наклоняет плоскость. При 90deg будет развёрнута перпен. глазу и не видно  */
   transform: perspective(300px) rotateX(25deg);
   overflow: hidden;
 }
