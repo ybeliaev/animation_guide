@@ -61,3 +61,40 @@ h3 {
 .move-4:hover {
   transform: rotate(-45deg);
 }
+/************************/
+/****** move-6 ******/
+/***********************/
+.move-6 {
+  position: relative;
+  background: #000;
+  color: #2c2c2c;
+}
+.titles {
+  position: absolute;
+  width: 18em;
+  height: 20em;
+  bottom: 0;
+  left: 50%;
+  margin-left: -9em;
+  font-size: 2em;
+  line-height: 1.5;
+  text-align: justify;
+  transform-origin: 50% 100%;
+  /* rotateX(25deg) разворачивает плоскость. При 90deg будет развёрнута перпен. глазу и не видно  */
+  transform: perspective(300px) rotateX(25deg);
+  overflow: hidden;
+}
+.content {
+  position: absolute;
+  top: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    top: 100%;
+  }
+  to {
+    top: -100%;
+  }
+}
