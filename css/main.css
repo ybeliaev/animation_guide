@@ -6,21 +6,37 @@ h1,
 h2,
 h3 {
   text-align: center;
-  margin-top: 1.5rem;
 }
 ul {
   width: 30%;
   list-style: none;
 }
 ul li {
+  text-align: left;
   padding: 10px 15px;
 }
 ul li:hover {
   background-color: rgb(224, 224, 224);
 }
+code {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+}
 .container {
   max-width: 1200px;
   margin: auto;
+  text-align: center;
+}
+.container-item {
+  box-shadow: 0 1px 2px 0 rgba(255, 251, 2, 0.2),
+    0 1px 5px 0 rgba(29, 5, 250, 0.19);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  transition: box-shadow 0.3s;
+}
+.container-item:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 190, 248, 0.2),
+    0 4px 20px 0 rgba(243, 1, 252, 0.19);
 }
 .box {
   margin-bottom: 5px;
@@ -38,9 +54,9 @@ ul li:hover {
   /* без display ссылки накрывают соседей */
   display: inline-block;
   text-decoration: none;
-  color: #272727;
+  color: #3700ff;
   font-size: 45px;
-  border: 5px solid #272727;
+  border: 5px solid #3700ff;
   padding: 40px 80px;
   position: relative;
 }
@@ -50,6 +66,13 @@ a:hover {
 }
 .hidden {
   overflow: hidden;
+}
+.alert {
+  text-align: left;
+  background-color: rgb(252, 207, 124);
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  border-left: 8px solid #ff7301;
 }
 /*******************/
 /****** move-1 *****/
@@ -188,7 +211,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #014d20;
+  background-color: #262626;
   transition: 1s;
   transform: rotateX(90deg);
   z-index: -1;
@@ -200,7 +223,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #014d20;
+  background-color: #262626;
   transition: 1s;
   transform: rotateY(90deg);
   z-index: -1;
@@ -215,4 +238,136 @@ a:hover {
 
 .hover-2:hover::after {
   transform: rotateY(0deg);
+}
+/************************/
+/********hover-3 *******/
+/***********************/
+.hover-3 {
+  color: #e1332d;
+  border: 3px solid #e1332d;
+  font-weight: 200;
+  letter-spacing: -2px;
+  transition: all 0.5s;
+}
+.hover-3:hover {
+  font-weight: 600;
+  letter-spacing: 10px;
+  border: 6px solid #e1332d;
+}
+/************************/
+/********hover-4 *******/
+/***********************/
+.hover-4 {
+  transition: all 1s;
+}
+.hover-4::before {
+  content: "YES!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #f44336;
+  /* z-index: -1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  transform: translateY(-100%);
+}
+.hover-4:hover::before {
+  transform: translateY(0);
+}
+/************************/
+/********hover-5 *******/
+/***********************/
+.hover-5 {
+  transition: all 1s;
+}
+.hover-5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #351435;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.hover-5:hover::before {
+  transform: translateX(0%);
+}
+.hover-5:hover {
+  color: #fff200;
+}
+/************************/
+/********hover-6 *******/
+/***********************/
+.hover-6 {
+  transition: all 0.3s;
+}
+.hover-6:hover {
+  background-color: #ff6347;
+}
+.hover-6::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.3s;
+}
+.hover-6:hover::before {
+  transform: translateX(100%) rotate(45deg);
+}
+/************************/
+/********hover-7 *******/
+/***********************/
+.hover-7 {
+  transition: all 0.3s;
+}
+.hover-7::before {
+  content: "Hello";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffff00;
+  color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.hover-7::after {
+  content: "By";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffff00;
+  color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: translate(
+    -100%,
+    100%
+  ); /* слева внизу(правый верх край касается ниж. левого родителя) */
+}
+
+.hover-7:hover::before {
+  transform: translate(100%, -100%);
+}
+.hover-7:hover::after {
+  transform: translate(0%, 0%);
 }

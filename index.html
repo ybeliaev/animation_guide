@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>Animations tutorial</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
     <link rel="stylesheet" href="./css/main.css" />
@@ -58,7 +62,7 @@
       <a href="https://webref.ru/css/value/perspective" target="_blank"
         >Guide</a
       >
-      <div class="alert alert-success" role="alert">
+      <div class="alert">
         Определяет расстояние от плоскости экрана до точки сходимости линий и
         тем самым задаёт, насколько выражен эффект перспективы. Точка сходимости
         по умолчанию располагается в центре элемента и может быть изменена с
@@ -86,12 +90,52 @@
           </div>
         </div>
       </div>
+      <div class="container-item">
+        <h3>7. Hover-1</h3>
+        <a href="#" class="link-style hidden hover-1">hover-1</a>
+      </div>
 
-      <h3>7. Hover-1</h3>
-      <a href="#" class="link-style hidden hover-1">hover-1</a>
+      <div class="container-item">
+        <h3>8. Hover-2</h3>
+        <a href="#" class="link-style hidden hover-2">hover-2</a>
+      </div>
 
-      <h3>8. Hover-2</h3>
-      <a href="#" class="link-style hidden hover-2">hover-2</a>
+      <div class="container-item">
+        <h3>9. Hover-3</h3>
+        <a href="#" class="link-style hidden hover-3">hover-3</a>
+      </div>
+
+      <div class="container-item">
+        <h3>10. Hover-4</h3>
+        <a href="#" class="link-style hidden hover-4">hover-4</a>
+      </div>
+
+      <div class="container-item">
+        <h3>11. Hover-5</h3>
+        <div class="alert">
+          Памятка: <code>overflow: hidden</code> крайне важно в подобных
+          анимациях, т.к.благодаря этому свойству не видны псевдоэлементы за
+          пределами основного
+        </div>
+        <a href="#" class="link-style hidden hover-5">hover-5</a>
+        <div class="alert">
+          Меняя <code>translateX(-100%) на translateX(100%)</code> получаем
+          эффект правого наезда элемента. А сменой
+          <code>translateX(-100%) на translateY(...%)</code> получим верх/низ
+          движение
+        </div>
+      </div>
+
+      <div class="container-item">
+        <h3>11. Hover-6</h3>
+        <a href="#" class="link-style hidden hover-6">hover-6</a>
+      </div>
+
+      <div class="container-item">
+        <h3>11. Hover-7</h3>
+        <a href="#" class="link-style hidden hover-7">hover-7</a>
+      </div>
+
       <!-- end -->
     </div>
   </body>
