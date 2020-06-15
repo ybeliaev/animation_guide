@@ -7,20 +7,32 @@ h2,
 h3 {
   text-align: center;
 }
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 ul {
-  width: 30%;
+  width: 40%;
   list-style: none;
 }
-ul li {
+.list-group li {
   text-align: left;
   padding: 10px 15px;
 }
-ul li:hover {
+.list-group li:hover {
   background-color: rgb(224, 224, 224);
 }
 code {
   font-family: "VT323", monospace;
   font-size: 1.5rem;
+}
+.p-in-code {
+  color: #3700ff;
+  font-size: 1.5rem;
+}
+.flex {
+  display: flex;
 }
 .container {
   max-width: 1200px;
@@ -48,6 +60,7 @@ code {
   text-align: center;
   font-size: 20px;
   cursor: pointer;
+  margin-right: 1rem;
 }
 
 .link-style {
@@ -57,7 +70,7 @@ code {
   color: #3700ff;
   font-size: 45px;
   border: 5px solid #3700ff;
-  padding: 40px 80px;
+  padding: 20px 40px;
   position: relative;
 }
 
@@ -74,6 +87,60 @@ a:hover {
   margin-bottom: 1rem;
   border-left: 8px solid #ff7301;
 }
+/************ стиллизация скролла *****************/
+html,
+body {
+  scrollbar-color: #843465 #253861; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: auto; /* толщина */
+}
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  width: 24px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+  background-color: #143861;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #0919e1;
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #253861;
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+  background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+  background: linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+  background: linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+  background: linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #f6f8f4;
+}
+
 /*******************/
 /****** move-1 *****/
 /*******************/
@@ -370,4 +437,76 @@ a:hover {
 }
 .hover-7:hover::after {
   transform: translate(0%, 0%);
+}
+/************************/
+/********hover-8 *******/
+/***********************/
+.hover-8 {
+  transition: all 0.5s;
+}
+.hover-8::before {
+  content: "HOVER";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 195, 255);
+  color: rgb(58, 58, 58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(5);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.hover-8:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+/************************/
+/********hover-9 *******/
+/***********************/
+.hover-9 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+.hover-9 li a {
+  display: block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ff0000;
+  text-transform: capitalize;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.5s;
+}
+.hover-9 li span {
+  position: absolute;
+  width: 33.33%;
+  height: 100%;
+  background-color: #262626;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+.hover-9 li span:nth-child(2) {
+  left: 33.33%;
+  transition-delay: 0.25s;
+}
+.hover-9 li span:nth-child(3) {
+  left: 66.66%;
+  transition-delay: 0.35s;
+}
+
+.hover-9 li span:hover {
+  /* transform: scaleY(0); */
+  background-color: #fff;
 }
