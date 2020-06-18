@@ -2,11 +2,13 @@ body {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
 }
+
 h1,
 h2,
 h3 {
   text-align: center;
 }
+
 p {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -16,29 +18,36 @@ ul {
   width: 40%;
   list-style: none;
 }
+
 .list-group li {
   text-align: left;
   padding: 10px 15px;
 }
+
 .list-group li:hover {
   background-color: rgb(224, 224, 224);
 }
+
 code {
   font-family: "VT323", monospace;
   font-size: 1.5rem;
 }
+
 .p-in-code {
   color: #3700ff;
   font-size: 1.5rem;
 }
+
 .flex {
   display: flex;
 }
+
 .container {
   max-width: 1200px;
   margin: auto;
   text-align: center;
 }
+
 .container-item {
   box-shadow: 0 1px 2px 0 rgba(255, 251, 2, 0.2),
     0 1px 5px 0 rgba(29, 5, 250, 0.19);
@@ -46,10 +55,12 @@ code {
   padding: 0.5rem;
   transition: box-shadow 0.3s;
 }
+
 .container-item:hover {
   box-shadow: 0 4px 10px 0 rgba(0, 190, 248, 0.2),
     0 4px 20px 0 rgba(243, 1, 252, 0.19);
 }
+
 .box {
   margin-bottom: 5px;
   width: 80px;
@@ -77,9 +88,11 @@ code {
 a:hover {
   text-decoration: none;
 }
+
 .hidden {
   overflow: hidden;
 }
+
 .alert {
   text-align: left;
   background-color: rgb(252, 207, 124);
@@ -87,16 +100,22 @@ a:hover {
   margin-bottom: 1rem;
   border-left: 8px solid #ff7301;
 }
+
 /************ стиллизация скролла *****************/
 html,
 body {
-  scrollbar-color: #843465 #253861; /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: auto; /* толщина */
+  scrollbar-color: #843465 #253861;
+  /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: auto;
+  /* толщина */
 }
+
 /* полоса прокрутки (скроллбар) */
 ::-webkit-scrollbar {
-  width: 24px; /* ширина для вертикального скролла */
-  height: 8px; /* высота для горизонтального скролла */
+  width: 24px;
+  /* ширина для вертикального скролла */
+  height: 8px;
+  /* высота для горизонтального скролла */
   background-color: #143861;
 }
 
@@ -147,23 +166,28 @@ body {
 .move-1 {
   transition: transform 1s;
 }
+
 /*must be below class "move-1"*/
 .ease-out {
   transition-timing-function: ease-out;
 }
+
 .move-1:hover {
   transform: translate(20rem, 0);
 }
+
 /*******************/
 /****** move-2 *****/
 /*******************/
 .move-2 {
   transition: width 0.3s, color 0.5s 1s;
 }
+
 .move-2:hover {
   width: 150px;
   color: #c3e73e;
 }
+
 /************************/
 /****** move-3,4,5,6,7 ******/
 /***********************/
@@ -176,6 +200,7 @@ body {
 .move-3:hover {
   transform: rotate(45deg);
 }
+
 .move-4 {
   background-color: rgb(29, 206, 13);
   font-size: 14px;
@@ -186,12 +211,14 @@ body {
 .move-4:hover {
   transform: rotate(-45deg);
 }
+
 .move-5,
 .move-6,
 .move-7 {
   background-color: rgb(29, 206, 13);
   transition: transform 0.3s;
 }
+
 .move-5:hover {
   transform: rotateX(90deg);
 }
@@ -203,6 +230,7 @@ body {
 .move-7:hover {
   transform: rotateY(45deg);
 }
+
 /************************/
 /****** move-8 ******/
 /***********************/
@@ -213,6 +241,7 @@ body {
   color: #6d6b6b;
   height: 20rem;
 }
+
 .titles {
   position: absolute;
   width: 18em;
@@ -228,6 +257,7 @@ body {
   transform: perspective(300px) rotateX(25deg);
   overflow: hidden;
 }
+
 .content {
   position: absolute;
   top: 100%;
@@ -238,10 +268,12 @@ body {
   from {
     top: 100%;
   }
+
   to {
     top: -100%;
   }
 }
+
 /************************/
 /********hover-1 *******/
 /***********************/
@@ -264,6 +296,7 @@ body {
 .hover-1:hover:before {
   transform: rotate(0deg);
 }
+
 /************************/
 /********hover-2 *******/
 /***********************/
@@ -271,6 +304,7 @@ body {
 .hover-2 {
   transition: 1s;
 }
+
 .hover-2::before {
   content: "";
   position: absolute;
@@ -283,6 +317,7 @@ body {
   transform: rotateX(90deg);
   z-index: -1;
 }
+
 .hover-2::after {
   content: "";
   position: absolute;
@@ -295,6 +330,7 @@ body {
   transform: rotateY(90deg);
   z-index: -1;
 }
+
 .hover-2:hover {
   color: whitesmoke;
 }
@@ -306,6 +342,7 @@ body {
 .hover-2:hover::after {
   transform: rotateY(0deg);
 }
+
 /************************/
 /********hover-3 *******/
 /***********************/
@@ -316,17 +353,20 @@ body {
   letter-spacing: -2px;
   transition: all 0.5s;
 }
+
 .hover-3:hover {
   font-weight: 600;
   letter-spacing: 10px;
   border: 6px solid #e1332d;
 }
+
 /************************/
 /********hover-4 *******/
 /***********************/
 .hover-4 {
   transition: all 1s;
 }
+
 .hover-4::before {
   content: "YES!";
   position: absolute;
@@ -343,15 +383,18 @@ body {
   transition: all 0.5s;
   transform: translateY(-100%);
 }
+
 .hover-4:hover::before {
   transform: translateY(0);
 }
+
 /************************/
 /********hover-5 *******/
 /***********************/
 .hover-5 {
   transition: all 1s;
 }
+
 .hover-5::before {
   content: "";
   position: absolute;
@@ -364,21 +407,26 @@ body {
   transform: translateX(-100%);
   transition: all 1s;
 }
+
 .hover-5:hover::before {
   transform: translateX(0%);
 }
+
 .hover-5:hover {
   color: #fff200;
 }
+
 /************************/
 /********hover-6 *******/
 /***********************/
 .hover-6 {
   transition: all 0.3s;
 }
+
 .hover-6:hover {
   background-color: #ff6347;
 }
+
 .hover-6::before {
   content: "";
   position: absolute;
@@ -390,15 +438,18 @@ body {
   transform: translateX(-100%) rotate(45deg);
   transition: all 0.3s;
 }
+
 .hover-6:hover::before {
   transform: translateX(100%) rotate(45deg);
 }
+
 /************************/
 /********hover-7 *******/
 /***********************/
 .hover-7 {
   transition: all 0.3s;
 }
+
 .hover-7::before {
   content: "Hello";
   position: absolute;
@@ -413,6 +464,7 @@ body {
   align-items: center;
   transition: all 0.5s;
 }
+
 .hover-7::after {
   content: "By";
   position: absolute;
@@ -426,24 +478,26 @@ body {
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
-  transform: translate(
-    -100%,
-    100%
-  ); /* слева внизу(правый верх край касается ниж. левого родителя) */
+  transform: translate(-100%,
+      100%);
+  /* слева внизу(правый верх край касается ниж. левого родителя) */
 }
 
 .hover-7:hover::before {
   transform: translate(100%, -100%);
 }
+
 .hover-7:hover::after {
   transform: translate(0%, 0%);
 }
+
 /************************/
 /********hover-8 *******/
 /***********************/
 .hover-8 {
   transition: all 0.5s;
 }
+
 .hover-8::before {
   content: "HOVER";
   position: absolute;
@@ -460,24 +514,25 @@ body {
   opacity: 0;
   transition: all 0.5s;
 }
+
 .hover-8:hover::before {
   transform: scale(1);
   opacity: 1;
 }
+
 /************************/
 /********hover-9 *******/
 /***********************/
 .hover-9 {
-  margin: 0;
-  padding: 0;
   display: flex;
   list-style-type: none;
 }
+
 .hover-9 li a {
   display: block;
-  width: 120px;
-  height: 40px;
-  line-height: 40px;
+  width: 150px;
+  height: 60px;
+  line-height: 60px;
   text-align: center;
   color: #ff0000;
   text-transform: capitalize;
@@ -485,6 +540,7 @@ body {
   position: relative;
   transition: all 0.5s;
 }
+
 .hover-9 li span {
   position: absolute;
   width: 33.33%;
@@ -493,20 +549,119 @@ body {
   z-index: -1;
   left: 0;
   top: 0;
-  transform: scaleY(1);
+  transform: scaleY(0);
   transform-origin: top;
   transition: all 0.5s;
 }
+
 .hover-9 li span:nth-child(2) {
   left: 33.33%;
   transition-delay: 0.25s;
 }
+
 .hover-9 li span:nth-child(3) {
   left: 66.66%;
   transition-delay: 0.35s;
 }
 
-.hover-9 li span:hover {
-  /* transform: scaleY(0); */
-  background-color: #fff;
+.hover-9 li a:hover span {
+  transform: scaleY(1);
+}
+
+.hover-9 li a:hover {
+  color: #ffffff;
+}
+
+/************************/
+/********hover-10 *******/
+/***********************/
+.hover-10.btn {
+  border: 2px solid tomato;
+  background: none;
+  color: tomato;
+  padding: 25px 50px;
+  font-size: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .5s;
+  position: relative;
+  margin-bottom: 1rem;
+  color: tomato;
+  overflow: hidden;
+}
+
+.hover-10.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: tomato;
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+  height: 0%;
+  transition: all 0.5s;
+}
+
+.hover-10.btn:hover {
+  color: white
+}
+
+.hover-10.btn:hover::before {
+  height: 200%;
+}
+
+/************************/
+/********hover-11 *******/
+/***********************/
+.hover-11 {
+  display: inline-block;
+  padding: 25px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ffe600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.hover-11::before {
+  content: "button";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+
+.hover-11:hover::before,
+.hover-11:hover::after {
+  transform: rotateX(0deg);
+}
+
+.hover-11::after {
+  content: "button";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+  transition-delay: 0.25s;
 }

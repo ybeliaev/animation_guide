@@ -1,185 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Animations tutorial</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./fonts/stylesheet.css" />
-    <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body class="grid">
-    <h1>Animation</h1>
-    <h2>Transition options</h2>
 
-    <div class="container">
-      <div class="box move-1 ease-out">Move-1</div>
-      <h3>Several property</h3>
-      <div class="box move-2">Move-2</div>
-      <h3>Animatable CSS properties</h3>
-      <a
-        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
-        target="_blank"
-        >MDN link</a
-      >
-      <h3>CSS-свойство transform</h3>
+<head>
+  <meta charset="UTF-8" />
+  <title>Animations tutorial</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./fonts/stylesheet.css" />
+  <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
 
-      <ul class="list-group">
-        <li class="list-group-item list-group-item-action">
-          transform: matrix(1, 2, 3, 4, 5, 6);
-        </li>
-        <li class="list-group-item list-group-item-action">
-          transform: scale(2, 0.5);
-        </li>
-        <li class="list-group-item list-group-item-action">
-          transform: translate(120px, 50%);
-        </li>
-        <li class="list-group-item list-group-item-action">
-          transform: rotate(0.5turn);
-        </li>
-        <li class="list-group-item list-group-item-action">
-          transform: scale(0.5) translate(-100%, -100%);
-        </li>
-      </ul>
-      <div class="container-item">
-        <h3>Transform origin</h3>
-        <p>
-          станавливает координаты точки, относительно которой будет происходить
-          трансформация элемента.
-        </p>
-        <div class="alert alert-success" role="alert">
-          transform-origin: x y z <br />
-          transform-origin: 100% 0; Точка поворота в правом верхнем углу
-        </div>
-        <div class="flex">
-          <div class="box move-3">Right</div>
-          <div class="box move-4">Right-Top</div>
-          <div class="box move-5">RotateX</div>
-          <div class="box move-6">RotateZ</div>
-          <div class="box move-7">RotateY</div>
-        </div>
+<body class="grid">
+  <h1>Animation</h1>
+  <h2>Transition options</h2>
+
+  <div class="container">
+    <div class="box move-1 ease-out">Move-1</div>
+    <h3>Several property</h3>
+    <div class="box move-2">Move-2</div>
+    <h3>Animatable CSS properties</h3>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target="_blank">MDN link</a>
+    <h3>CSS-свойство transform</h3>
+
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-action">
+        transform: matrix(1, 2, 3, 4, 5, 6);
+      </li>
+      <li class="list-group-item list-group-item-action">
+        transform: scale(2, 0.5);
+      </li>
+      <li class="list-group-item list-group-item-action">
+        transform: translate(120px, 50%);
+      </li>
+      <li class="list-group-item list-group-item-action">
+        transform: rotate(0.5turn);
+      </li>
+      <li class="list-group-item list-group-item-action">
+        transform: scale(0.5) translate(-100%, -100%);
+      </li>
+    </ul>
+    <div class="container-item">
+      <h3>Transform origin</h3>
+      <p>
+        станавливает координаты точки, относительно которой будет происходить
+        трансформация элемента.
+      </p>
+      <div class="alert alert-success" role="alert">
+        transform-origin: x y z <br />
+        transform-origin: 100% 0; Точка поворота в правом верхнем углу
       </div>
+      <div class="flex">
+        <div class="box move-3">Right</div>
+        <div class="box move-4">Right-Top</div>
+        <div class="box move-5">RotateX</div>
+        <div class="box move-6">RotateZ</div>
+        <div class="box move-7">RotateY</div>
+      </div>
+    </div>
 
-      <div class="container-item">
-        <h3>6. Perspective</h3>
-        <a href="https://webref.ru/css/value/perspective" target="_blank"
-          >Guide</a
-        >
-        <div class="alert">
-          Определяет расстояние от плоскости экрана до точки сходимости линий и
-          тем самым задаёт, насколько выражен эффект перспективы. Точка
-          сходимости по умолчанию располагается в центре элемента и может быть
-          изменена с помощью свойства perspective-origin.
-        </div>
-        <div class="move-8">
-          <div class="titles">
-            <div class="content">
-              <p>
-                В Галактике бушует гражданская война. Корабли повстанцев, нанеся
-                удар с тайной базы, одержали первую победу над жестокой
-                Галактической Империей.
-              </p>
-              <p>
-                Во время сражения шпионы повстанцев смогли добыть секретные
-                чертежи супероружия Империи — ЗВЕЗДЫ СМЕРТИ, укрепленной
-                космической станции, обладающей достаточной огневой мощью, чтобы
-                уничтожить целую планету.
-              </p>
-              <p>
-                Преследуемая зловещими агентами Империи, принцесса Лея летит
-                домой на своем корабле, везя с собой украденные чертежи, которые
-                могут спасти её народ и вернуть свободу галактике...
-              </p>
-            </div>
+    <div class="container-item">
+      <h3>6. Perspective</h3>
+      <a href="https://webref.ru/css/value/perspective" target="_blank">Guide</a>
+      <div class="alert">
+        Определяет расстояние от плоскости экрана до точки сходимости линий и
+        тем самым задаёт, насколько выражен эффект перспективы. Точка
+        сходимости по умолчанию располагается в центре элемента и может быть
+        изменена с помощью свойства perspective-origin.
+      </div>
+      <div class="move-8">
+        <div class="titles">
+          <div class="content">
+            <p>
+              В Галактике бушует гражданская война. Корабли повстанцев, нанеся
+              удар с тайной базы, одержали первую победу над жестокой
+              Галактической Империей.
+            </p>
+            <p>
+              Во время сражения шпионы повстанцев смогли добыть секретные
+              чертежи супероружия Империи — ЗВЕЗДЫ СМЕРТИ, укрепленной
+              космической станции, обладающей достаточной огневой мощью, чтобы
+              уничтожить целую планету.
+            </p>
+            <p>
+              Преследуемая зловещими агентами Империи, принцесса Лея летит
+              домой на своем корабле, везя с собой украденные чертежи, которые
+              могут спасти её народ и вернуть свободу галактике...
+            </p>
           </div>
         </div>
       </div>
-      <div class="container-item">
-        <h3>7. Hover-1</h3>
-        <a href="#" class="link-style hidden hover-1">hover-1</a>
-      </div>
-
-      <div class="container-item">
-        <h3>8. Hover-2</h3>
-        <a href="#" class="link-style hidden hover-2">hover-2</a>
-      </div>
-
-      <div class="container-item">
-        <h3>9. Hover-3</h3>
-        <a href="#" class="link-style hidden hover-3">hover-3</a>
-      </div>
-
-      <div class="container-item">
-        <h3>10. Hover-4</h3>
-        <a href="#" class="link-style hidden hover-4">hover-4</a>
-      </div>
-
-      <div class="container-item">
-        <h3>11. Hover-5</h3>
-        <div class="alert">
-          Памятка: <code>overflow: hidden</code> крайне важно в подобных
-          анимациях, т.к.благодаря этому свойству не видны псевдоэлементы за
-          пределами основного
-        </div>
-        <a href="#" class="link-style hidden hover-5">hover-5</a>
-        <div class="alert">
-          Меняя <code>translateX(-100%) на translateX(100%)</code> получаем
-          эффект правого наезда элемента. А сменой
-          <code>translateX(-100%) на translateY(...%)</code> получим верх/низ
-          движение
-        </div>
-      </div>
-
-      <div class="container-item">
-        <h3>11. Hover-6</h3>
-        <a href="#" class="link-style hidden hover-6">hover-6</a>
-      </div>
-
-      <div class="container-item">
-        <h3>12. Hover-7</h3>
-        <a href="#" class="link-style hidden hover-7">hover-7</a>
-        <div class="alert">
-          <p>
-            Можно добавить <code>color: transparent </code> для текста родителя
-          </p>
-          <p></p>
-        </div>
-      </div>
-
-      <div class="container-item">
-        <h3>13. Hover-8</h3>
-        <a href="#" class="link-style hidden hover-8">HOVER</a>
-        <div class="alert">
-          <p>
-            <code>transform: scale(5);opacity: 0;</code> to hover
-            <code>transform: scale(1);opacity: 1;</code>
-          </p>
-          <p></p>
-        </div>
-      </div>
-
-      <div class="container-item">
-        <h3>14. Hover-9</h3>
-        <ul class="hover-9">
-          <li><a href="#!">service<span></span><span></span><span></span></a></li>
-          <li><a href="#!">team<span></span><span></span><span></span></a></li>
-          <li><a href="#!">contact<span></span><span></span><span></span></a></li>
-        </ul>
-        <div class="alert">
-          <p>
-            <code>Три span помещёны в <a> c left:0, left:33.33%, left:66.66%. Все transform: scaleY(0) transform-origin: top</code> 
-            <p class="p-in-code">to hover</p>
-            <code>span:nth-child(2) {left: 33.33%;transition-delay: 0.25s;} span:nth-child(3) {left: 66.66%;transition-delay: 0.35s;}
-            } и transform: scaleY(1)</code>
-          </p>
-          <p></p>
-        </div>
-      </div>
-
-      <!-- end -->
     </div>
-  </body>
+    <div class="container-item">
+      <h3>7. Hover-1</h3>
+      <a href="#" class="link-style hidden hover-1">hover-1</a>
+    </div>
+
+    <div class="container-item">
+      <h3>8. Hover-2</h3>
+      <a href="#" class="link-style hidden hover-2">hover-2</a>
+    </div>
+
+    <div class="container-item">
+      <h3>9. Hover-3</h3>
+      <a href="#" class="link-style hidden hover-3">hover-3</a>
+    </div>
+
+    <div class="container-item">
+      <h3>10. Hover-4</h3>
+      <a href="#" class="link-style hidden hover-4">hover-4</a>
+    </div>
+
+    <div class="container-item">
+      <h3>11. Hover-5</h3>
+      <div class="alert">
+        Памятка: <code>overflow: hidden</code> крайне важно в подобных
+        анимациях, т.к.благодаря этому свойству не видны псевдоэлементы за
+        пределами основного
+      </div>
+      <a href="#" class="link-style hidden hover-5">hover-5</a>
+      <div class="alert">
+        Меняя <code>translateX(-100%) на translateX(100%)</code> получаем
+        эффект правого наезда элемента. А сменой
+        <code>translateX(-100%) на translateY(...%)</code> получим верх/низ
+        движение
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3>11. Hover-6</h3>
+      <a href="#" class="link-style hidden hover-6">hover-6</a>
+    </div>
+
+    <div class="container-item">
+      <h3>12. Hover-7</h3>
+      <a href="#" class="link-style hidden hover-7">hover-7</a>
+      <div class="alert">
+        <p>
+          Можно добавить <code>color: transparent </code> для текста родителя
+        </p>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3>13. Hover-8</h3>
+      <a href="#" class="link-style hidden hover-8">HOVER</a>
+      <div class="alert">
+        <p>
+          <code>transform: scale(5);opacity: 0;</code> to hover
+          <code>transform: scale(1);opacity: 1;</code>
+        </p>
+
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3>14. Hover-9</h3>
+      <ul class="hover-9">
+        <li><a href="#!">service<span></span><span></span><span></span></a></li>
+        <li><a href="#!">team<span></span><span></span><span></span></a></li>
+        <li><a href="#!">contact<span></span><span></span><span></span></a></li>
+      </ul>
+      <div class="alert">
+        <p>
+          Три <code>span</code> помещёны в <code><a></code> c <code>left:0, left:33.33%, left:66.66%.</code> Все <code>transform: scaleY(0) transform-origin: top.</code> При наведении          
+          <code>span:nth-child(2) {left: 33.33%;transition-delay: 0.25s;} span:nth-child(3) {left:
+            66.66%;transition-delay: 0.35s;}
+             и transform: scaleY(1)</code>
+        </p>
+      </div>
+      <div class="alert">
+        <p>
+          ВАЖНО: <code>hover</code> на элемент <code>a</code>, т.к он перекрывает <code>span: li a:hover span</code>
+        </p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3>13. Hover-10</h3>
+      <button class="hover-10 btn">button</button>
+      <div class="alert">
+        <p>
+          Псевдоэлемент <code>.btn::before</code> получил <code>top: 0;left: 0;border-radius: 0 0 50% 50%;height: 0%;</code>
+          При наведении  <code>height: 200%;</code>. Ещё можно менять направление анимации сменой <code>top: 0;</code> на <code>bottom: 0</code> и изменением скруглений..
+        </p>
+
+      </div>
+    </div>
+
+
+    <div class="container-item">
+      <h3>13. Hover-11</h3>
+      <a href="#!" class="hover-11 btn">button</a>
+      <div class="alert">
+        <p>
+          Ссылка <code>a</code> инлайн элемент, поэтому залезет на др. элементы, поэтому важно дать <code>display: inline-block</code> для <code>a</code>.
+        </p>
+
+      </div>
+      <div class="alert">
+        <p>
+          Для псевдоэлемента <code>content: "button";transform: rotateX(270deg);transform-origin: top;</code>. Для второго добавить задержку <code>transition-delay: 0.25s;</code>. При наведении <code>transform: rotateX(0deg);</code>
+        </p>
+      </div>
+    </div>
+    <!-- end -->
+  </div>
+</body>
+
 </html>
