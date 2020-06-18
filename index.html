@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Animations tutorial</title>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./fonts/stylesheet.css" />
   <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
   <link rel="stylesheet" href="./css/main.css" />
@@ -201,6 +201,16 @@
       <div class="alert">
         <p>
           Для псевдоэлемента <code>content: "button";transform: rotateX(270deg);transform-origin: top;</code>. Для второго добавить задержку <code>transition-delay: 0.25s;</code>. При наведении <code>transform: rotateX(0deg);</code>
+        </p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3>13. Hover-12</h3>
+      <a class="hover-12 btn">button</a>
+      <div class="alert">
+        <p>
+          Один псевдоэлемент получает <code>left: 0;</code> а другой <code>left: -100%; transform: scale(0) rotateY(0deg); opacity: 0;</code>. При наведении <code>left: 100%; transform: scale(0) rotateY(360deg); opacity: 0;</code> - первый, а второй элемент <code>left: 0; transform: scale(1) rotateY(360deg); opacity: 1;</code>
         </p>
       </div>
     </div>
