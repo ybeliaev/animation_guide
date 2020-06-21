@@ -863,6 +863,7 @@ a.hover-14:hover {
   height: 500px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 .container_hover-15 img {
   width: 100%;
@@ -898,3 +899,48 @@ a.hover-14:hover {
 .container_hover-15:hover img {
   transform: scale(1.2) rotate(5deg);
 }
+/************************/
+/********hover-16 *******/
+/***********************/
+.container_hover-16 {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.container_hover-16 img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.container_hover-16 .caption {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: all 0.5s;
+  background: rgba(0, 0, 0, 0);
+  transform: translateX(-100%);
+}
+.container_hover-16 .caption h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+.container_hover-16 .caption p {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.container_hover-16:hover .caption {
+  background-color: rgba(255, 255, 255, 0.4);
+
+  transform: translateX(0);
+  opacity: 1;
+}
+
