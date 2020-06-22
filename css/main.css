@@ -983,3 +983,46 @@ a.hover-14:hover {
 .container_hover-17:hover img {
   transform: translateX(100%);
 }
+/************************/
+/********hover-18 *******/
+/***********************/
+.container_hover-18 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.container_hover-18 img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.container_hover-18 .caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0);
+  transform: translateY(100%);
+}
+.container_hover-18 .caption h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+.container_hover-18 .caption p {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.container_hover-18:hover .caption {
+  transform: translateY(0);
+}
+.container_hover-18:hover img {
+  transform: translateY(-30%);
+}
