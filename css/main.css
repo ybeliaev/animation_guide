@@ -1026,3 +1026,67 @@ a.hover-14:hover {
 .container_hover-18:hover img {
   transform: translateY(-30%);
 }
+/************************/
+/********hover-19 *******/
+/***********************/
+.container_hover-19 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.container_hover-19 img {
+  width: 100%;
+}
+.container_hover-19::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0);
+  opacity: 0.5;
+  transform: translateY(100%);
+  transition: all 0.25s;
+  transition-delay: 0.25s;
+}
+.container_hover-19:hover::before {
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+.container_hover-19 .caption {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: all 0.25s;
+}
+.container_hover-19:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+.container_hover-19 h1,
+.container_hover-19 h4 {
+  margin: 0;
+  letter-spacing: 1px;
+}
+.container_hover-19 h1 {
+  text-transform: uppercase;
+  font-weight: 400px;
+  margin-bottom: 5px;
+}
+.container_hover-19 h4 {
+  background-color: #ae895dce;
+  padding: 3px 5px;
+}

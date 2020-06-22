@@ -337,16 +337,27 @@
       <h3 id="19">17. Hover-19</h3>     
         
         <div class="container_hover-19">
-          <img src="./img/photo_6.jpg" alt="women">
+          <img src="./img/photo.jpg" alt="women">
           <div class="caption">
             <h1>amazing caption</h1>
-            <p>you can write any text..</p>
+            <h4>you can write any text..</h4>
           </div>
         </div>
         <div class="alert">
           <p>
-            
+            На контенер повесили <code>::before {position: absolute; opacity: 0.5; transform: translateY(100%); transition: all 0.25s; transition-delay: 0.25s;}</code> Последнее св-во указывает задержку для возвращения к первоначальному состоянию
           </p>
+          <p>
+            <code>
+              :hover::before { transform: translateY(0); transition-delay: 0s;
+              }
+            </code>
+          </p>
+          <p>
+            Блок текста <code>position: absolute;</code> и <code>transform: translateY(-30px); opacity: 0;</code>        </p>
+            <p>
+              <code>:hover {opacity: 1; transform: translateY(0); transition-delay: 0.3s;}</code>
+            </p>
            
         </div>   
       
