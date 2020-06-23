@@ -1090,3 +1090,37 @@ a.hover-14:hover {
   background-color: #ae895dce;
   padding: 3px 5px;
 }
+/************************/
+/********hover-20 *******/
+/***********************/
+.container_hover-20 {
+  display: flex;
+  
+}
+.container_hover-20 li {
+  list-style-type: none;
+  color: rgb(0, 68, 255);
+  font-size: 100px;
+  font-weight: bold;
+  transition: all 2s;
+}
+.container_hover-20:hover li {
+  transform: rotate(45deg) translateY(-200px);
+  opacity: 0;
+  filter: blur(20px);
+}
+.container_hover-20 li:nth-child(1) {
+  transition-delay: 0;
+}
+.container_hover-20 li:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.container_hover-20 li:nth-child(3) {
+  transition-delay: 0.8s;
+}
+.container_hover-20 li:nth-child(4) {
+  transition-delay: 1.2s;
+}
+.container_hover-20 li:nth-child(5) {
+  transition-delay: 1.6s;
+}
