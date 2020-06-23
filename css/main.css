@@ -1095,7 +1095,6 @@ a.hover-14:hover {
 /***********************/
 .container_hover-20 {
   display: flex;
-  
 }
 .container_hover-20 li {
   list-style-type: none;
@@ -1123,4 +1122,29 @@ a.hover-14:hover {
 }
 .container_hover-20 li:nth-child(5) {
   transition-delay: 1.6s;
+}
+/************************/
+/********hover-21 *******/
+/***********************/
+h1.container_hover-21 {
+  display: inline-block;
+  font-size: 120px;
+  color: rgba(58, 6, 248, 0.281);
+  text-transform: uppercase;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+h1.container_hover-21:before {
+  content: "text";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  color: #0400ff;
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+h1.container_hover-21:hover::before {
+  width: 100%;
 }
