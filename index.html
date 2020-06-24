@@ -420,6 +420,28 @@
       </div>
     </div>
 
+    <div class="container-item">
+      <h3 id="23"> Hover-23</h3>
+      <ul class="container_hover-23">
+        <li><a href="#!">Home</a></li>
+        <li><a href="#!">About</a></li>
+        <li><a href="#!">Services</a></li>
+        <li><a href="#!">Portfolio</a></li>
+        <li><a href="#!">Contact</a></li>
+      </ul>
+      <div class="alert" >
+        <p>
+          Формируем рамочки: <code>a::before { bottom: 0; left: 0; width: 12px; height: 12px; border: 3px solid #ea00ff; border-width: 0 0 3px 3px; }</code>. Для второй рамки: <code>a::after { top: 0; right: 0; ..... border-width: 3px 3px 0 0; }</code>
+        </p>
+        <p>
+          Теперь изменим их положение для эффекта выезда, изменив <code>bottom .. left </code>и т.д с<code>0</code> на <code>12px</code> плюс спрятать их <code>opacity:0</code>
+        </p>
+        <p>
+          При наведении положениям даём <code>-8px</code> чтобы больше отодвинуть, т.к. фон будет перекрывать. И цвет бэка менять.. 
+        </p>
+      </div>
+    </div>
+
     <!-- end -->
   </div>
 </body>
