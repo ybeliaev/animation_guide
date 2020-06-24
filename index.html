@@ -6,7 +6,7 @@
   <title>Animations tutorial</title>
   <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./fonts/stylesheet.css" />
-  <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
   <link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -390,7 +390,7 @@
           
         <div class="alert">
           <p>
-            Для <code>h1 display: inline-block;</code> т.к. иначе ::before с <code>top: 0%; left: 0%; width: 0%; overflow: hidden;</code> будет слева. 
+            Для <code>h1 display: inline-block;</code> т.к. иначе <code>::before</code> с <code>top: 0%; left: 0%; width: 0%; overflow: hidden;</code> будет слева. 
           </p>     
           <p>
             <code>:hover::before { width: 100%; }</code>
@@ -438,6 +438,32 @@
         </p>
         <p>
           При наведении положениям даём <code>-8px</code> чтобы больше отодвинуть, т.к. фон будет перекрывать. И цвет бэка менять.. 
+        </p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3 id="24"> Hover-24</h3>
+      <div class="container_hover-24">
+        <a href="#!"><i class="fab fa-facebook-f"></i></a>
+        <a href="#!"><i class="fab fa-twitter"></i></a>
+        <a href="#!"><i class="fab fa-google"></i></a>
+        <a href="#!"><i class="fab fa-youtube"></i></a>
+        <a href="#!"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="alert" >
+        <p>
+          Структура ссылки: <code>a href="#!" i class="fab fa-facebook-f" i a</code>
+        </p>
+        <p>
+          Для <code>a</code> задать размеры, тень, <code>overflow: hidden</code>, и т.п. Для <code>a i { line-height: 90px;}</code>  - как высота ссылки, чтобы по центру. 
+          <code>a::before { width: 120%; height: 120%; left: -110%; top: 90%; transform: rotate(45deg); }</code> - элемент развёрнут ромбом и сдвинут вниз влево.
+        </p>
+        <p>
+          <code>@keyframes animation</code> с изменениями <code>left</code> и <code>top</code>
+        </p>
+        <p>
+          <code>a:hover::before { animation: animation 0.7s 1 forwards }</code>
         </p>
       </div>
     </div>
