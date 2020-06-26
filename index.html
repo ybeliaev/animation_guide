@@ -468,6 +468,60 @@
       </div>
     </div>
 
+    <div class="container-item">
+      <h3 id="25">Анимации с несколькими состояниями</h3>
+
+      <div class="alert" >
+        <p>
+         <code> @keyframes animation { 0% { left: 0;  } 10% { left: 100px; } 100% { left: 300px; }}</code>
+         Заметить, что блок 10% выполнится по времени гораздо быстрее чем отрезок от него до 100%. 
+        </p>
+        <p>
+          Также важно, что элемент <strong>возвратится в исходное положение</strong>> после выполнения анимации.
+        </p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3 id="26">Animation-fill-mode</h3>
+
+      <div class="alert" >
+        <p>
+         <code> animation-fill-mode: forwards</code>
+         К элементу по окончанию анимации применяется стиль последнего ключевого кадра.
+        </p>
+        <p>
+          Интересно, что, если применить к анимируемому элементу свойство <code>animation-delay</code>, то время выполнения анимирующей функции <code>@keyframes имя_функции</code> уменьшится на это время(причём первый блок - с <code>0%{ ... }</code>).
+        </p>
+      </div>
+      <div class="alert" >
+        <p>
+          <code>animation-fill-mode: backwards </code>
+          К элементу применяется стиль первого ключевого кадра(тот, что <code>0% { ... }</code>) и он остаётся на протяжении периода заданного <code>animation-delay</code>. Первый ключевой кадр определяется на основании значения <code>animation-direction</code>. Затем возвращается в первоначальное положение как при <code>animation-fill-mode: none</code>.
+        </p>
+      </div>
+      <div class="alert" >
+        <p>
+          <code>animation-fill-mode: both</code>
+          К элементу применяются оба правила, как для <code>forwards</code>, так и для <code>backwards</code>. В конце элемент останется в заанемированном состоянии. Т.е начало с <code>backwards</code> конец с <code>forwards</code>
+        </p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3 id="26">Animation-iteration-count</h3>
+
+      <div class="alert" >
+        <p>CSS свойство <code>animation-iteration-count</code> определяет сколько раз будет проигрываться анимационный цикл, перед тем как остановиться.</p>
+        <p>
+          <code>infinite</code> Анимация повторяется бесконечно.
+        </p>
+        <p>
+          <code>animation-iteration-count: number</code> Сколько раз анимация будет повторяться; по-умолчанию <code>1</code>. Отрицательные значения не используются. Можно использовать не целые значения, для проигрывания части анимационного цикла (например, <code>0.5</code> воспроизведет половину анимационного цикла).
+        </p>
+      </div>
+    </div>
+
     <!-- end -->
   </div>
 </body>
