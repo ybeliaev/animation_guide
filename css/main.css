@@ -1470,10 +1470,23 @@ ul.container_hover-23 li a:hover::after {
 /********hover-32 *******/
 /***********************/
 .container_hover-32 {
+  position: relative;
   height: 80vh;
   background: url(../img/bg.jpg);
   background-position: bottom left;
   animation: driving 15s linear infinite;
+}
+.container_hover-32 .car{
+  position: absolute;
+  left: 300px;
+  bottom: -50px;
+  width: 200px;
+}
+.container_hover-32 .motobike{
+  position: absolute;
+  left: 700px;
+  bottom: 55px;
+  width: 150px;
 }
 
 @keyframes driving {
