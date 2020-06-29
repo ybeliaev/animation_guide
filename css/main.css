@@ -724,6 +724,7 @@ a.hover-12:hover::after {
   transform: scale(1) rotateY(360deg);
   opacity: 1;
 }
+
 /************************/
 /********hover-13 *******/
 /***********************/
@@ -741,6 +742,7 @@ a.hover-13 {
   transition: all 0.5s;
   position: relative;
 }
+
 a.hover-13::before,
 a.hover-13::after {
   content: "";
@@ -755,26 +757,31 @@ a.hover-13::after {
   z-index: -1;
   opacity: 0;
 }
+
 a.hover-13::before {
   left: 0;
   box-shadow: -100px 0 0 green;
 }
+
 a.hover-13::after {
   right: 0;
   box-shadow: 100px 0 0 blue;
 }
+
 a.hover-13:hover::before {
   left: 50%;
   box-shadow: 30px 0 0 yellow;
   transform: translateX(-50%) translateY(-50%);
   opacity: 1;
 }
+
 a.hover-13:hover::after {
   right: 50%;
   box-shadow: -30px 0 0 yellow;
   transform: translateX(50%) translateY(-50%);
   opacity: 1;
 }
+
 a.hover-13 span {
   position: absolute;
   top: 0;
@@ -787,14 +794,17 @@ a.hover-13 span {
   transition: all 0.3s;
   z-index: -1;
 }
+
 a.hover-13:hover span {
   transform: scale(1);
   transition-delay: 0.4s;
 }
+
 .hover-13:hover {
   color: grey;
   transition-delay: 0.4s;
 }
+
 /************************/
 /********hover-14 *******/
 /***********************/
@@ -815,6 +825,7 @@ a.hover-14 {
   margin-bottom: 1rem;
   color: white;
 }
+
 a.hover-14::before {
   content: "";
   position: absolute;
@@ -828,6 +839,7 @@ a.hover-14::before {
   transition: all 0.2s;
   transform-origin: top;
 }
+
 a.hover-14::after {
   content: "";
   position: absolute;
@@ -841,19 +853,23 @@ a.hover-14::after {
   transition: all 0.2s;
   transform-origin: bottom;
 }
+
 a.hover-14:hover::before {
   top: -6px;
   left: 0;
   transform: perspective(1000px) rotateX(75deg);
 }
+
 a.hover-14:hover::after {
   top: 6px;
   left: 0;
   transform: perspective(1000px) rotateX(-75deg);
 }
+
 a.hover-14:hover {
   color: grey;
 }
+
 /************************/
 /********hover-15 *******/
 /***********************/
@@ -865,10 +881,12 @@ a.hover-14:hover {
   overflow: hidden;
   margin-bottom: 1rem;
 }
+
 .container_hover-15 img {
   width: 100%;
   transition: all 0.5s;
 }
+
 .container_hover-15 .caption {
   position: absolute;
   left: 0;
@@ -884,21 +902,26 @@ a.hover-14:hover {
   transition: all 0.5s;
   background: rgba(0, 0, 0, 0);
 }
+
 .container_hover-15 .caption h1 {
   text-transform: uppercase;
   margin: 0;
 }
+
 .container_hover-15 .caption p {
   font-size: 18px;
   text-transform: capitalize;
 }
+
 .container_hover-15:hover .caption {
   opacity: 1;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .container_hover-15:hover img {
   transform: scale(1.2) rotate(5deg);
 }
+
 /************************/
 /********hover-16 *******/
 /***********************/
@@ -909,10 +932,12 @@ a.hover-14:hover {
   overflow: hidden;
   margin-bottom: 1rem;
 }
+
 .container_hover-16 img {
   width: 100%;
   transition: all 0.5s;
 }
+
 .container_hover-16 .caption {
   position: absolute;
   left: 0;
@@ -928,18 +953,22 @@ a.hover-14:hover {
   background: rgba(0, 0, 0, 0);
   transform: translateX(-100%);
 }
+
 .container_hover-16 .caption h1 {
   text-transform: uppercase;
   margin: 0;
 }
+
 .container_hover-16 .caption p {
   font-size: 18px;
   text-transform: capitalize;
 }
+
 .container_hover-16:hover .caption {
   background-color: rgba(255, 255, 255, 0.4);
   transform: translateX(0);
 }
+
 /************************/
 /********hover-17 *******/
 /***********************/
@@ -950,10 +979,12 @@ a.hover-14:hover {
   overflow: hidden;
   margin-bottom: 1rem;
 }
+
 .container_hover-17 img {
   width: 100%;
   transition: all 0.5s;
 }
+
 .container_hover-17 .caption {
   position: absolute;
   left: 0;
@@ -969,20 +1000,25 @@ a.hover-14:hover {
   background-color: rgba(0, 0, 0);
   transform: translateX(-100%);
 }
+
 .container_hover-17 .caption h1 {
   text-transform: uppercase;
   margin: 0;
 }
+
 .container_hover-17 .caption p {
   font-size: 18px;
   text-transform: capitalize;
 }
+
 .container_hover-17:hover .caption {
   transform: translateX(0);
 }
+
 .container_hover-17:hover img {
   transform: translateX(100%);
 }
+
 /************************/
 /********hover-18 *******/
 /***********************/
@@ -993,10 +1029,12 @@ a.hover-14:hover {
   overflow: hidden;
   margin-bottom: 1rem;
 }
+
 .container_hover-18 img {
   width: 100%;
   transition: all 0.5s;
 }
+
 .container_hover-18 .caption {
   position: absolute;
   left: 0;
@@ -1012,20 +1050,25 @@ a.hover-14:hover {
   background-color: rgba(0, 0, 0);
   transform: translateY(100%);
 }
+
 .container_hover-18 .caption h1 {
   text-transform: uppercase;
   margin: 0;
 }
+
 .container_hover-18 .caption p {
   font-size: 18px;
   text-transform: capitalize;
 }
+
 .container_hover-18:hover .caption {
   transform: translateY(0);
 }
+
 .container_hover-18:hover img {
   transform: translateY(-30%);
 }
+
 /************************/
 /********hover-19 *******/
 /***********************/
@@ -1037,9 +1080,11 @@ a.hover-14:hover {
   border-radius: 10px;
   margin-bottom: 1rem;
 }
+
 .container_hover-19 img {
   width: 100%;
 }
+
 .container_hover-19::before {
   content: "";
   position: absolute;
@@ -1053,10 +1098,12 @@ a.hover-14:hover {
   transition: all 0.25s;
   transition-delay: 0.25s;
 }
+
 .container_hover-19:hover::before {
   transform: translateY(0);
   transition-delay: 0s;
 }
+
 .container_hover-19 .caption {
   position: absolute;
   top: 0;
@@ -1071,31 +1118,37 @@ a.hover-14:hover {
   opacity: 0;
   transition: all 0.25s;
 }
+
 .container_hover-19:hover .caption {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.3s;
 }
+
 .container_hover-19 h1,
 .container_hover-19 h4 {
   margin: 0;
   letter-spacing: 1px;
 }
+
 .container_hover-19 h1 {
   text-transform: uppercase;
   font-weight: 400px;
   margin-bottom: 5px;
 }
+
 .container_hover-19 h4 {
   background-color: #ae895dce;
   padding: 3px 5px;
 }
+
 /************************/
 /********hover-20 *******/
 /***********************/
 .container_hover-20 {
   display: flex;
 }
+
 .container_hover-20 li {
   list-style-type: none;
   color: rgb(0, 68, 255);
@@ -1103,26 +1156,33 @@ a.hover-14:hover {
   font-weight: bold;
   transition: all 2s;
 }
+
 .container_hover-20:hover li {
   transform: rotate(45deg) translateY(-200px);
   opacity: 0;
   filter: blur(20px);
 }
+
 .container_hover-20 li:nth-child(1) {
   transition-delay: 0;
 }
+
 .container_hover-20 li:nth-child(2) {
   transition-delay: 0.4s;
 }
+
 .container_hover-20 li:nth-child(3) {
   transition-delay: 0.8s;
 }
+
 .container_hover-20 li:nth-child(4) {
   transition-delay: 1.2s;
 }
+
 .container_hover-20 li:nth-child(5) {
   transition-delay: 1.6s;
 }
+
 /************************/
 /********hover-21 *******/
 /***********************/
@@ -1135,6 +1195,7 @@ h1.container_hover-21 {
   padding: 0;
   margin: 0;
 }
+
 h1.container_hover-21:before {
   content: "text";
   position: absolute;
@@ -1145,9 +1206,11 @@ h1.container_hover-21:before {
   overflow: hidden;
   transition: all 0.5s;
 }
+
 h1.container_hover-21:hover::before {
   width: 100%;
 }
+
 /************************/
 /********hover-21 *******/
 /***********************/
@@ -1159,9 +1222,11 @@ ul.container_hover-21 {
   flex-wrap: wrap;
   margin-bottom: 1rem;
 }
+
 ul.container_hover-21 li {
   list-style: none;
 }
+
 ul.container_hover-21 li a {
   text-decoration: none;
   color: #2f00ff;
@@ -1170,6 +1235,7 @@ ul.container_hover-21 li a {
   padding: 10px 15px;
   position: relative;
 }
+
 ul.container_hover-21 li a::before {
   content: "";
   position: absolute;
@@ -1182,9 +1248,11 @@ ul.container_hover-21 li a::before {
   transition: all 0.5s;
   transform-origin: left;
 }
+
 ul.container_hover-21 li a:hover::before {
   transform: scaleX(1);
 }
+
 ul.container_hover-21 li a::after {
   content: "";
   position: absolute;
@@ -1197,9 +1265,11 @@ ul.container_hover-21 li a::after {
   transition: all 0.5s;
   transform-origin: right;
 }
+
 ul.container_hover-21 li a:hover::after {
   transform: scaleX(1);
 }
+
 /************************/
 /********hover-23 *******/
 /***********************/
@@ -1223,10 +1293,12 @@ ul.container_hover-23 li a {
   position: relative;
   transition: all 0.5s;
 }
+
 ul.container_hover-23 li a:hover {
   background-color: #ea00ff;
   color: #ffffff;
 }
+
 ul.container_hover-23 li a::before {
   content: "";
   position: absolute;
@@ -1239,11 +1311,13 @@ ul.container_hover-23 li a::before {
   opacity: 0;
   transition: all 0.3s;
 }
+
 ul.container_hover-23 li a:hover::before {
   opacity: 1;
   bottom: -8px;
   left: -8px;
 }
+
 ul.container_hover-23 li a::after {
   content: "";
   position: absolute;
@@ -1256,11 +1330,13 @@ ul.container_hover-23 li a::after {
   opacity: 0;
   transition: all 0.3s;
 }
+
 ul.container_hover-23 li a:hover::after {
   opacity: 1;
   top: -8px;
   right: -8px;
 }
+
 /************************/
 /********hover-24 *******/
 /***********************/
@@ -1285,15 +1361,18 @@ ul.container_hover-23 li a:hover::after {
   overflow: hidden;
   transition: all 0.5s;
 }
+
 .container_hover-24 a i {
   line-height: 90px;
   font-size: 25px;
   transition: all 0.2s;
 }
+
 .container_hover-24 a:hover i {
   transform: scale(1.3);
   color: #f1f1f1;
 }
+
 .container_hover-24 a::before {
   content: "";
   position: absolute;
@@ -1304,6 +1383,7 @@ ul.container_hover-23 li a:hover::after {
   top: 90%;
   transform: rotate(45deg);
 }
+
 .container_hover-24 a:hover::before {
   animation: animation 0.7s 1 forwards;
 }
@@ -1313,15 +1393,95 @@ ul.container_hover-23 li a:hover::after {
     left: -110%;
     top: 90%;
   }
+
   50% {
     left: 15%;
     top: -30%;
   }
+
   100% {
     left: -10%;
     top: -10%;
   }
 }
+
 /************************/
-/********hover-25 *******/
+/********hover-30 *******/
 /***********************/
+.container_hover-30 h1 {
+  text-align: center;
+  color: tomato;
+  font-family: arial;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 15px;
+  text-shadow: 0 1px 0 #efefef,
+    0 2px 0 #efefef,
+    0 3px 0 #efefef,
+    0 4px 0 #efefef,
+    0 30px 5px rgba(0, 0, 0, 0.1);
+  animation: float 3s linear infinite;
+  animation-direction: alternate;
+
+}
+
+@keyframes float {
+  from {
+    transform: rotate(5deg)
+  }
+
+  to {
+    transform: rotate(-5deg)
+  }
+}
+
+/************************/
+/********hover-31 *******/
+/***********************/
+.container_hover-31 {
+  perspective: 200px;
+}
+
+.container_hover-31 .loading {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: rgb(0, 255, 234);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg)
+  }
+
+  50% {
+    transform: rotateX(0deg) rotateY(180deg)
+  }
+
+  100% {
+    transform: rotateX(180deg) rotateY(180deg)
+  }
+}
+
+/************************/
+/********hover-32 *******/
+/***********************/
+.container_hover-32 {
+  height: 80vh;
+  background: url(../img/bg.jpg);
+  background-position: bottom left;
+  animation: driving 15s linear infinite;
+}
+
+@keyframes driving {
+  from {
+    background-position: bottom left;
+  }
+
+  to {
+    background-position: bottom right;
+  }
+}

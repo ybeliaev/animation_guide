@@ -163,10 +163,11 @@
       </ul>
       <div class="alert">
         <p>
-          Три <code>span</code> помещёны в <code><a></code> c <code>left:0, left:33.33%, left:66.66%.</code> Все <code>transform: scaleY(0) transform-origin: top.</code> При наведении          
+          Три <code>span</code> помещёны в <code><a></code> c <code>left:0, left:33.33%, left:66.66%.</code> Все
+          <code>transform: scaleY(0) transform-origin: top.</code> При наведении
           <code>span:nth-child(2) {left: 33.33%;transition-delay: 0.25s;} span:nth-child(3) {left:
             66.66%;transition-delay: 0.35s;}
-             и transform: scaleY(1)</code>
+            и transform: scaleY(1)</code>
         </p>
       </div>
       <div class="alert">
@@ -181,8 +182,10 @@
       <button class="hover-10 btn">button</button>
       <div class="alert">
         <p>
-          Псевдоэлемент <code>.btn::before</code> получил <code>top: 0;left: 0;border-radius: 0 0 50% 50%;height: 0%;</code>
-          При наведении  <code>height: 200%;</code>. Ещё можно менять направление анимации сменой <code>top: 0;</code> на <code>bottom: 0</code> и изменением скруглений..
+          Псевдоэлемент <code>.btn::before</code> получил <code>top: 0;left: 0;border-radius: 0 0 50% 50%;height:
+            0%;</code>
+          При наведении <code>height: 200%;</code>. Ещё можно менять направление анимации сменой <code>top: 0;</code> на
+          <code>bottom: 0</code> и изменением скруглений..
         </p>
 
       </div>
@@ -194,13 +197,16 @@
       <a href="#!" class="hover-11 btn">button</a>
       <div class="alert">
         <p>
-          Ссылка <code>a</code> инлайн элемент, поэтому залезет на др. элементы, поэтому важно дать <code>display: inline-block</code> для <code>a</code>.
+          Ссылка <code>a</code> инлайн элемент, поэтому залезет на др. элементы, поэтому важно дать <code>display:
+            inline-block</code> для <code>a</code>.
         </p>
 
       </div>
       <div class="alert">
         <p>
-          Для псевдоэлемента <code>content: "button";transform: rotateX(270deg);transform-origin: top;</code>. Для второго добавить задержку <code>transition-delay: 0.25s;</code>. При наведении <code>transform: rotateX(0deg);</code>
+          Для псевдоэлемента <code>content: "button";transform: rotateX(270deg);transform-origin: top;</code>. Для
+          второго добавить задержку <code>transition-delay: 0.25s;</code>. При наведении <code>transform:
+            rotateX(0deg);</code>
         </p>
       </div>
     </div>
@@ -210,7 +216,10 @@
       <a class="hover-12 btn">button</a>
       <div class="alert">
         <p>
-          Один псевдоэлемент получает <code>left: 0;</code> а другой <code>left: -100%; transform: scale(0) rotateY(0deg); opacity: 0;</code>. При наведении <code>left: 100%; transform: scale(0) rotateY(360deg); opacity: 0;</code> - первый, а второй элемент <code>left: 0; transform: scale(1) rotateY(360deg); opacity: 1;</code>
+          Один псевдоэлемент получает <code>left: 0;</code> а другой <code>left: -100%; transform: scale(0)
+            rotateY(0deg); opacity: 0;</code>. При наведении <code>left: 100%; transform: scale(0) rotateY(360deg);
+            opacity: 0;</code> - первый, а второй элемент <code>left: 0; transform: scale(1) rotateY(360deg); opacity:
+            1;</code>
         </p>
       </div>
     </div>
@@ -220,15 +229,20 @@
       <a class="hover-13"><span></span>button</a>
       <div class="alert">
         <p>
-          <code>a::before, a::after {top: 50%; transform: translateY(-50%);}</code> Затем раскидать их по краям: <code>a::before{left:0}, a::after{right: 0}</code>
+          <code>a::before, a::after {top: 50%; transform: translateY(-50%);}</code> Затем раскидать их по краям:
+          <code>a::before{left:0}, a::after{right: 0}</code>
         </p>
-        <p>Доп элементы делаются тенями <code>box-shadow: 100px 0 0 blue;</code> для правого и <code>box-shadow: -100px 0 0 green;</code> для левого</p>
+        <p>Доп элементы делаются тенями <code>box-shadow: 100px 0 0 blue;</code> для правого и <code>box-shadow: -100px
+            0 0 green;</code> для левого</p>
         <p>При наведении <code>:hover::before {left: 50%; box-shadow: 30px 0 0 green;}</code> и <code>
-        <p>При наведении <code>:hover::before {left: 50%; box-shadow: 30px 0 0 green;}</code> и   :hover::after {
-            right: 50%; box-shadow: -30px 0 0 blue;}
-        <p>При наведении <code>:hover::before {left: 50%; box-shadow: 30px 0 0 green;}</code> и </code></p>
-        <p>Теперь при наведении смешать тени в центр, жёлтые при этом сливаются <code>transform: translateX(-50%) translateY(-50%);</code> и <code>transform: translateX(50%) translateY(-50%);</code></p>
-        <p>Теперь <code>span: {transform: scale(0); z-index: -1;} :hover span{transform: scale(1); transition-delay: 0.4s;}</code></p>
+            <p>При наведении <code>:hover::before {left: 50%; box-shadow: 30px 0 0 green;}</code> и :hover::after {
+              right: 50%; box-shadow: -30px 0 0 blue;}
+              <p>При наведении <code>:hover::before {left: 50%; box-shadow: 30px 0 0 green;}</code> и
+          </code></p>
+        <p>Теперь при наведении смешать тени в центр, жёлтые при этом сливаются <code>transform: translateX(-50%)
+            translateY(-50%);</code> и <code>transform: translateX(50%) translateY(-50%);</code></p>
+        <p>Теперь <code>span: {transform: scale(0); z-index: -1;} :hover span{transform: scale(1); transition-delay:
+            0.4s;}</code></p>
       </div>
     </div>
 
@@ -237,11 +251,12 @@
       <a href="#!" class="hover-14">button</a>
       <div class="alert">
         <p>
-          Два псевдоэлемента: <code>top: -3px; left: -3px;</code> и <code>top: -3px; left: -3px;</code>. Также к каждому <code>mix-blend-mode: multiply;</code> и изменён <code>transform-origin</code>.
+          Два псевдоэлемента: <code>top: -3px; left: -3px;</code> и <code>top: -3px; left: -3px;</code>. Также к каждому
+          <code>mix-blend-mode: multiply;</code> и изменён <code>transform-origin</code>.
         </p>
         <p><code>:hover::before{top: -6px; left: 0; transform: perspective(1000px) rotateX(75deg);}</code> и <code>
-          :hover::after {top: 6px; left: 0; transform: perspective(1000px) rotateX(-75deg);</code>
-          </p>
+            :hover::after {top: 6px; left: 0; transform: perspective(1000px) rotateX(-75deg);</code>
+        </p>
       </div>
     </div>
 
@@ -257,9 +272,11 @@
         </div>
         <div class="alert">
           <p>
-            Текстовый блок по центру флексом с <code>flex-direction: column;</code>. <code>opacity: 0;transition: all 0.5s; background: rgba(0, 0, 0, 0);</code>
-            При наведении <code>opacity: 1; background: rgba(0, 0, 0, 0.5);</code> текстовому блоку и <code>transform: scale(1.2) rotate(5deg);</code> для картинки
-           </p>
+            Текстовый блок по центру флексом с <code>flex-direction: column;</code>. <code>opacity: 0;transition: all
+              0.5s; background: rgba(0, 0, 0, 0);</code>
+            При наведении <code>opacity: 1; background: rgba(0, 0, 0, 0.5);</code> текстовому блоку и <code>transform:
+              scale(1.2) rotate(5deg);</code> для картинки
+          </p>
         </div>
       </div>
     </div>
@@ -267,7 +284,7 @@
     <div class="container-item">
       <h3 id="16">14. Hover-16</h3>
       <div class="container_photo">
-        
+
         <div class="container_hover-16">
           <img src="./img/photo_4.jpg" alt="women">
           <div class="caption">
@@ -277,17 +294,18 @@
         </div>
         <div class="alert">
           <p>
-            Для <code>absolute</code> элемента с текстом <code>transform: translateX(-100%);</code> а при наведении <code>transform: translateX(0);</code>
-           </p>
+            Для <code>absolute</code> элемента с текстом <code>transform: translateX(-100%);</code> а при наведении
+            <code>transform: translateX(0);</code>
+          </p>
         </div>
-        
+
       </div>
     </div>
 
     <div class="container-item">
       <h3 id="17">15. Hover-17</h3>
       <div class="container_photo">
-        
+
         <div class="container_hover-17">
           <img src="./img/photo_3.jpg" alt="women">
           <div class="caption">
@@ -297,106 +315,113 @@
         </div>
         <div class="alert">
           <p>
-            Для <code>absolute</code> элемента с текстом <code>transform: translateX(-100%);</code> а при наведении <code>transform: translateX(0);</code>
-           </p>
-           <p>
-             Для фото при наведении <code>transform: translateX(100%);</code>
-           </p>
-           <p>Для эффекта сверху поменять на <code>translateY</code></p>
+            Для <code>absolute</code> элемента с текстом <code>transform: translateX(-100%);</code> а при наведении
+            <code>transform: translateX(0);</code>
+          </p>
+          <p>
+            Для фото при наведении <code>transform: translateX(100%);</code>
+          </p>
+          <p>Для эффекта сверху поменять на <code>translateY</code></p>
         </div>
-        
+
       </div>
     </div>
 
     <div class="container-item">
-      <h3 id="18">16. Hover-18</h3>     
-        
-        <div class="container_hover-18">
-          <img src="./img/photo_5.jpg" alt="women">
-          <div class="caption">
-            <h1>amazing caption</h1>
-            <p>you can write any text..</p>
-          </div>
+      <h3 id="18">16. Hover-18</h3>
+
+      <div class="container_hover-18">
+        <img src="./img/photo_5.jpg" alt="women">
+        <div class="caption">
+          <h1>amazing caption</h1>
+          <p>you can write any text..</p>
         </div>
-        <div class="alert">
-          <p>
-            Для <code>absolute</code> элемента с текстом <code>left: 0; bottom: 0; height: 30%</code> для нахождения внизу и <code>transform: translateY(100%);</code>
-          </p>
-          <p>
-            Для фото при наведении <code>transform: translateX(30%);</code> т.е высота абсол.элемента
-          </p>
-          <p>
-            При наведении соответственно <code>transform: translateY(0);</code> и <code>transform: translateY(-30%);</code>
-          </p>
-           
-        </div>   
-      
+      </div>
+      <div class="alert">
+        <p>
+          Для <code>absolute</code> элемента с текстом <code>left: 0; bottom: 0; height: 30%</code> для нахождения внизу
+          и <code>transform: translateY(100%);</code>
+        </p>
+        <p>
+          Для фото при наведении <code>transform: translateX(30%);</code> т.е высота абсол.элемента
+        </p>
+        <p>
+          При наведении соответственно <code>transform: translateY(0);</code> и <code>transform:
+            translateY(-30%);</code>
+        </p>
+
+      </div>
+
     </div>
 
     <div class="container-item">
-      <h3 id="19">17. Hover-19</h3>     
-        
-        <div class="container_hover-19">
-          <img src="./img/photo.jpg" alt="women">
-          <div class="caption">
-            <h1>amazing caption</h1>
-            <h4>you can write any text..</h4>
-          </div>
+      <h3 id="19">17. Hover-19</h3>
+
+      <div class="container_hover-19">
+        <img src="./img/photo.jpg" alt="women">
+        <div class="caption">
+          <h1>amazing caption</h1>
+          <h4>you can write any text..</h4>
         </div>
-        <div class="alert">
-          <p>
-            На контенер повесили <code>::before {position: absolute; opacity: 0.5; transform: translateY(100%); transition: all 0.25s; transition-delay: 0.25s;}</code> Последнее св-во указывает задержку для возвращения к первоначальному состоянию
-          </p>
-          <p>
-            <code>
-              :hover::before { transform: translateY(0); transition-delay: 0s;
-              }
-            </code>
-          </p>
-          <p>
-            Блок текста <code>position: absolute;</code> и <code>transform: translateY(-30px); opacity: 0;</code>        </p>
-            <p>
-              <code>:hover {opacity: 1; transform: translateY(0); transition-delay: 0.3s;}</code>
-            </p>
-           
-        </div>   
-      
+      </div>
+      <div class="alert">
+        <p>
+          На контенер повесили <code>::before {position: absolute; opacity: 0.5; transform: translateY(100%);
+            transition: all 0.25s; transition-delay: 0.25s;}</code> Последнее св-во указывает задержку для возвращения к
+          первоначальному состоянию
+        </p>
+        <p>
+          <code>
+            :hover::before { transform: translateY(0); transition-delay: 0s;
+            }
+          </code>
+        </p>
+        <p>
+          Блок текста <code>position: absolute;</code> и <code>transform: translateY(-30px); opacity: 0;</code> </p>
+        <p>
+          <code>:hover {opacity: 1; transform: translateY(0); transition-delay: 0.3s;}</code>
+        </p>
+
+      </div>
+
     </div>
 
     <div class="container-item">
-      <h3 id="20">20. Hover-20</h3>     
-        
-        <ul class="container_hover-20">
-          <li>S</li>
-          <li>M</li>
-          <li>O</li>
-          <li>K</li>
-          <li>Y</li>
-        </ul>
-          
-        <div class="alert">
-          <p>
-            <code>
-              ul:hover li { transform: rotate(45deg) translateY(-200px); opacity: 0;  filter: blur(20px); }
-            </code> Плюс добавить <code>ul li:nth-child(1)...ul li:nth-child(5)</code> добавить различную задержку <code>transition-delay: от 0 до 1.6s;</code>
-          </p>           
-        </div>   
-      
+      <h3 id="20">20. Hover-20</h3>
+
+      <ul class="container_hover-20">
+        <li>S</li>
+        <li>M</li>
+        <li>O</li>
+        <li>K</li>
+        <li>Y</li>
+      </ul>
+
+      <div class="alert">
+        <p>
+          <code>
+            ul:hover li { transform: rotate(45deg) translateY(-200px); opacity: 0; filter: blur(20px); }
+          </code> Плюс добавить <code>ul li:nth-child(1)...ul li:nth-child(5)</code> добавить различную задержку
+          <code>transition-delay: от 0 до 1.6s;</code>
+        </p>
+      </div>
+
     </div>
 
     <div class="container-item">
-      <h3 id="21"> Hover-21</h3>     
-        <h1 class="container_hover-21">text</h1>       
-          
-        <div class="alert">
-          <p>
-            Для <code>h1 display: inline-block;</code> т.к. иначе <code>::before</code> с <code>top: 0%; left: 0%; width: 0%; overflow: hidden;</code> будет слева. 
-          </p>     
-          <p>
-            <code>:hover::before { width: 100%; }</code>
-          </p>      
-        </div>   
-      
+      <h3 id="21"> Hover-21</h3>
+      <h1 class="container_hover-21">text</h1>
+
+      <div class="alert">
+        <p>
+          Для <code>h1 display: inline-block;</code> т.к. иначе <code>::before</code> с <code>top: 0%; left: 0%; width:
+            0%; overflow: hidden;</code> будет слева.
+        </p>
+        <p>
+          <code>:hover::before { width: 100%; }</code>
+        </p>
+      </div>
+
     </div>
     <div class="container-item">
       <h3 id="22"> Hover-22</h3>
@@ -407,15 +432,17 @@
         <li><a href="#!">Portfolio</a></li>
         <li><a href="#!">Contact</a></li>
       </ul>
-      <div class="alert" >
+      <div class="alert">
         <p>
-          <code>a::before{ top: 0; left: 0; width: 100%; height: 2px; transform: scaleX(0); transform-origin: left;}</code>
+          <code>a::before{ top: 0; left: 0; width: 100%; height: 2px; transform: scaleX(0); transform-origin:
+            left;}</code>
         </p>
         <p>
           <code>a:hover::before { transform: scaleX(1); }</code>
         </p>
         <p>
-          У <code>a::after</code> меняем <code>top</code> на <code>bottom</code>, <code>left</code> на <code>right</code>. И <code>transform-origin: right;</code>
+          У <code>a::after</code> меняем <code>top</code> на <code>bottom</code>, <code>left</code> на
+          <code>right</code>. И <code>transform-origin: right;</code>
         </p>
       </div>
     </div>
@@ -429,15 +456,19 @@
         <li><a href="#!">Portfolio</a></li>
         <li><a href="#!">Contact</a></li>
       </ul>
-      <div class="alert" >
+      <div class="alert">
         <p>
-          Формируем рамочки: <code>a::before { bottom: 0; left: 0; width: 12px; height: 12px; border: 3px solid #ea00ff; border-width: 0 0 3px 3px; }</code>. Для второй рамки: <code>a::after { top: 0; right: 0; ..... border-width: 3px 3px 0 0; }</code>
+          Формируем рамочки: <code>a::before { bottom: 0; left: 0; width: 12px; height: 12px; border: 3px solid #ea00ff;
+            border-width: 0 0 3px 3px; }</code>. Для второй рамки: <code>a::after { top: 0; right: 0; .....
+            border-width: 3px 3px 0 0; }</code>
         </p>
         <p>
-          Теперь изменим их положение для эффекта выезда, изменив <code>bottom .. left </code>и т.д с<code>0</code> на <code>12px</code> плюс спрятать их <code>opacity:0</code>
+          Теперь изменим их положение для эффекта выезда, изменив <code>bottom .. left </code>и т.д с<code>0</code> на
+          <code>12px</code> плюс спрятать их <code>opacity:0</code>
         </p>
         <p>
-          При наведении положениям даём <code>-8px</code> чтобы больше отодвинуть, т.к. фон будет перекрывать. И цвет бэка менять.. 
+          При наведении положениям даём <code>-8px</code> чтобы больше отодвинуть, т.к. фон будет перекрывать. И цвет
+          бэка менять..
         </p>
       </div>
     </div>
@@ -451,13 +482,15 @@
         <a href="#!"><i class="fab fa-youtube"></i></a>
         <a href="#!"><i class="fab fa-instagram"></i></a>
       </div>
-      <div class="alert" >
+      <div class="alert">
         <p>
           Структура ссылки: <code>a href="#!" i class="fab fa-facebook-f" i a</code>
         </p>
         <p>
-          Для <code>a</code> задать размеры, тень, <code>overflow: hidden</code>, и т.п. Для <code>a i { line-height: 90px;}</code>  - как высота ссылки, чтобы по центру. 
-          <code>a::before { width: 120%; height: 120%; left: -110%; top: 90%; transform: rotate(45deg); }</code> - элемент развёрнут ромбом и сдвинут вниз влево.
+          Для <code>a</code> задать размеры, тень, <code>overflow: hidden</code>, и т.п. Для <code>a i { line-height:
+            90px;}</code> - как высота ссылки, чтобы по центру.
+          <code>a::before { width: 120%; height: 120%; left: -110%; top: 90%; transform: rotate(45deg); }</code> -
+          элемент развёрнут ромбом и сдвинут вниз влево.
         </p>
         <p>
           <code>@keyframes animation</code> с изменениями <code>left</code> и <code>top</code>
@@ -471,10 +504,10 @@
     <div class="container-item">
       <h3 id="25">Анимации с несколькими состояниями</h3>
 
-      <div class="alert" >
+      <div class="alert">
         <p>
-         <code> @keyframes animation { 0% { left: 0;  } 10% { left: 100px; } 100% { left: 300px; }}</code>
-         Заметить, что блок 10% выполнится по времени гораздо быстрее чем отрезок от него до 100%. 
+          <code> @keyframes animation { 0% { left: 0; } 10% { left: 100px; } 100% { left: 300px; }}</code>
+          Заметить, что блок 10% выполнится по времени гораздо быстрее чем отрезок от него до 100%.
         </p>
         <p>
           Также важно, что элемент <strong>возвратится в исходное положение</strong>> после выполнения анимации.
@@ -485,25 +518,32 @@
     <div class="container-item">
       <h3 id="26">Animation-fill-mode</h3>
 
-      <div class="alert" >
+      <div class="alert">
         <p>
-         <code> animation-fill-mode: forwards</code>
-         К элементу по окончанию анимации применяется стиль последнего ключевого кадра.
+          <code> animation-fill-mode: forwards</code>
+          К элементу по окончанию анимации применяется стиль последнего ключевого кадра.
         </p>
         <p>
-          Интересно, что, если применить к анимируемому элементу свойство <code>animation-delay</code>, то время выполнения анимирующей функции <code>@keyframes имя_функции</code> уменьшится на это время(причём первый блок - с <code>0%{ ... }</code>).
+          Интересно, что, если применить к анимируемому элементу свойство <code>animation-delay</code>, то время
+          выполнения анимирующей функции <code>@keyframes имя_функции</code> уменьшится на это время(причём первый блок
+          - с <code>0%{ ... }</code>).
         </p>
       </div>
-      <div class="alert" >
+      <div class="alert">
         <p>
           <code>animation-fill-mode: backwards </code>
-          К элементу применяется стиль первого ключевого кадра(тот, что <code>0% { ... }</code>) и он остаётся на протяжении периода заданного <code>animation-delay</code>. Первый ключевой кадр определяется на основании значения <code>animation-direction</code>. Затем возвращается в первоначальное положение как при <code>animation-fill-mode: none</code>.
+          К элементу применяется стиль первого ключевого кадра(тот, что <code>0% { ... }</code>) и он остаётся на
+          протяжении периода заданного <code>animation-delay</code>. Первый ключевой кадр определяется на основании
+          значения <code>animation-direction</code>. Затем возвращается в первоначальное положение как при
+          <code>animation-fill-mode: none</code>.
         </p>
       </div>
-      <div class="alert" >
+      <div class="alert">
         <p>
           <code>animation-fill-mode: both</code>
-          К элементу применяются оба правила, как для <code>forwards</code>, так и для <code>backwards</code>. В конце элемент останется в заанемированном состоянии. Т.е начало с <code>backwards</code> конец с <code>forwards</code>
+          К элементу применяются оба правила, как для <code>forwards</code>, так и для <code>backwards</code>. В конце
+          элемент останется в заанемированном состоянии. Т.е начало с <code>backwards</code> конец с
+          <code>forwards</code>
         </p>
       </div>
     </div>
@@ -511,13 +551,16 @@
     <div class="container-item">
       <h3 id="26">Animation-iteration-count</h3>
 
-      <div class="alert" >
-        <p>CSS свойство <code>animation-iteration-count</code> определяет сколько раз будет проигрываться анимационный цикл, перед тем как остановиться.</p>
+      <div class="alert">
+        <p>CSS свойство <code>animation-iteration-count</code> определяет сколько раз будет проигрываться анимационный
+          цикл, перед тем как остановиться.</p>
         <p>
           <code>infinite</code> Анимация повторяется бесконечно.
         </p>
         <p>
-          <code>animation-iteration-count: number</code> Сколько раз анимация будет повторяться; по-умолчанию <code>1</code>. Отрицательные значения не используются. Можно использовать не целые значения, для проигрывания части анимационного цикла (например, <code>0.5</code> воспроизведет половину анимационного цикла).
+          <code>animation-iteration-count: number</code> Сколько раз анимация будет повторяться; по-умолчанию
+          <code>1</code>. Отрицательные значения не используются. Можно использовать не целые значения, для проигрывания
+          части анимационного цикла (например, <code>0.5</code> воспроизведет половину анимационного цикла).
         </p>
       </div>
     </div>
@@ -525,9 +568,10 @@
     <div class="container-item">
       <h3 id="27">Animation-direction</h3>
 
-      <div class="alert" >
+      <div class="alert">
         <p>
-          CSS-свойство <code>animation-direction</code> определяет, должна ли анимация воспроизводиться вперед, назад или переменно вперед и назад.
+          CSS-свойство <code>animation-direction</code> определяет, должна ли анимация воспроизводиться вперед, назад
+          или переменно вперед и назад.
         </p>
       </div>
     </div>
@@ -535,12 +579,64 @@
     <div class="container-item">
       <h3 id="28">Animation shorthand property</h3>
 
-      <div class="alert" >
+      <div class="alert">
         <p><code>animation: mymove 5s infinite;</code></p>
-        <p>          
-          <code>animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction animation-fill-mode animation-play-state</code>
+        <p>
+          <code>animation-name animation-duration animation-timing-function animation-delay animation-iteration-count
+            animation-direction animation-fill-mode animation-play-state</code>
         </p>
-        <p><strong><span style="color:red; font-size: 1.5rem" >Note:</span> Always specify the <code>animation-duration</code> property</strong>, otherwise the <code>duration</code> is <code>0</code>, and will never be played.</p>
+        <p><strong><span style="color:red; font-size: 1.5rem">Note:</span> Always specify the
+            <code>animation-duration</code> property</strong>, otherwise the <code>duration</code> is <code>0</code>,
+          and will never be played.</p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3 id="30">Hover-30</h3>
+      <div class="container_hover-30">
+        <h1>COMMING<br>SOON<br></h1>
+      </div>
+      <div class="alert">
+        <p>
+          Тут сложная тень.. Для анимации использовано <code>transform: rotate(5deg)</code> и
+          <code>rotate(-5deg)</code>. <code>animation: float 3s linear infinite;</code>
+        </p>
+        <p>
+          CSS-свойство <code>animation-direction</code> определяет, должна ли анимация воспроизводиться вперед, назад
+          или переменно
+          вперед и назад. Без этого св-ва элемент после достижения конца анимации рывком возвращается в первоначальное
+          состояние.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="container-item">
+      <h3 id="31">Hover-31</h3>
+      <div class="container_hover-31">
+        <div class="loading"></div>
+      </div>
+      <div class="alert">
+        <p>
+          Для контейнера <code>perspective: 200px</code>;
+        </p>
+        <p>
+          Сама анимация <code>transform: 0% rotateX(0deg) rotateY(0deg) 50% transform: rotateX(0deg) rotateY(180deg)
+            100% transform: rotateX(180deg) rotateY(180deg)</code>
+        </p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3 id="31">Hover-32</h3>
+      <div class="container_hover-32">
+        <img src="./img/car.png" alt="car" class="car">
+        <img src="./img/motobike.png" alt="car" class="motobike">
+      </div>
+      <div class="alert">
+        <p>
+          
+        </p>
       </div>
     </div>
 
