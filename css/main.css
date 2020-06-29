@@ -1476,13 +1476,15 @@ ul.container_hover-23 li a:hover::after {
   background-position: bottom left;
   animation: driving 15s linear infinite;
 }
-.container_hover-32 .car{
+
+.container_hover-32 .car {
   position: absolute;
   left: 300px;
   bottom: -50px;
   width: 200px;
 }
-.container_hover-32 .motobike{
+
+.container_hover-32 .motobike {
   position: absolute;
   left: 700px;
   bottom: 55px;
@@ -1496,5 +1498,34 @@ ul.container_hover-23 li a:hover::after {
 
   to {
     background-position: bottom right;
+  }
+}
+
+/************************/
+/********hover-32 *******/
+/***********************/
+.container_hover-33 h1 {
+  color: rgb(255, 0, 170);
+  font-size: 50px;
+}
+
+.container_hover-33 span::before {
+  content: "TRANSITIONS";
+  text-transform: uppercase;
+  color: #0c42b8;
+  animation: word-switch 5s infinite;
+}
+
+@keyframes word-switch {
+  0% {
+    content: "transitions"
+  }
+
+  50% {
+    content: "animations"
+  }
+
+  100% {
+    content: "transitions"
   }
 }

@@ -637,7 +637,7 @@
         <p>
           Контейнеру <code>background: url(../img/bg.jpg); background-position: bottom left;</code>
         </p>
-        <p>
+        <p>Перемещать бэккартинку двигая от левого нижнего угла к правому нижнему:
           <code>
             @keyframes driving { from {background-position: bottom left; }
             to { background-position: bottom right; } }
@@ -646,6 +646,21 @@
         <p><code>animation: driving 15s linear infinite;</code> Фон движется</p>
         <p>Теперь машину и байк <code>position: absolute</code> и указать местоположение указывая значения
           <code>left</code> и <code>bottom</code> </p>
+      </div>
+    </div>
+
+
+    <div class="container-item">
+      <h3 id="33">Hover-33</h3>
+      <div class="container_hover-33">
+        <h1>I love <span></span> </h1>
+      </div>
+      <div class="alert">
+        <p>
+          Элемент <code><span></code> получает псевдоэлемент <code>::before</code>
+        </p>
+        <p>В <code>@keyframes word-switch</code> меняется <code>content: "transitions"</code> до <code>content:
+            "animations"</code> и назад</p>
       </div>
     </div>
 
