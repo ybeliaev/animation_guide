@@ -1502,17 +1502,19 @@ ul.container_hover-23 li a:hover::after {
 }
 
 /************************/
-/********hover-32 *******/
+/********hover-33 *******/
 /***********************/
 .container_hover-33 h1 {
   color: rgb(255, 0, 170);
   font-size: 50px;
+
 }
 
 .container_hover-33 span::before {
   content: "TRANSITIONS";
   text-transform: uppercase;
   color: #0c42b8;
+
   animation: word-switch 5s infinite;
 }
 
@@ -1527,5 +1529,26 @@ ul.container_hover-23 li a:hover::after {
 
   100% {
     content: "transitions"
+  }
+}
+
+/************************/
+/********hover-34 *******/
+/***********************/
+.container_hover-34 {
+  height: 50vh;
+  background: url(../img/bg_1.png);
+  background-position: 0 0;
+  margin-bottom: 1rem;
+  animation: animated-pattern 10s linear infinite;
+}
+
+@keyframes animated-pattern {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 0 600px;
   }
 }
