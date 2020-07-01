@@ -665,14 +665,34 @@
     </div>
 
     <div class="container-item">
-      <h3 id="33">Hover-34</h3>
+      <h3 id="34">Hover-34</h3>
       <div class="container_hover-34">
 
       </div>
       <div class="alert">
         <p>
-          В @<code>keyframes</code> использовано св-во <code>background-position: 0 0;</code> до
+          В <code>@keyframes</code> использовано св-во <code>background-position: 0 0;</code> до
           <code>background-position: 0 600px;</code>
+        </p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3 id="35">Hover-35</h3>
+      <div class="container_hover-35">
+        <a href="#!">Hover me</a>
+      </div>
+      <div class="alert">
+        <p>
+          Для <code>a::before {width: 120px; height: 100%; transition: all 0.5s; animation: moving 1.2s linear infinite;
+            }</code>
+        </p>
+        <p>
+          В анимации-функции меняется <code>left: -120px</code> до <code>left: 100%</code> <code>-120px</code> потому
+          как ширина псевдоэлемента такая - т.е. чтобы спрятать его вначале
+        </p>
+        <p>
+          При наведении <code>width: 100%; animation: none; background: tomato;</code>
         </p>
       </div>
     </div>
