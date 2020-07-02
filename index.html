@@ -713,6 +713,59 @@
       </div>
     </div>
 
+    <div class="container-item">
+      <h3 id="37">Hover-37</h3>
+      <div class="container_hover-37">
+        <ul>
+          <li>L</li>
+          <li>I</li>
+          <li>G</li>
+          <li>H</li>
+          <li>T</li>
+          <li>I</li>
+          <li>N</li>
+          <li>G</li>
+        </ul>
+      </div>
+      <div class="alert">
+        <p>
+          <code>
+            @keyframes lighting 0% { color: #484848; text-shadow: none; } 90% { color: #484848; text-shadow: none; }
+            100%
+            { color: #fff900; text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00; }
+          </code>
+        </p>
+        <p>
+          Стоит внимания, что точки в <code>@keyframes lighting 0% 90% 100%</code>. Если бы не было <code>90%</code>, то
+          анимация была очень плавной
+        </p>
+        <p>
+          <code>animation: lighting 1.4s linear infinite;</code>
+        </p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3 id="37_1">Hover-37_1</h3>
+      <div class="container_hover-37_1">
+        <ul>
+          <li>L</li>
+          <li>I</li>
+          <li>G</li>
+          <li>H</li>
+          <li>T</li>
+          <li>I</li>
+          <li>N</li>
+          <li>G</li>
+        </ul>
+      </div>
+      <div class="alert">
+        <p>
+          То же что и сверху, но к каждому элементу <code>li:nth-child(n)</code> добавить с шагом <code>0.1s</code>
+          свойство <code>animation-delay</code>
+        </p>
+      </div>
+    </div>
 
     <!-- end -->
   </div>
