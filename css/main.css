@@ -1597,3 +1597,38 @@ ul.container_hover-23 li a:hover::after {
     left: 100%
   }
 }
+
+/************************/
+/********hover-36 *******/
+/***********************/
+.container_hover-36 a {
+  display: inline-block;
+  padding: 25px 50px;
+  color: tomato;
+  border: 3px solid tomato;
+  font-size: 40px;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.container_hover-36 a:hover {
+  border: 3px solid rgb(194, 1, 253);
+  color: rgb(194, 1, 253);
+  animation: shake 0.3s linear 1;
+}
+
+@keyframes shake {
+  33% {
+    transform: rotate(10deg)
+  }
+
+  66% {
+    transform: rotate(-10deg)
+  }
+
+  100% {
+    transform: rotate(10deg)
+  }
+}
