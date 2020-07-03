@@ -7,6 +7,31 @@ h1,
 h2,
 h3 {
   text-align: center;
+  color: #262626;
+}
+
+.container-item h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  animation: light-h3 1.5s linear infinite;
+}
+
+@keyframes light-h3 {
+  0% {
+    color: #262626;
+    text-shadow: none;
+  }
+
+  90% {
+    color: #262626;
+    text-shadow: none;
+  }
+
+  100% {
+    color: #00bef8;
+    text-shadow: 0 0 7px #00bef8, 0 0 50px #f700ff;
+  }
 }
 
 p {
