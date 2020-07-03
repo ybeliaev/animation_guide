@@ -11,7 +11,7 @@
 </head>
 
 <body class="grid">
-  <h1>Animation</h1>
+  <h1>CSS Animation</h1>
   <h2>Transition options</h2>
 
   <div class="container">
@@ -763,6 +763,42 @@
         <p>
           То же что и сверху, но к каждому элементу <code>li:nth-child(n)</code> добавить с шагом <code>0.1s</code>
           свойство <code>animation-delay</code>
+        </p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3 id="38">Hover-38</h3>
+      <div class="container_hover-38">
+        <div class="heart"></div>
+      </div>
+      <div class="alert">
+        <p>
+          Сначала творим сердце: 1. квадрат( <code>width: 100px; height: 100px;</code> ) и развернуть его ромбом
+          <code>transform: rotate(45deg); </code>2. <code>.heart::before { transform: translateY(-50%); border-radius:
+            50%; }</code> и <code>.heart::after { transform: translateX(-50%); border-radius: 50%; }</code>
+          Сердце готово.
+        </p>
+        <p>
+          Анимация: <code>transform: rotate(45deg) scale(1);</code> Менять <code>scale(n)</code> в порядке
+          <code>1</code>-<code>1</code>-<code>1.4</code>-<code>1.2</code>-<code>1.4</code>-<code>1</code>
+        </p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3 id="39">Hover-39</h3>
+      <div class="container_hover-39">
+        <h1>css animation</h1>
+      </div>
+      <div class="alert">
+        <p>
+          Свойство CSS <code>background-clip</code> определяет как цвет фона или фоновое изображение будут выводиться
+          под границами блока.
+        </p>
+        <p>
+          Для текста <code>-webkit-background-clip: text; background: url(../img/wave.png); color: transparent</code>
+          Теперь фон виден только в контуре литер.
         </p>
       </div>
     </div>

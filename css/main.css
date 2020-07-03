@@ -2,6 +2,17 @@ body {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
 }
+.grid h1{
+  font-size: 8rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  background: url(../img/bg_1.jpg);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: textbg 15s linear infinite;
+}
 
 h1,
 h2,
@@ -1772,4 +1783,104 @@ ul.container_hover-23 li a:hover::after {
 
 .container_hover-37_1 ul li:nth-child(8) {
   animation-delay: 0.7s;
+}
+
+/************************/
+/********hover-38*******/
+/***********************/
+.container_hover-38 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_hover-38 .heart {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  transform: rotate(45deg);
+  margin-bottom: 1.5rem;
+  animation: heartbeat 1.4s linear infinite;
+}
+
+.container_hover-38 .heart::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: tomato;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.container_hover-38 .heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: tomato;
+  transform: translateX(-50%);
+  border-radius: 50%
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+
+  25% {
+    transform: rotate(45deg) scale(1);
+  }
+
+  30% {
+    transform: rotate(45deg) scale(1.4);
+  }
+
+  50% {
+    transform: rotate(45deg) scale(1.2);
+  }
+
+  70% {
+    transform: rotate(45deg) scale(1.4);
+  }
+
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
+}
+
+/************************/
+/********hover-39*******/
+/***********************/
+.container_hover-39 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_hover-39 h1 {
+  font-size: 10rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  background: url(../img/wave.png);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: textbg 15s linear infinite;
+}
+
+@keyframes textbg {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 100%;
+  }
 }
