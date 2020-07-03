@@ -84,7 +84,7 @@ code {
   max-width: 1200px;
   margin: auto;
   text-align: center;
-  background-color: #ffffff;
+  /* background-color: transparent; */
 }
 
 .container-item {
@@ -94,6 +94,7 @@ code {
   margin-bottom: 1rem;
   padding: 0.5rem;
   transition: box-shadow 0.3s;
+
 }
 
 .container-item:hover {
@@ -123,14 +124,11 @@ code {
   border: 5px solid #3700ff;
   padding: 20px 40px;
   position: relative;
+  overflow: hidden;
 }
 
 a:hover {
   text-decoration: none;
-}
-
-.hidden {
-  overflow: hidden;
 }
 
 .alert {
@@ -332,10 +330,12 @@ body {
   transform-origin: bottom left;
   transform: rotate(-90deg);
   transition: transform 1s;
+
 }
 
 .hover-1:hover:before {
   transform: rotate(0deg);
+  z-index: 1;
 }
 
 /************************/
@@ -432,29 +432,30 @@ body {
 /************************/
 /********hover-5 *******/
 /***********************/
-.hover-5 {
+.container_hover-5 a {
   transition: all 1s;
 }
 
-.hover-5::before {
+.container_hover-5 a::before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #351435;
-  z-index: -1;
+  background-color: #1900ff;
   transform: translateX(-100%);
   transition: all 1s;
+  z-index: -1;
 }
 
-.hover-5:hover::before {
-  transform: translateX(0%);
+.container_hover-5 a:hover::before {
+  transform: translateX(0);
 }
 
-.hover-5:hover {
+.container_hover-5 a:hover {
   color: #fff200;
+
 }
 
 /************************/
@@ -558,6 +559,7 @@ body {
 .hover-8:hover::before {
   transform: scale(1);
   opacity: 1;
+
 }
 
 /************************/
@@ -1870,7 +1872,7 @@ ul.container_hover-23 li a:hover::after {
 }
 
 .container_hover-39 h1 {
-  font-size: 10rem;
+  font-size: 8rem;
   margin-top: 0;
   margin-bottom: 1rem;
   text-align: center;
