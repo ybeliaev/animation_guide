@@ -2,13 +2,14 @@ body {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
 }
-.grid h1{
+
+h1.body {
   font-size: 8rem;
   margin-top: 0;
   margin-bottom: 1rem;
   text-align: center;
   text-transform: uppercase;
-  background: url(../img/bg_1.jpg);
+  background: url(../img/bg_2.jpg);
   -webkit-background-clip: text;
   color: transparent;
   animation: textbg 15s linear infinite;
