@@ -1,6 +1,7 @@
 body {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
+
 }
 
 h1.body {
@@ -26,6 +27,7 @@ h3 {
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 1rem 0;
   animation: light-h3 1.5s linear infinite;
 }
 
@@ -78,12 +80,15 @@ code {
 }
 
 .container {
+  padding: 1rem;
   max-width: 1200px;
   margin: auto;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .container-item {
+  background-color: rgba(0, 132, 255, 0.03);
   box-shadow: 0 1px 2px 0 rgba(255, 251, 2, 0.2),
     0 1px 5px 0 rgba(29, 5, 250, 0.19);
   margin-bottom: 1rem;
@@ -93,7 +98,7 @@ code {
 
 .container-item:hover {
   box-shadow: 0 4px 10px 0 rgba(0, 190, 248, 0.2),
-    0 4px 20px 0 rgba(243, 1, 252, 0.19);
+    0 4px 30px 0 rgba(243, 1, 252, 0.19);
 }
 
 .box {
@@ -1801,7 +1806,7 @@ ul.container_hover-23 li a:hover::after {
   height: 100px;
   background-color: tomato;
   transform: rotate(45deg);
-  margin-bottom: 1.5rem;
+  margin: 2.5rem 0;
   animation: heartbeat 1.4s linear infinite;
 }
 
@@ -1884,4 +1889,67 @@ ul.container_hover-23 li a:hover::after {
   to {
     background-position: 100% 100%;
   }
+}
+
+/************************/
+/********hover-40*******/
+/***********************/
+.container_hover-40 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_hover-40 ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 10px solid rgb(0, 248, 186);
+  ;
+}
+
+.container_hover-40 ul li {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(0, 248, 186);
+  margin: 0 10px;
+  border-radius: 50%;
+  animation: jumping 0.8s linear infinite;
+}
+
+@keyframes jumping {
+  0% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(-150%)
+  }
+
+  100% {
+    transform: translateY(0)
+  }
+}
+
+.container_hover-40 ul li:nth-child(1) {
+  animation-delay: 0.45s;
+}
+
+.container_hover-40 ul li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.container_hover-40 ul li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.container_hover-40 ul li:nth-child(4) {
+  animation-delay: 0s;
+}
+
+.container_hover-40 ul li:nth-child(5) {
+  animation-delay: 0.15s;
 }
