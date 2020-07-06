@@ -852,6 +852,48 @@
       </div>
     </div>
 
+    <div class="container-item">
+      <h3 id="42">Hover-42</h3>
+      <div class="container_hover-42">
+        <!-- table>tr#row$*4>td[colspan=2] -->
+        <ul>
+          <li><i class="fas fa-heart"></i></li>
+          <li><i class="fas fa-glass-martini"></i></li>
+          <li><i class="fas fa-globe"></i></li>
+          <li><i class="fas fa-gift"></i></li>
+        </ul>
+      </div>
+      <div class="alert">
+        <p>Emmet: <code>table>tr#row$*4>td[colspan=2]</code></p>
+        <p>
+          Добавить иконки fontawesome ( можно через CDN ).
+          Не перепутай <code>align-items: center;</code> с <code>text-align: center</code>
+
+        </p>
+        <p>
+          <code>li::before {border-radius: 50%; opacity: 0;transition: all 0.5s;}</code>
+          <code>li::after {background-color: transparent; border: 2px dashed #2e86de; opacity: 0; transition: all
+            0.5s;}</code>
+        </p>
+        <p>
+          <code>li:hover::before { opacity: 1; transform: scale(0.8) }</code>
+          <code>li:hover::after { opacity: 1; animation: rotation 10s linear infinite; }</code>
+        </p>
+        <p>
+          <code>
+            @keyframes rotation {
+            0% { transform: scale(0.92) rotate(0deg) }
+            100% {transform: scale(0.92) rotate(360deg) }
+            }
+          </code>
+        </p>
+        <p>
+          <code>li:hover i { color: #ffffff; z-index: 1; }</code>
+        </p>
+        </code>
+      </div>
+    </div>
+
     <!-- end -->
   </div>
 </body>
