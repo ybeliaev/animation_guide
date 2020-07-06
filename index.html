@@ -894,6 +894,56 @@
       </div>
     </div>
 
+    <div class="container-item">
+      <h3 id="43">Hover-43</h3>
+      <div class="container_hover-43">
+        <ul>
+          <li>L</li>
+          <li>O</li>
+          <li>A</li>
+          <li>D</li>
+          <li>I</li>
+          <li>N</li>
+          <li>G</li>
+        </ul>
+      </div>
+      <div class="alert">
+        <p>
+          <code> ul li { letter-spacing: 20px; animation: loading-43 3s linear infinite }</code>
+        </p>
+        <p>
+          <code>
+            @keyframes loading-43 {
+            <br>
+            0% { color: tomato;
+            transform: translateX(-50px);
+            letter-spacing: 20px;
+            opacity: 0;
+            } <br>
+            10% {
+            opacity: 1;
+            } <br>
+            50% {
+            letter-spacing: -20px;
+            opacity: 1;
+            } <br>
+            100% {
+            color: blueviolet;
+            transform: translateX(50px);
+            letter-spacing: 20px;
+            opacity: 0;
+            }
+            }
+          </code>
+          Без <code>opacity: 0;</code> в конце будет рывок в фазе возврата к начальному состоянию.
+        </p>
+        <p>
+          <code>ul li:nth-child(1) { animation-delay: time; }</code> с шагом <code>0.2s</code> для каждой литеры
+        </p>
+        </code>
+      </div>
+    </div>
+
     <!-- end -->
   </div>
 </body>
