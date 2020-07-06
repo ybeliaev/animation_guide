@@ -1955,3 +1955,30 @@ ul.container_hover-23 li a:hover::after {
 .container_hover-40 ul li:nth-child(5) {
   animation-delay: 0.15s;
 }
+
+/************************/
+/********hover-41*******/
+/***********************/
+.container_hover-41 {
+  height: 65vh;
+  background-image: url(../img/castle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+
+.container_hover-41 .rain {
+  height: 100%;
+  background: url(../img/rain.png);
+  animation: rain 0.3s linear infinite;
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 20% 100%;
+  }
+}
