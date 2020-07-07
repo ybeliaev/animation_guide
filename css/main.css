@@ -2205,3 +2205,50 @@ ul.container_hover-23 li a:hover::after {
     opacity: 0;
   }
 }
+
+/************************/
+/********hover-45*******/
+/***********************/
+.container_hover-45 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.container_hover-45 .slider {
+  width: 800px;
+  height: 400px;
+  background: url(../img/bg_1.jpg);
+  animation: change-bg 10s linear infinite;
+}
+
+@keyframes change-bg {
+  0% {
+    background: url(../img/bg_1.jpg);
+  }
+
+  17% {
+    background: url(../img/bg_2.jpg);
+  }
+
+  35% {
+    background: url(../img/bg_3.jpg);
+  }
+
+  52% {
+    background: url(../img/bg_4.jpg);
+  }
+
+  75% {
+    background: url(../img/bg_5.jpg);
+  }
+
+  83% {
+    background: url(../img/bg_6.jpg);
+  }
+
+  100% {
+    background: url(../img/bg_7.jpg);
+  }
+}
