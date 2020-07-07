@@ -1001,6 +1001,96 @@
       </div>
     </div>
 
+    <div class="container-item">
+      <h3 id="46">Hover-46</h3>
+      <div class="container_hover-46">
+        <h2>Changed<br>background color</h2>
+      </div>
+      <div class="alert">
+        <p>
+          Для контейнера <code>animation: bgchanged 10s infinite;</code>
+        </p>
+        <p>
+          Сама анимация в изменении цвета <code>background-color: rgb(39, 39, 39);</code> Чтобы не было рывка первый и
+          последний фон сделать одинаковым.
+        </p>
+      </div>
+    </div>
+
+    <div class="container-item">
+      <h3 id="47">Hover-47</h3>
+      <div class="container_hover-47">
+        <div class="cradle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="alert">
+        <p>
+          Для начала создать основу крепления: <code>.cradle {border-top: 10px solid rgb(25, 0, 255);}</code>
+        </p>
+        <p>
+          Проволочки: <code>
+            span {
+            display: block;
+            position: relative;
+            width: 3px;
+            height: 300px;
+            background-color: rgb(25, 0, 255);
+            margin: 0px 29px;
+            } </code>
+          <code>margin: 0px 29px;</code> <code>29px</code> чтобы касались друг друга. По идее было <code>30px</code>
+        </p>
+        <p>
+          Шарики: <code>
+            span::before {<br>
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgb(25, 0, 255);
+            transform: translateX(-50%)<br>
+            }
+          </code>
+          Важно: <code>translateX(-50%)</code> иначе шары будут касаться проволочки левым боком
+        </p>
+      </div>
+      <div class="alert">
+        <p>
+          Анимация для левого шара: <code>.cradle span:first-child { animation: left-arm 2s ease-in infinite; }</code>
+        </p>
+        <p>
+          <code>
+            @keyframes left-arm {<br>
+            0% {
+            transform: rotate(0deg);
+            }<br>
+
+            25% {
+            transform: rotate(60deg);
+            }<br>
+
+            50% {
+            transform: rotate(0deg);
+            }<br>
+
+            100% {
+            transform: rotate(0deg);
+            }
+            }
+          </code>
+        </p>
+        <p>Но нужно <code>span{transform-origin: top;}</code></p>
+        <p>Для <code>span:last-child</code> тоже но поменять в новой функции <code>60deg</code> на <code>-60deg</code>
+        </p> Ещё добавить задержку <code>animation: right-arm 2s ease-in infinite 1s;</code>
+      </div>
+    </div>
+
+
     <!-- end -->
   </div>
 </body>
