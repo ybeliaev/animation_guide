@@ -2074,7 +2074,7 @@ ul.container_hover-23 li a:hover::after {
 }
 
 /************************/
-/********hover-42*******/
+/********hover-43*******/
 /***********************/
 .container_hover-43 {
   display: flex;
@@ -2147,4 +2147,61 @@ ul.container_hover-23 li a:hover::after {
 
 .container_hover-43 ul li:nth-child(7) {
   animation-delay: 1.2s;
+}
+
+/************************/
+/********hover-44*******/
+/***********************/
+.container_hover-44 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_hover-44 .pulse {
+  position: relative;
+  margin-bottom: 1rem;
+  height: 100px;
+  width: 100px;
+  color: white;
+  font-size: 48px;
+  background-color: rgb(0, 255, 128);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_hover-44 .pulse::before,
+.container_hover-44 .pulse::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  bottom: -20px;
+  right: -20px;
+  border: 1px solid rgb(0, 255, 128);
+  border-radius: 50%;
+  animation: pulsing 1.5s linear infinite;
+}
+
+.container_hover-44 .pulse::before {
+  animation-delay: 0.5s;
+}
+
+@keyframes pulsing {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }

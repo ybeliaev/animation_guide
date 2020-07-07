@@ -909,11 +909,11 @@
       </div>
       <div class="alert">
         <p>
-          <code> ul li { letter-spacing: 20px; animation: loading-43 3s linear infinite }</code>
+          <code> ul li { letter-spacing: 20px; animation: loading 3s linear infinite }</code>
         </p>
         <p>
           <code>
-            @keyframes loading-43 {
+            @keyframes loading {
             <br>
             0% { color: tomato;
             transform: translateX(-50px);
@@ -939,6 +939,48 @@
         </p>
         <p>
           <code>ul li:nth-child(1) { animation-delay: time; }</code> с шагом <code>0.2s</code> для каждой литеры
+        </p>
+        </code>
+      </div>
+    </div>
+
+
+    <div class="container-item">
+      <h3 id="44">Hover-44</h3>
+      <div class="container_hover-44">
+        <div class="pulse"><i class="fas fa-phone"></i></div>
+      </div>
+      <div class="alert">
+        <p>
+          <code>.pulse::before{ left: -20px; top: -20px; }</code> Но так элемента не видно, поэтому задать координаты
+          второго угла <code>{bottom: -20px; right: -20px;}</code>
+        </p>
+        <p>
+          <code>-20px</code> чтобы элемент вышел за границы родителя на <code>20px</code>
+        </p>
+        <p>
+          <code>
+            @keyframes pulsing {
+            0% {
+            transform: scale(0.5);
+            opacity: 0;
+            }
+            50% {
+            transform: scale(1);
+            opacity: 1;
+            }
+            100% {
+            transform: scale(1.2);
+            opacity: 0;
+            }
+            }
+          </code>
+        </p>
+        <p>
+          <code>.pulse::after</code> добавить через запятую к свойствам .<code>pulse::before</code>
+        </p>
+        <p>
+          Осталось добавить задержку <code>.pulse::before {animation-delay: 0.5s;}</code>
         </p>
         </code>
       </div>
