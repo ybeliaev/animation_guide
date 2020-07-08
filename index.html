@@ -1102,10 +1102,71 @@
       </div>
       <div class="alert">
         <p>
-
+          Создать <code>4</code> <code>span</code> и контейнер для них <code>.span-container</code>.
+          <code>
+            .span-container {
+            width: 100px;<br>
+            height: 100px;<br>
+            /* background-color: tomato; */<br>
+            position: absolute;<br>
+            animation: animate-box 1s linear infinite;<br>
+            transform: rotate(45deg)<br>
+            }
+          </code>
+          Если дать <code>position: relative;</code> то при увеличении ширины всё будет двигаться.
+        </p>
+        <p>
+          <code>
+            @keyframes animate-box {<br>
+            0%, 10% {<br>
+            width: 100px;<br>
+            height: 100px;<br>
+            }<br>
+            50% {<br>
+            width: 150px;<br>
+            height: 150px;<br>
+            }<br>
+            90%, 100% {<br>
+            width: 100px;<br>
+            height: 100px;<br>
+            }<br>
+          </code>
         </p>
       </div>
+      <div class="alert">
+        <p>
+          <code>
+            span {
+            position: absolute;<br>
+            height: 50px;<br>
+            width: 50px;<br>
+            animation: rotate-box 1s linear infinite;
+            }
+          </code>
+          <p>
+            Для каждого span немного разные стили
+            <code>
+              span:nth-child(n) {<br>
+              top / bottom: 0;<br>
+              left / right: 0;<br>
+              background-color: rgb(n, n, n);<br>
+              }
+            </code>
+          </p>
+        </p>
+      </div>
+    </div>
 
+    <div class="container-item">
+      <h3 id="48">Hover-48</h3>
+      <div class="container_hover-48">
+
+        <div class="alert">
+          <p>
+            
+          </p>
+        </div>
+      </div>
     </div>
 
 
