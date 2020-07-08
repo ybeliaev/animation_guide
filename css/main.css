@@ -2560,3 +2560,49 @@ ul.container_hover-23 li a:hover::after {
     left: 0;
   }
 }
+
+/************************/
+/********hover-50*******/
+/***********************/
+.container_hover-50 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.container_hover-50 h1 {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 10px;
+  color: tomato;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.container_hover-50 h1::before {
+  content: "loading..";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  color: rgb(255, 196, 0);
+  overflow: hidden;
+  border-right: 4px solid rgb(255, 196, 0);
+  animation: animate-loading 5s linear infinite;
+}
+
+@keyframes animate-loading {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}

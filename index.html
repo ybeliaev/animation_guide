@@ -1240,6 +1240,60 @@
       </div>
     </div>
 
+    <div class="container-item">
+      <h3 id="50">Hover-50</h3>
+      <div class="container_hover-50">
+        <h1>loading..</h1>
+      </div>
+      <div class="alert">
+        <p> Стили для <code>h1</code> обычные
+          <code>
+            h1 {
+            letter-spacing: 10px;
+            color: tomato;<br>
+            text-transform: uppercase;
+            position: relative;
+            }
+          </code>
+        </p>
+        <p> Для псевдоэлемента:
+          <code>
+            h1::before {<br>
+            content: "loading..";
+            top: 0;
+            left: 0;<br>
+            position: absolute;
+            width: 100%;
+            color: rgb(255, 196, 0);<br>
+            overflow: hidden;
+            border-right: 4px solid rgb(255, 196, 0);<br>
+            animation: animate-loading 5s linear infinite;
+            }
+          </code>
+        </p>
+      </div>
+      <div class="alert">
+        <p>
+          <code>
+            @keyframes animate-loading {<br>
+            0% {
+            width: 0;
+            }<br>
+
+            50% {
+            width: 100%;
+            }<br>
+
+            100% {
+            width: 0;
+            }<br>
+            }
+          </code>
+          Если вместо <code>50%</code> сделать <code>10%</code>, то в право анимация пролетит быстро..
+        </p>
+      </div>
+    </div>
+
 
     <!-- end -->
   </div>
