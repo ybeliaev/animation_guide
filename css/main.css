@@ -2485,3 +2485,78 @@ ul.container_hover-23 li a:hover::after {
 /************************/
 /********hover-49*******/
 /***********************/
+.container_hover-49 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_hover-49 .loader {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.container_hover-49 span {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(0, 255, 157);
+  border-radius: 4px;
+  animation: chase 2s linear infinite;
+}
+
+.container_hover-49 span:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.container_hover-49 span:nth-child(3) {
+  animation-delay: 1.4s;
+}
+
+@keyframes chase {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  12.5% {
+    top: 0;
+    left: 50%;
+  }
+
+  25% {
+    top: 0;
+    left: 50%;
+  }
+
+  37.5% {
+    top: 50%;
+    left: 50%;
+  }
+
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+
+  62.5% {
+    top: 50%;
+    left: 0;
+  }
+
+  75% {
+    top: 50%;
+    left: 0;
+  }
+
+  87.5% {
+    top: 0;
+    left: 0;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
