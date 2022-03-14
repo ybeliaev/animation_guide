@@ -8,3 +8,7 @@
 * `transition: margin-left 4s, color 1s;`
 
 ### bezier function 🔗 https://cubic-bezier.com/
+
+### Work with SVG in Figma
+![cookie svg]([/src/img/figma_cookie.png)
+
