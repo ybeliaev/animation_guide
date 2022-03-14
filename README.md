@@ -10,5 +10,5 @@
 ### bezier function 🔗 https://cubic-bezier.com/
 
 ### Work with SVG in Figma
-![cookie svg]([/src/img/figma_cookie.png)
+![cookie svg]([https://github.com/ybeliaev/animation_guide/blob/master/src/img/figma_cookie.png) 
 
