@@ -24,7 +24,9 @@
 .text {
   flex-basis: 70%;
 }
-
+.cookie {
+  overflow: visible;
+}
 .cookie-title {
   font-size: 1.6rem;
   letter-spacing: 1px;
