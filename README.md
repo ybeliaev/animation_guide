@@ -22,8 +22,5 @@
   > если `<50%`  -  50% задержки 
 * чтобы части svg были видны за пределами элемента при их захожднии за пределы фигуры
   > необходимо, но НЕДОСТАТОЧНО `overflow: visible; `
-  > ещё нужно удалить
-  <clipPath id="clip0_1_4">
-        <rect width="98" height="98" fill="white"/>
-  </clipPath>
+  > ещё нужно удалить `<clipPath id="clip0_1_4"><rect width="98" height="98" fill="white"/></clipPath>` из тела `svg`
   
