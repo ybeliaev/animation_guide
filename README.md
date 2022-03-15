@@ -11,4 +11,4 @@
 
 ### Work with SVG in Figma
 ![cookie svg](https://github.com/ybeliaev/animation_guide/blob/master/src/img/figma_cookie.png) 
-
+  > тогда в `id` будут названия групп ,которые дал(по-умолчанию они `group`)
