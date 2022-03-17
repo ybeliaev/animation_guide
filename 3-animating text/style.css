@@ -6,9 +6,10 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
 }
 img {
-  max-width: 100%;
+  width: 100%;
 }
 nav {
   min-height: 10vh;
@@ -61,4 +62,5 @@ nav {
   border-radius: 0.3rem;
   border: none;
   margin: 1rem;
+  text-transform: uppercase;
 }
