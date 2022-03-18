@@ -12,3 +12,21 @@ body {
   align-items: center;
   font-family: "Poppins", sans-serif;
 }
+
+.container {
+  background-color: rgb(226, 226, 226);
+  padding: 4rem;
+  border-radius: 2rem;
+}
+.home,
+.notifications,
+.messages {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.home-title,
+.notification-title,
+.message-title {
+  padding-left: 2rem;
+}
