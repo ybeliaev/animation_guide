@@ -36,6 +36,8 @@
   > 3. повторный клик возвращает на `scale: 1` с последующим `scale: 0.9`
 * добавление `yoyo: true, repeat: 1` исправляет проблему
   > `gsap.fromTo(".home-svg", { scale: 1 }, { scale: 0.9, yoyo: true, repeat: 1 })`
+
+### 💡 `rotate()` in GSAP is `rotation`
 ### `transform-origin`
 * https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin
 * https://www.w3schools.com/cssref/css3_pr_transform-origin.asp
