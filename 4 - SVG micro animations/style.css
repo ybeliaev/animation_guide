@@ -24,6 +24,7 @@ body {
   display: flex;
   align-items: center;
   padding: 1rem;
+  cursor: pointer;
 }
 .home-title,
 .notification-title,

@@ -26,5 +26,19 @@
 * `{ y: 0, opacity:1 ,delay: 2, stagger: 0.1, ease: "back.out(3)" }`
   > `stagger` задаёт задержку применения анимации к каждому элементу поочерёдно
 * 🔥 `span` - inline элемент поэтому не будет реагировать на `transform: translate()`
-  > рещение  `gsap.set(".letter", { display: "inline-block" });`
-
+  > решение  `gsap.set(".letter", { display: "inline-block" });`
+### GSAP exemple 
+* `const tl = gsap.timeline({ default:{duration: 0.35, ease: "Power2.easeOut"}})`
+* добавил в `addEventListener` на click `gsap.fromTo(".home-svg", { scale: 1 }, { scale: 0.9})`
+  >  жизнь `.home-svg`:
+  > 1. имеет размер  `scale: 1`
+  > 2. на клик он за `0.35s` получает `scale: 0.9` и остаётся в нём
+  > 3. повторный клик возвращает на `scale: 1` с последующим `scale: 0.9`
+* добавление `yoyo: true, repeat: 1` исправляет проблему
+  > `gsap.fromTo(".home-svg", { scale: 1 }, { scale: 0.9, yoyo: true, repeat: 1 })`
+### `transform-origin`
+* https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin
+* https://www.w3schools.com/cssref/css3_pr_transform-origin.asp
+  
+### `matrix`
+* The parameters are as follow: `matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())`
