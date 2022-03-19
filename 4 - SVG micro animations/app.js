@@ -41,4 +41,18 @@ notifications.addEventListener("click", ()=>{
         { rotation: 0, x: 0, duration: 1, ease: "elastic.out(5, 0.2)" }
       );
 })
+//Messages
 
+gsap.set(".flap", { transformOrigin: "top" });
+messages.addEventListener("click", () => {
+    tl.fromTo(".messages-svg", { scale: 1 }, { scale: 0.9 });
+    tl.fromTo(".flap", { scale: 1 }, { scale: -1 }, "<50%");
+    tl.fromTo(".messages-svg", { scale: 0.9 }, { scale: 1 }, "<50%");
+
+    tl.fromTo(
+        ".note",
+        { y: 0, opacity: 1 },
+        { y: -40, opacity: 0, duration: 0.75 }
+      );
+      tl.to(".flap", { scale: 1 }, "<50%");
+})

@@ -13,7 +13,7 @@
 ![cookie svg](https://github.com/ybeliaev/animation_guide/blob/master/src/img/figma_cookie.png) 
   > тогда в `id` будут названия групп ,которые дал(по-умолчанию они `group`)
 
-### 💡 GSAP
+## 💡 GSAP
 * `yoyo: true, repeat: -1 `
   > `yoyo: true` Gets or sets the timeline's `yoyo` state, where `true` causes the `timeline` to go back and forth, alternating backward and forward on each repeat.
   >if `repeat` is `1`, the `timeline will` play a total of twice (the initial play plus 1 repeat). To repeat INDEFINITELY, use `-1`.
@@ -27,7 +27,7 @@
   > `stagger` задаёт задержку применения анимации к каждому элементу поочерёдно
 * 🔥 `span` - inline элемент поэтому не будет реагировать на `transform: translate()`
   > решение  `gsap.set(".letter", { display: "inline-block" });`
-### GSAP exemple 
+### GSAP example 
 * `const tl = gsap.timeline({ default:{duration: 0.35, ease: "Power2.easeOut"}})`
 * добавил в `addEventListener` на click `gsap.fromTo(".home-svg", { scale: 1 }, { scale: 0.9})`
   >  жизнь `.home-svg`:
@@ -38,9 +38,16 @@
   > `gsap.fromTo(".home-svg", { scale: 1 }, { scale: 0.9, yoyo: true, repeat: 1 })`
 
 ### 💡 `rotate()` in GSAP is `rotation`
+
+### GSAP example
+*    `tl.fromTo(".messages-svg", { scale: 1 }, { scale: 0.9 });` - объект "замёрз" на `scale: 0.9`
+*    `tl.fromTo(".flap", { scale: 1 }, { scale: -1 }, "<50%");` - что-то ещё
+*    `tl.fromTo(".messages-svg", { scale: 0.9 }, { scale: 1 }, "<50%");` - объект вернул на `scale: 1`
 ### `transform-origin`
 * https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin
 * https://www.w3schools.com/cssref/css3_pr_transform-origin.asp
   
 ### `matrix`
 * The parameters are as follow: `matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())`
+### 💡 `scale: -1` перевернёт элемент на 180deg
+
