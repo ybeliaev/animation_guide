@@ -49,5 +49,20 @@
   
 ### `matrix`
 * The parameters are as follow: `matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())`
+
 ### 💡 `scale: -1` перевернёт элемент на 180deg
+
+### 💡 Как реализовать смену картинки при клике:
+``` js
+//global var: 
+let current = 0; let z = 0  
+// slides - контейнер, imges - массив картинок в нём
+slides.addEventListener("click", () => {
+  z = z + 1
+  current = current + 1
+  // чтобы начинать с нуля когда дойдёт до конца
+  current = current % imges.length
+  imges[current].style.zIndex = z
+})
+```
 
