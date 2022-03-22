@@ -43,6 +43,74 @@
 *    `tl.fromTo(".messages-svg", { scale: 1 }, { scale: 0.9 });` - объект "замёрз" на `scale: 0.9`
 *    `tl.fromTo(".flap", { scale: 1 }, { scale: -1 }, "<50%");` - что-то ещё
 *    `tl.fromTo(".messages-svg", { scale: 0.9 }, { scale: 1 }, "<50%");` - объект вернул на `scale: 1`
+
+### GSAP example
+#### работа с двумя заголовками
+
+```js
+const carousels = document.querySelectorAll('h1, h2')
+const fadeInTimeline = gsap.timeline()
+
+fadeInTimeline
+        .set(carousels, {opacity: 0})
+        .to(carousels, {opacity: 1, delay: 1, stagger: 1, duration: 3})
+
+
+```
+* абзацы будут поочерёдно (за это отвечает `stagger: 1`) появляться
+
+#### бегущая сторока
+
+```js
+const carousels = document.querySelectorAll("header h1, header h2")
+
+const fadeInTimeline = gsap.timeline()
+
+carousels.forEach(carousel => {
+  const spanTag = carousel.querySelector("span")
+  const spanWidth = spanTag.clientWidth
+  
+  for (let i = 0; i < 20; i = i + 1) {
+    carousel.appendChild(spanTag.cloneNode(true))
+  }
+  
+  const movementTimeline = gsap.timeline({
+    repeat: -1
+  })
+
+  movementTimeline
+    .set(carousel, { x: 0 })
+    .to(carousel, { x: spanWidth * -1, duration: 6, ease: "linear" })
+})
+
+```
+> ширина заголовков разная, поэтому скорость движения разная (за скорость анимации отвечает `duration`)
+> https://codepen.io/jorgenb/pen/QWaKzZG
+### 💡 GSAP Функции в свойствах
+```js
+imagesLoaded(images, function () {
+    const timeline = gsap.timeline()
+  
+    timeline
+      .set(images, {
+        x: () => {
+          return 500 * Math.random() - 250
+        },
+        y: "500%",
+        rotation: () => {
+          return 90 * Math.random() - 45
+        },
+        opacity: 1
+      })
+      .to(images, { x: 0, y: 0, stagger: -0.25 })
+      .to(images, { 
+        rotation: () => {
+          return 16 * Math.random() - 8
+        } 
+      })
+  })
+``` 
+
 ### `transform-origin`
 * https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin
 * https://www.w3schools.com/cssref/css3_pr_transform-origin.asp
@@ -55,14 +123,19 @@
 ### 💡 Как реализовать смену картинки при клике:
 ``` js
 //global var: 
-let current = 0; let z = 0  
+let current = 0; let z = 1000  
 // slides - контейнер, imges - массив картинок в нём
+// если контейнер с картинками не один, то slides.forEach..
 slides.addEventListener("click", () => {
-  z = z + 1
+  z = z - 1
+  imges[current].style.zIndex = z
+  
   current = current + 1
   // чтобы начинать с нуля когда дойдёт до конца
   current = current % imges.length
-  imges[current].style.zIndex = z
 })
 ```
+### 💡 `flex: 0 0 auto`
+  > `flex-shrink: 0` - элемент не будет сжиматься
+
 
