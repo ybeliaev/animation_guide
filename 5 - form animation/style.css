@@ -42,7 +42,7 @@ form {
 
 .input-container {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     margin-bottom: 1rem;
 }
 
@@ -52,11 +52,12 @@ form {
     outline: none;
     color: #777474;
     font-size: 1rem;
-    resize: vertical;
 }
 
 .placeholder {
-    position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     z-index: 1;
     pointer-events: none;
     font-size: 0.8rem;
