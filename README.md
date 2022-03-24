@@ -155,5 +155,9 @@ slides.addEventListener("click", () => {
 ```
 ### 💡 `flex: 0 0 auto`
   > `flex-shrink: 0` - элемент не будет сжиматься
-
+### 💡 document.activeElement
+> Возвращает текущий сфокусированный элемент
+```js 
+if (document.activeElement !== input){}
+```
 
