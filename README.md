@@ -160,4 +160,15 @@ slides.addEventListener("click", () => {
 ```js 
 if (document.activeElement !== input){}
 ```
-
+### 💡 e.target.type
+> покажет значение type для input который получил событие
+```js
+if (e.target.type === "text") {
+  let inputText = e.target.value;
+  if (inputText.length > 2) {
+    colorize("#6391E8", line, placeholder);
+  } else {
+    colorize("#FE8C99", line, placeholder);
+  }
+}
+```
