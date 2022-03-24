@@ -108,3 +108,16 @@ function colorize(color, line, placeholder) {
     gsap.to(line, {stroke: color, duration: 0.75});
     gsap.to(placeholder, {color: color, duration: 0.75});
 }
+
+//Checkbox animation fill
+const checkbox = document.querySelector(".checkbox");
+
+const tl2 = gsap.timeline({
+    defaults: { duration: 0.5, ease: "Power2.easeOut" },
+});
+const tickMarkPath = document.querySelector(".tick-mark path");
+const pathLength = tickMarkPath.getTotalLength();
+gsap.set(tickMarkPath, {
+    strokeDashoffset: pathLength,
+    strokeDasharray: pathLength,
+});

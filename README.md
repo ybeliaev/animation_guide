@@ -1,5 +1,8 @@
 # 🔥 Animation_guide 🔥
 
+* https://svg-art.ru/
+* https://css-tricks.com/svg-line-animation-works/
+
 ### 💡 Свойство `transition` указывать как свойство элемента НАД которым совершаю действие
 * имя свойства | длительность | временная функция | задержка 
 * `transition: margin-left 4s ease-in-out 1s;`
@@ -128,6 +131,9 @@ imagesLoaded(images, function () {
       })
   })
 ``` 
+### SVGGeometryElement.getTotalLength()
+> The SVGGeometryElement.getTotalLength() method returns the user agent's computed value for the total length of the path in user units.
+> У svg length не взять, нужно цепляться к path внутри svg
 
 ### `transform-origin`
 * https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin
@@ -172,3 +178,11 @@ if (e.target.type === "text") {
   }
 }
 ```
+### stroke-dashoffset
+https://css-tricks.com/almanac/properties/s/stroke-dashoffset/
+> in GSAP `strokeDashoffset`
+> задаёт смещение пуктивной обводки относительно первоначального положения
+### stroke-dasharray
+> задаёт сдвиг линии
+https://css-tricks.com/svg-line-animation-works/
+> 
