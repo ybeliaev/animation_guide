@@ -179,6 +179,7 @@ if (e.target.type === "text") {
 }
 ```
 ### stroke-dashoffset
+https://www.youtube.com/watch?v=s--_-2YPkX0
 https://css-tricks.com/almanac/properties/s/stroke-dashoffset/
 > in GSAP `strokeDashoffset`
 > задаёт смещение пуктивной обводки относительно первоначального положения
@@ -186,3 +187,31 @@ https://css-tricks.com/almanac/properties/s/stroke-dashoffset/
 > задаёт сдвиг линии
 https://css-tricks.com/svg-line-animation-works/
 > 
+### GSAP. Простая анимация рисования SVG
+```js
+const tickMarkPath = document.querySelector(".tick-mark path");
+const pathLength = tickMarkPath.getTotalLength();
+
+gsap.set(tickMarkPath, {
+  strokeDashoffset: pathLength,
+  strokeDasharray: pathLength,
+});
+checkbox.addEventListener("click", () => {
+  if (checkbox.checked) {    
+    tl2.fromTo(
+            tickMarkPath,
+            { strokeDashoffset: pathLength },
+            { strokeDashoffset: 0 },
+            "<50%"
+    );
+    
+  } else {    
+    tl2.fromTo(
+            tickMarkPath,
+            { strokeDashoffset: 0 },
+            { strokeDashoffset: pathLength },
+            "<50%"
+    );    
+  }
+});
+```
