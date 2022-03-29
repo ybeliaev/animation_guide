@@ -62,7 +62,7 @@ form {
     pointer-events: none;
     font-size: 0.8rem;
     opacity: 0.6;
-    transform-origin: left;
+    /*transform-origin: left;*/
 }
 
 .line-svg {
