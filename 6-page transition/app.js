@@ -33,3 +33,31 @@ const leaveAnimation = (current, done) => {
 
     )
 }
+const enterAnimation = (current, done, gradient) => {
+    const product = current.querySelector(".image-container");
+    const text = current.querySelector(".showcase-text");
+    const circles = current.querySelectorAll(".circle");
+    const arrow = current.querySelector(".showcase-arrow");
+    return (
+        tlEnter.fromTo(
+            arrow,
+            { opacity: 0, y: 50 },
+            { opacity: 1, y: 0, onComplete: done }
+        ),
+            tlEnter.to("body", { background: gradient }, "<"),
+            tlEnter.fromTo(product, { y: -100, opacity: 0 }, { y: 0, opacity: 1 }, "<"),
+            tlEnter.fromTo(text, { y: 100, opacity: 0 }, { opacity: 1, y: 0 }, "<"),
+            tlEnter.fromTo(
+                circles,
+                { y: -200, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    stagger: 0.15,
+                    ease: "back.out(1.7)",
+                    duration: 1,
+                },
+                "<"
+            )
+    );
+};
