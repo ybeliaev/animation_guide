@@ -1,11 +1,11 @@
 const tlLeave = gsap.timeline({
     default: {duration: 0.75, ease: "Power2.easeOut"}
 })
-const tlLeave = gsap.timeline({
+const tlEnter = gsap.timeline({
     default: {duration: 0.75, ease: "Power2.easeOut"}
 })
 
-//Make the functions for the leave and enter animations
+//++++++++Make the functions for the leave and enter animations+++++++
 const leaveAnimation = (current, done) => {
     const product = current.querySelector(".image-container");
     const text = current.querySelector(".showcase-text");
@@ -61,3 +61,23 @@ const enterAnimation = (current, done, gradient) => {
             )
     );
 };
+// RUN ANIMATION
+barba.init({
+    transitions: [{
+        name: 'default',
+        leave(data) {
+            // create your stunning leave animation here
+            console.log(data)
+            // data:
+            // current: {container: section.showcase, html: '<html lang="en"><head>\n    <meta charset="UTF-8">\n…   \x3Cscript src="./app.js">\x3C/script></body></html>', namespace: 'handbag', url: {…}}
+            // next: {container: section.showcase, html: '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <met…cript src="./app.js">\x3C/script>\n  </body>\n</html>\n', namespace: 'boot', url: {…}}
+            // trigger: a
+            let current = data.current.container
+            console.log(current)
+        },
+        enter() {
+            // create your amazing enter animation here
+            let next = data.next.container
+        }
+    }]
+})
