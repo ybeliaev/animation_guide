@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #282828;
+    --white: #d9d9d9
+}
+
+html {
+    font-size: 100%;
+}
+//------NAV--------
+nav {
+    position: fixed;
+    width: 100vw;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 20%;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 10;
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(2px);
+}
+
+nav, a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1rem;
+}
+
+.nav-links a,
+.nav-links button {
+    margin-left: 2rem;
+}
+
+nav .logo {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.buy-button {
+    padding: 0.2rem 2rem;
+    font-size: 0.6rem;
+    color: white;
+    background: #3056f5;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+//-----FIRST PAGE--------
+
