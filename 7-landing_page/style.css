@@ -4,50 +4,43 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
-:root {
-    --black: #282828;
-    --white: #d9d9d9;
-    --padding: 0% 20%
+a,
+button,
+h1,
+h2,
+h3,
+h4 {
+    color: rgb(40, 40, 40);
 }
-
-html {
-    font-size: 100%;
-}
-
-/* **********NAV********** */
 nav {
     position: fixed;
     width: 100vw;
-    min-height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--padding);
-    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0% 20%;
+    min-height: 8vh;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
     z-index: 10;
-    backdrop-filter: blur(2px);
 }
-
-nav, a {
+nav,
+a {
     text-decoration: none;
-    color: var(--black);
-    font-size: 1.4rem;
+    color: black;
+    font-size: 0.9rem;
 }
-
 .nav-links a,
 .nav-links button {
     margin-left: 2rem;
 }
-
-nav .logo {
-    font-size: 1.4rem;
+.logo {
+    font-size: 1rem;
     font-weight: bold;
 }
-
 .buy-button {
     padding: 0.2rem 2rem;
-    font-size: 1rem;
+    font-size: 0.6rem;
     color: white;
     background: #3056f5;
     border: none;
@@ -55,17 +48,16 @@ nav .logo {
     cursor: pointer;
 }
 
-/***********FIRST PAGE************/
-
+/*First Page*/
 .first-page {
     min-height: 100vh;
-    padding: var(--padding);
+    padding: 0 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.first-page-text{
+.first-page-text {
     z-index: 2;
     text-align: center;
     padding-bottom: 10rem;
@@ -76,9 +68,11 @@ nav .logo {
 .first-page-subtitle {
     font-size: 3rem;
 }
+
 .intro-video {
     position: absolute;
 }
+
 /* Second Page */
 .second-page {
     min-height: 125vh;
@@ -88,6 +82,7 @@ nav .logo {
     position: relative;
     justify-content: center;
 }
+
 .smoke-video {
     position: absolute;
     height: 100%;
@@ -103,11 +98,12 @@ nav .logo {
     z-index: 2;
 }
 /* Third Page Phone Split*/
-.third-page{
+.third-page {
     position: relative;
-    padding: var(--padding);
+    padding: 0% 20%;
 }
-.product-text-container{
+
+.product-text-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -130,7 +126,7 @@ nav .logo {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.large-phone{
+.large-phone {
     position: relative;
     transform: translateX(40%) scale(0.8);
     z-index: 1;
@@ -142,12 +138,13 @@ nav .logo {
 }
 .retina-line {
     position: absolute;
-    bottom: 0%;
+    bottom: 15%;
     left: 50%;
     transform: translate(-50%, -15%);
     font-size: 0.8rem;
     font-weight: bold;
 }
+
 /* 4th Page Slider */
 .forth-page {
     min-height: 100vh;
@@ -166,13 +163,6 @@ nav .logo {
 .phone-gallery {
     display: flex;
     align-self: flex-start;
-}
-
-/* Purchase right */
-.purchase-right {
-    flex: 1;
-    position: relative;
-    background: black;
 }
 .phone-gallery img {
     transform: scale(0.8);
@@ -193,6 +183,20 @@ nav .logo {
     padding: 0.5rem 0.3rem;
     cursor: pointer;
 }
+/* Purchase right */
+.purchase-right {
+    flex: 1;
+    position: relative;
+    background: black;
+}
+.purchase-right img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%) scale(0.8);
+    transform-origin: bottom;
+}
+
 /* 5th Page */
 .fifth-page {
     min-height: 100vh;
@@ -204,7 +208,6 @@ nav .logo {
     object-fit: cover;
     z-index: 1;
 }
-
 .product-info-container {
     position: relative;
     z-index: 2;
@@ -232,6 +235,7 @@ nav .logo {
 .blue {
     z-index: 1;
 }
+
 /*  Sixth page */
 .sixth-page {
     min-height: 100vh;
