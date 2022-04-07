@@ -228,3 +228,15 @@ checkbox.addEventListener("click", () => {
 ```
 ### `pointer-events: none`
 > элемент НЕ может стать объектом события мыши (прячем его, но не удаляем)
+
+### GSAP. ScrollTrigger 
+> 
+> https://greensock.com/docs/v3/Plugins/ScrollTrigger
+ ```js
+scrollTrigger: {
+trigger: ".first-page",
+start: '0%', 
+end: '100%',
+pin: true, // пока не прокрутишь до показателя end элемент закреплённый за trigger не будет прокручиваться
+}
+```
