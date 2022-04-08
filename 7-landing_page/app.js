@@ -97,6 +97,9 @@ swatches.forEach((swatch, index)=>{
         gsap.to(gallery, { x: -coord, duration: 1, ease: "back.out(1)" });
         //Increment zIndex
         topIndex++;
-        currentSwatch = swatchName;
+        currentSwatch = swatchName; // потому что на 1-й элемент не вернёшся иначе, т.к сработает if(currentSwatch ===swatchName) return
+        
+        
+        
     })
 })

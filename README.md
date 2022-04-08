@@ -247,4 +247,29 @@ pinSpacing: false, // следующий элемент наезжает на э
 ### Для создания галереи
 #### `getBoundingClientRect()`
 > https://developer.mozilla.org/ru/docs/Web/API/Element/getBoundingClientRect
-> 
+```js
+// swatches - container with images
+swatches.forEach((swatch, index)=>{
+    const coord = slides[index].getBoundingClientRect().left;
+    swatch.addEventListener('click', e =>{
+        // в этом блоке меняется картинка по клику на боковом блоке галереи
+        //***************************************************
+        let swatchName = e.target.getAttribute("swatch");
+        let closeUp = document.querySelector('.' + swatchName)
+        // check if I'm on same swatch
+        if(currentSwatch ===swatchName) return
+        // create class with Z-index prop for right section img
+        gsap.set(closeUp, {zIndex: topIndex})
+        gsap.fromTo(closeUp, { opacity: 0 }, { opacity: 1, duration: 1 });
+      //*****************************************************
+        //Gallery
+        gsap.to(gallery, { x: -coord, duration: 1, ease: "back.out(1)" });
+        //Increment zIndex
+        topIndex++;
+        currentSwatch = swatchName; // потому что на 1-й элемент не вернёшся иначе, т.к сработает if(currentSwatch ===swatchName) return
+        
+        
+        
+    })
+})
+```
