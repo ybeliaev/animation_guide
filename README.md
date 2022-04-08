@@ -244,3 +244,7 @@ pinSpacing: false, // следующий элемент наезжает на э
 > `scrub: 1` - задержка анимации на 1сек
 > 
 > `scrub: true` - просто вкл плавность
+### Для создания галереи
+#### `getBoundingClientRect()`
+> https://developer.mozilla.org/ru/docs/Web/API/Element/getBoundingClientRect
+> 
