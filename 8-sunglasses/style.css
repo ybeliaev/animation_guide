@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'PT Root';
+  src: url('/assets/ptroot.woff2') format("woff2");
+}
+
+body {
+	font-family: PT Root;
+	font-size: 24px;
+	line-height: 1.5;
+	
+	background-color: #000000;
+	color: #ffffff;
+}
+
+header {
+  position: fixed;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  font-size: 16px;
+  font-variation-settings:  "wght" 800;
+  z-index: 1000;
+}
+
+
