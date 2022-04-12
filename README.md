@@ -66,7 +66,9 @@ fadeInTimeline
 
 ```
 * абзацы будут поочерёдно (за это отвечает `stagger: 1`) появляться
-
+>
+> `fadeInTimeline.fromTo()` не тоже самое как `fadeInTimeline.set().to()` ,т.к в первом случае мгновение будет видно элемент со свойствами из `style.css`
+> 
 #### бегущая сторока
 
 ```js
@@ -81,7 +83,7 @@ carousels.forEach(carousel => {
   for (let i = 0; i < 20; i = i + 1) {
     carousel.appendChild(spanTag.cloneNode(true))
   }
-  
+  //Метод Node.cloneNode() возвращает дубликат узла, из которого этот метод был вызван.
   const movementTimeline = gsap.timeline({
     repeat: -1
   })

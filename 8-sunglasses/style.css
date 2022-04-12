@@ -1,26 +1,37 @@
-@font-face {
-  font-family: 'PT Root';
-  src: url('/assets/ptroot.woff2') format("woff2");
-}
+//@font-face {
+//  font-family: 'PT Root';
+//  src: url('/assets/ptroot.woff2') format("woff2");
+//}
 
 body {
-	font-family: PT Root;
-	font-size: 24px;
-	line-height: 1.5;
-	
-	background-color: #000000;
-	color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    background-color: #1f1f1f;
+    color: #eeeeee;
 }
 
+/*  HEADER  */
 header {
-  position: fixed;
-  top: 8px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  font-size: 16px;
-  font-variation-settings:  "wght" 800;
-  z-index: 1000;
+    position: fixed;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+    z-index: 1000;
 }
 
+header h1, header h2 {
+    display: flex;
+}
 
+h1 span, h2 span {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+}
+
+h2 span {
+    width: 350px;
+}
