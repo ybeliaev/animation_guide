@@ -303,4 +303,7 @@ img {
     object-position: center right;
     transition: width 0.25s;
 }
+a:hover img {
+  width: 30px;
+}
 ```
