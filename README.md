@@ -292,3 +292,15 @@ tlVideo.fromTo(
   { currentTime: 3, duration: 1 }
 );
 ````
+## Style for animation IMG
+I can animate width of img
+```css
+img {
+    margin-left: 8px;
+    width: 15px;
+    height: 20px;
+    object-fit: cover;
+    object-position: center right;
+    transition: width 0.25s;
+}
+```
