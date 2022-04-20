@@ -49,6 +49,7 @@ section .split{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding: 80px 0;
 }
 section .split:first-child{
     background-color: #000000;
@@ -112,7 +113,7 @@ section.alternative .split:last-child {
     }
 
     section div.split {
-        padding: 64px 0 64px 0;
+        padding: 64px 0 ;
     }
 }
 
