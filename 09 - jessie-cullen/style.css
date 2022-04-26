@@ -49,13 +49,14 @@ header {
 h1 {
     font-size: 10vw;
     font-style: italic;
+    font-weight: lighter;
     margin-bottom: 1rem;
     animation: fadein 0.4s 1s both cubic-bezier(0.9, 0.03, 0.69, 0.22);
 }
 
 h2 {
     max-width: 480px;
-    font-size: 36px;
+    font-size: calc(2vw + 10px);
     text-align: center;
     animation: fadein 0.4s 2s both cubic-bezier(0.9, 0.03, 0.69, 0.22);
 }

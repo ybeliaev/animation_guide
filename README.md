@@ -15,6 +15,8 @@
 
 ## SVG
 
+https://developer.mozilla.org/ru/docs/Web/SVG
+
 ### Work with SVG in Figma
 
 ![cookie svg](./src/img/figma_cookie.png)
@@ -41,6 +43,58 @@ path {
 svg:hover path {
     d: path('M 850 300 C 850 300 350 300 350 300 L 348.1 205.39 L 120 400.39 L 348.1 606.19 L 350 500 C 850 500 850 500 850 500 z') !important;
 }
+```
+
+#### `<g></g>`
+
+>
+>Элемент `g` используется для группировки других SVG элементов. Любые преобразования применяемые к g элементу
+> наследуются
+> его дочерними элементами.
+>
+
+```html
+
+<svg viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+    <g class="blob">
+        <g transform="translate(1100, 1100)">
+            <path d="M1559 3.58236C1559.../></g>
+      <g transform=" translate(-100, -100)
+            ">
+            <path d="M1559 3.58236C1559.../>
+      </g>
+    </g>
+</svg>
+```
+
+> `viewBox` — это набор четырёх чисел: `min-x`, `min-y`, `width` и `height`
+>
+> На отображение с `viewBox` также влияет атрибут `preserveAspectRatio`
+
+### анимация SVG заливки контейнера элементом
+
+![blob svg](./src/img/svg-blog.png)
+> далее `<path d="M1559 3.58236C1559.../>` вставил в элемент `<g>` похожий на тот, что выше в коде
+
+```css
+/* STYLE FOR SVG */
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    mix-blend-mode: multiply;
+}
+
+path {
+    transform: scale(0);
+    transition: transform 5s;
+}
+
+g.blob.in-view path {
+    transform: scale(1);
+
 ```
 
 ## 💡 GSAP
