@@ -13,6 +13,8 @@
 
 ### bezier function 🔗 https://cubic-bezier.com/
 
+## SVG
+
 ### Work with SVG in Figma
 
 ![cookie svg](./src/img/figma_cookie.png)
@@ -41,6 +43,12 @@
   первым.
 * 🔥 `span` - inline элемент поэтому не будет реагировать на `transform: translate()`
   > решение  `gsap.set(".letter", { display: "inline-block" });`
+
+### preserveAspectRatio
+
+> https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio
+> The preserveAspectRatio attribute indicates how an element with a viewBox providing a given aspect ratio must fit into
+> a viewport with a different aspect ratio.
 
 ### GSAP example
 
