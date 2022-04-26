@@ -20,6 +20,29 @@
 ![cookie svg](./src/img/figma_cookie.png)
 > тогда в `id` будут названия групп ,которые дал(по-умолчанию они `group`)
 
+### Change d in path
+
+> CSS:
+> https://stackoverflow.com/questions/68630016/changing-svg-path-by-using-css
+>
+> JS:
+> https://stackoverflow.com/questions/6813931/change-svg-path-with-javascript
+
+```css
+/* CSS */
+svg {
+    overflow: initial;
+}
+
+path {
+    transition: d 0.5s;
+}
+
+svg:hover path {
+    d: path('M 850 300 C 850 300 350 300 350 300 L 348.1 205.39 L 120 400.39 L 348.1 606.19 L 350 500 C 850 500 850 500 850 500 z') !important;
+}
+```
+
 ## 💡 GSAP
 
 * `yoyo: true, repeat: -1 `
