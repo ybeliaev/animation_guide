@@ -15,7 +15,29 @@
 
 ## SVG
 
-https://developer.mozilla.org/ru/docs/Web/SVG
+> https://developer.mozilla.org/ru/docs/Web/SVG
+>
+> https://css-tricks.com/svg-properties-and-css/
+> пример css
+
+```css
+svg.spiral {
+    border: 2px solid var(--highlight-color);
+}
+
+svg.spiral rect {
+    /*заливка*/
+    fill: var(--highlight-color);
+    /*прозрачность*/
+    fill-opacity: 0;
+    /*обводка*/
+    stroke: var(--highlight-color);
+}
+
+svg.spiral rect:hover {
+    fill-opacity: 0.25;
+}
+```
 
 ### Work with SVG in Figma
 
