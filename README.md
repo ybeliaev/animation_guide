@@ -92,8 +92,10 @@ path {
     transition: transform 5s;
 }
 
+/* adding class in-view  */
 g.blob.in-view path {
     transform: scale(1);
+}
 
 ```
 
