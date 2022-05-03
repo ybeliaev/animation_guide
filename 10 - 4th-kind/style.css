@@ -159,7 +159,7 @@ div.wipe {
     width: 100%;
     height: 0;
     background-color: var(--highlight-color);
-    z-index: 3;
+    /*z-index: 3;*/
     transition: background-color 0.0001s 2s;
 }
 

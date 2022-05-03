@@ -1,12 +1,14 @@
+// +++++++ DARK MODE content ++++++
 const darkModeToggle = document.querySelector("a.dark-mode-toggle")
 const darkModeToggleText = darkModeToggle.querySelector("span")
 
+// ++++++ MENU content ++++++
 const menuToggle = document.querySelector("a.menu-toggle")
 const menuToggleText = menuToggle.querySelector("span")
 
-
+// +++++++ DARK MODE ++++++
 const bodyTag = document.querySelector("body")
-// гоняется шарик из угла в угол(шарика ТРИ)
+// гоняется шарик из угла в угол(всего ТРИ шарика )
 darkModeToggle.addEventListener('click', function () {
     if (bodyTag.classList.contains("dark-mode")) {
         darkModeToggleText.innerHTML = "Light mode"
@@ -24,5 +26,20 @@ darkModeToggle.addEventListener('click', function () {
         })
 
 })
-console.log(darkModeToggle)
-console.log(bodyTag)
+// ++++++ MENU ++++++
+menuToggle.addEventListener("click", () => {
+    bodyTag.classList.toggle("nav-open")
+    if (bodyTag.classList.contains("nav-open")) {
+        menuToggleText.innerHTML = "Close"
+
+        gsap.to(".burger-top", {rotation: 45, transformOrigin: "50% 50%", y: 8})
+        gsap.to(".burger-bottom", {rotation: -45, transformOrigin: "50% 50%", y: -8})
+        gsap.to(".burger-mid", {opacity: 0})
+    } else {
+        menuToggleText.innerHTML = "Menu"
+
+        gsap.to(".burger-top", {rotation: 0, y: 0})
+        gsap.to(".burger-bottom", {rotation: 0, y: 0})
+        gsap.to(".burger-mid", {opacity: 1})
+    }
+})
