@@ -393,21 +393,16 @@ checkbox.addEventListener("click", () => {
 > https://greensock.com/docs/v3/Plugins/ScrollTrigger
 
  ```js
-scrollTrigger: {
-    trigger: ".first-page",
-        start
-:
-    '0%',
-        end
-:
-    '100%',
-        pin
-:
-    true, // пока не прокрутишь до показателя end элемент закреплённый за trigger не будет прокручиваться
-        pinSpacing
-:
-    false, // следующий элемент наезжает на этот в заданном диапазоне
-}
+const tlIntro = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".first-page",
+        start: '0%', // когда старт
+        end: '100%',
+        pin: true, // закрепить триггерный элемент, пока он активен
+        markers: true,
+        pinSpacing: false // следующий элемент наезжает на этот в заданном диапазоне
+    }
+})
 ```
 
 > `scrub: 1` - задержка анимации на 1сек
