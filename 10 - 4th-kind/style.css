@@ -10,6 +10,7 @@ body.dark-mode {
     --highlight-color: #ff4141;
 }
 
+
 body {
     font-family: 'Radio Canada', sans-serif;
     font-size: 1rem;
@@ -18,30 +19,48 @@ body {
     color: var(--text-color)
 }
 
+section {
+    background-image: url('./assets/grid.svg');
+    background-position: center center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    transform: translate(0, 0);
+    transition: transform 0.5s;
+}
+
+body.nav-open section {
+    transform: translate(-100px, 0);
+}
+
 h1 {
     position: fixed;
+    margin-top: 0;
     top: 32px;
     left: 32px;
 }
 
 h1 rect {
-    fill: var(--highlight-color)
+    fill: var(--highlight-color);
 }
 
 a {
     color: var(--text-color);
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.25s;
 }
 
 a:hover {
-    color: var(--highlight-color)
+    color: var(--highlight-color);
 }
 
 a.dark-mode-toggle {
     position: fixed;
     bottom: 32px;
-    left: 32px
+    left: 32px;
 }
 
 /*Ключевое слово currentColor соответствует ТЕКУЩЕМУ (hover напр. может менять) значению свойства color
@@ -51,7 +70,7 @@ a.dark-mode-toggle circle {
 }
 
 a.dark-mode-toggle rect {
-    fill: currentColor;
+    stroke: currentColor;
 }
 
 a.menu-toggle {
@@ -65,29 +84,6 @@ a.menu-toggle rect {
     fill: currentColor;
 }
 
-svg {
-    vertical-align: middle;
-}
-
-a.dark-mode-toggle g.toggle circle {
-    transition: transform 0.5s;
-}
-
-a.dark-mode-toggle:hover g.toggle circle {
-    transform: scale(1.75);
-}
-
-
-section {
-    background-image: url("./assets/grid.svg");
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(0, 0);
-    transition: transform 0.5s;
-}
-
 nav {
     position: fixed;
     top: 0;
@@ -97,13 +93,14 @@ nav {
     height: 100%;
     background-color: var(--main-color);
     padding: 48px;
+    transform: translate(100%, 0);
+    transition: transform 0.5s 0s;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*hide nav*/
-    transform: translate(100%, 0);
-    transition: transform 0.5s;
 }
+
 
 nav.fake-mid {
     background-color: var(--highlight-color);
@@ -112,6 +109,12 @@ nav.fake-mid {
 
 nav.fake-back {
     background-color: var(--text-color);
+    transition-delay: 0.2s;
+}
+
+
+body.nav-open nav {
+    transform: translate(0, 0);
     transition-delay: 0.2s;
 }
 
@@ -135,6 +138,19 @@ nav div.internal {
     flex: 1;
 }
 
+svg {
+    vertical-align: middle;
+}
+
+a.dark-mode-toggle g.toggle circle {
+    transition: transform 0.5s;
+}
+
+a.dark-mode-toggle:hover g.toggle circle {
+    transform: scale(1.75);
+}
+
+
 div.wipe {
     position: fixed;
     top: 0;
@@ -145,6 +161,7 @@ div.wipe {
     z-index: 3;
     transition: background-color 0.0001s 2s;
 }
+
 
 svg.spiral {
     border: 2px solid var(--highlight-color);
