@@ -24,7 +24,7 @@ darkModeToggle.addEventListener('click', function () {
         .add(function () {
             bodyTag.classList.toggle('dark-mode')
         })
-
+        .to("div.wipe", {height: "0%", top: "100%"})
 })
 // ++++++ MENU ++++++
 menuToggle.addEventListener("click", () => {

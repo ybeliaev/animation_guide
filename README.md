@@ -506,3 +506,25 @@ a:hover img {
   заданного `animation-delay`. Первый ключевой кадр определяется на основании значения animation-direction
 * `both`
   К элементу применяются оба правила, как для `forwards`, так и для `backwards`.
+
+### GSAP. Эффект падающего сверху и проваливающегося бэкграунда
+
+```js
+const timeline = gsap.timeline()
+timeline
+    .set("div.wipe", {height: "0%", top: "0%"})
+    .to("div.wipe", {height: "100%", duration: 2})
+    .to("div.wipe", {height: "0%", top: "100%"})
+```
+
+```css
+div.wipe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--highlight-color);
+    transition: background-color 0.0001s 2s;
+}
+```
