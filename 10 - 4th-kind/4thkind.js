@@ -43,3 +43,10 @@ menuToggle.addEventListener("click", () => {
         gsap.to(".burger-mid", {opacity: 1})
     }
 })
+// +++++ SPIRAL Section +++++
+const spiralTimeline = gsap.timeline({repeat: -1})
+spiralTimeline
+    .set("svg.spiral rect", {rotation: 0, transformOrigin: "50%, 50%"})
+    .set("svg.spiral rect:nth-child(1)", {rotation: 15})
+    .set("svg.spiral rect:nth-child(3)", {rotation: -15})
+    .to("svg.spiral rect", {rotation: "+=90", transformOrigin: "50%, 50%", duration: 4, stagger: -0.25})

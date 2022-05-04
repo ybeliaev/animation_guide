@@ -135,7 +135,7 @@ g.blob.in-view path {
 
 ```
 
-### SVG HOVER
+### SVG SCALE Part 1
 
 Работа с `circle`, но его лучше группировать в `g` иначе при `scale(1.7)` `circle` отъедет в сторону
 
@@ -156,6 +156,26 @@ a.dark-mode-toggle:hover g.toggle circle {
 }
 ```
 
+### SVG SCALE Part 2
+
+```css
+svg * {
+    transform-box: fill-box;
+}
+
+a.dark-mode-toggle:hover .c1 {
+    transform-origin: center center;
+    transform: scale(1.75);
+}
+```
+
+`transform-box: fill-box;` заставит `svg` вести себя как обычные `html` элементы
+> точнее Свойство transform-box определяет поле макета, к которому относятся свойства `transform` и `transform - origin`
+
+### SVG TRANSFORM
+
+https://stackoverflow.com/questions/6711610/how-to-set-transform-origin-in-svg
+
 ## 💡 GSAP
 
 * `yoyo: true, repeat: -1 `
@@ -175,7 +195,7 @@ a.dark-mode-toggle:hover g.toggle circle {
   > `stagger` задаёт задержку применения анимации к каждому элементу поочерёдно
   > https://greensock.com/docs/v3/Staggers
   >
-  > `stagger` можкт быть отрицательным - то же самое, но в обратном порядке, так что последний элемент будет начинаться
+  > `stagger` может быть отрицательным - то же самое, но в обратном порядке, так что последний элемент будет начинаться
   первым.
 * 🔥 `span` - inline элемент поэтому не будет реагировать на `transform: translate()`
   > решение  `gsap.set(".letter", { display: "inline-block" });`
