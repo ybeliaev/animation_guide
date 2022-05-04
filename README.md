@@ -93,6 +93,20 @@ svg:hover path {
 >
 > На отображение с `viewBox` также влияет атрибут `preserveAspectRatio`
 
+### `currentColor`
+
+> получит цвет элемента `a` включая эффект `hover`
+
+```css
+a circle {
+    fill: currentColor;
+}
+
+a rect {
+    stroke: currentColor;
+}
+```
+
 ### анимация SVG заливки контейнера элементом
 
 ![blob svg](./src/img/svg-blog.png)
@@ -242,7 +256,9 @@ if (!input.value) {
         {attr: {d: start}},
         {attr: {d: end}, ease: "Power2.easeOut", duration: 0.75}
     );
-    tl.to(line, {attr: {d: start}, ease: "elastic.out(3,0.5)"}, "<50%");
+    tl.to(line, {attr: {d: start}, ease: "elastic.out(3,0.5)"}, "<50%")
+}
+;
 ```
 
 ### 💡 GSAP Функции в свойствах
