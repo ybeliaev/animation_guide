@@ -135,6 +135,27 @@ g.blob.in-view path {
 
 ```
 
+### SVG HOVER
+
+Работа с `circle`, но его лучше группировать в `g` иначе при `scale(1.7)` `circle` отъедет в сторону
+
+```html
+
+<g transform="translate(25, 20)" class="toggle">
+    <circle cx="0" cy="0" r="6" fill="black"></circle>
+</g>
+```
+
+```css
+a.dark-mode-toggle g.toggle circle {
+    transition: transform 0.5s;
+}
+
+a.dark-mode-toggle:hover g.toggle circle {
+    transform: scale(1.75);
+}
+```
+
 ## 💡 GSAP
 
 * `yoyo: true, repeat: -1 `

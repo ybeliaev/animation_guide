@@ -8,7 +8,7 @@ const menuToggleText = menuToggle.querySelector("span")
 
 // +++++++ DARK MODE ++++++
 const bodyTag = document.querySelector("body")
-// гоняется шарик из угла в угол(всего ТРИ шарика )
+// гоняется шарик из угла в угол(всего ТРИ шарика  )
 darkModeToggle.addEventListener('click', function () {
     if (bodyTag.classList.contains("dark-mode")) {
         darkModeToggleText.innerHTML = "Light mode"
