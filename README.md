@@ -206,6 +206,21 @@ https://stackoverflow.com/questions/6711610/how-to-set-transform-origin-in-svg
 > The preserveAspectRatio attribute indicates how an element with a viewBox providing a given aspect ratio must fit into
 > a viewport with a different aspect ratio.
 
+### `dilay`
+
+```js
+const eyesTimeline = gsap.timeline({
+    repeat: -1
+})
+const eyeBalls = document.querySelectorAll("path#ball, path#ball_2, path#ball_3, path#ball_4")
+
+eyesTimeline
+    .set(eyeBalls, {y: 0})
+    .to(eyeBalls, {y: 7, duration: 0.25, delay: 2, stagger: 0.25}) // this line will be triggered after 2sec
+    .to(eyeBalls, {y: 0, duration: 0.25, delay: 4})// эта строка сработает через 4сек
+
+```
+
 ### GSAP example
 
 * `const tl = gsap.timeline({ default:{duration: 0.35, ease: "Power2.easeOut"}})`
@@ -594,3 +609,19 @@ spiralTimeline
     <rect x="257" y="257" width="30" height="30" stroke="black" stroke-width="2"></rect>
 </svg>
 ```
+
+## GSAP. `.repeatDelay()`
+
+https://greensock.com/docs/v3/GSAP/Timeline/repeatDelay()
+
+```js
+const hatTimeline = gsap.timeline({
+    repeat: -1,
+    repeatDelay: 4
+})
+```
+
+> Получает или задает время в секундах между повторениями.
+>
+> Gets or sets the amount of time in seconds between repeats.
+
