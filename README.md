@@ -343,6 +343,10 @@ imagesLoaded(images, function () {
 })
 ``` 
 
+### `gsap.config()`
+
+https://greensock.com/docs/v3/GSAP/gsap.config()
+
 ### SVGGeometryElement.getTotalLength()
 
 > The SVGGeometryElement.getTotalLength() method returns the user agent's computed value for the total length of the

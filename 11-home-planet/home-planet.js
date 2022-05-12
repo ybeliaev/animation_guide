@@ -1,5 +1,7 @@
 console.log(`%c ${new Date().toLocaleTimeString()} `, 'background: #222; color: #bada55')
-
+gsap.config({
+    nullTargetWarn: false
+});
 //****** EYES
 const eyesTimeline = gsap.timeline({
     repeat: -1
@@ -41,3 +43,27 @@ leftArmTimeline
     .set(rightArm, {rotation: 0})
     .to(rightArm, {rotation: 20, duration: 0.25, delay: 3})
     .to(rightArm, {rotation: 0, duration: 0.25, delay: 2})
+// ************************
+// ------ TVlight ---------
+// ************************
+const tvLight = document.querySelector("#tv-light") // этот элемент над всем в доме + бэкграунд чёрный
+
+const tvTimeline = gsap.timeline({
+    repeat: -1
+})
+
+
+let opct = 0.75
+tvTimeline
+    .set(tvLight, {opacity: opct})
+    .to(tvLight, {opacity: 1, duration: 1, delay: 0.25})
+    .to(tvLight, {opacity: opct})
+    .to(tvLight, {opacity: 1, duration: 0.4, delay: 0.25})
+    .to(tvLight, {opacity: opct})
+
+const label = document.querySelector("div.label")
+const links = document.querySelectorAll("svg a")// get NodeList(2) [a#tv-cabinet, a#shelves]
+
+
+
+
