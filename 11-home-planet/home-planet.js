@@ -64,6 +64,30 @@ tvTimeline
 const label = document.querySelector("div.label")
 const links = document.querySelectorAll("svg a")// get NodeList(2) [a#tv-cabinet, a#shelves]
 
+links.forEach(link => {
+    link.addEventListener("mouseenter", function () {
+        // сделает видимым
+        label.classList.add("is-visible")
+        // впишет содержимое аттрибута data-label что в link
+        label.innerHTML = link.getAttribute("data-label")
+
+        // target element get opacity: 1, all inner opacity: 0.25
+        gsap.to(links, {opacity: 0.25})
+        gsap.to(link, {opacity: 1})
+    })
+    // opacity: 0.25 остаётся  - нужно снять +
+    link.addEventListener("mouseleave", function () {
+        label.classList.remove("is-visible")
+        label.innerHTML = "Label"
+        gsap.to(links, {opacity: 1})
+    })
+})
+// расположение label рядом с курсором
+document.addEventListener("mousemove", function (e) {
+    label.style.left = e.clientX + "px"
+    label.style.top = e.clientY + "px"
+})
+
 
 
 
