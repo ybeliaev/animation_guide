@@ -2,6 +2,56 @@ console.log(`%c ${new Date().toLocaleTimeString()} `, 'background: #222; color: 
 gsap.config({
     nullTargetWarn: false
 });
+
+// **************************
+// **** Horizontal moves ****
+// **************************
+
+const storyTimeline = gsap.timeline()
+
+// hide all without UFO-men
+gsap.set("section.house", {opacity: 1})
+gsap.set("section.scene", {opacity: 0})// this is images mountains, trees etc.
+
+// first img have got style="transform: translate(300vh, 0px);"
+// second img have got style="transform: translate(600vh, 0px);" etc.
+gsap.set("section.scene img", {
+    x: (idx) => {
+        return (idx * 300 + 300) + "vh"
+    }
+})
+
+storyTimeline
+    .to("header", {opacity: 0, delay: 3}) // UFO-men hidden after 3 sec
+    .addLabel("startScene") // Adds a label to the timeline
+    .to("section.scene", {opacity: 1}, "startScene")
+    // after 10 sec all img get transform: translate(0vh, 0px);
+    .to("section.scene img", {x: '0vh', duration: 10, ease: "linear"}, "startScene")
+    .addLabel("endScene")
+    .to("section.scene", {opacity: 0}, "endScene")
+    .to("section.house", {opacity: 1}, "endScene")
+
+// Pauses the instance / ставлю код выше на паузу
+storyTimeline.pause()
+
+let update
+
+window.addEventListener("scroll", function () {
+    const pixels = window.scrollY
+    const currentTime = pixels / 300
+
+    cancelAnimationFrame(update)
+
+    update = requestAnimationFrame(function () {
+        //Jumps to a specific time .seek( time:* )
+        storyTimeline.seek(currentTime)
+    })
+})
+
+// **************************
+// ***** Figure UFO-men******
+// **************************
+
 //****** EYES
 const eyesTimeline = gsap.timeline({
     repeat: -1
@@ -75,7 +125,7 @@ links.forEach(link => {
         gsap.to(links, {opacity: 0.25})
         gsap.to(link, {opacity: 1})
     })
-    // opacity: 0.25 остаётся  - нужно снять +
+    // opacity: 0.25 остаётся  - нужно снять
     link.addEventListener("mouseleave", function () {
         label.classList.remove("is-visible")
         label.innerHTML = "Label"

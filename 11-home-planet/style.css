@@ -73,6 +73,7 @@ section.house svg g#scene {
     transition: opacity 0.25s;
 }
 
+
 /*другие группы <g> не затронуты*/
 section.house svg:hover g#scene {
     opacity: 0.3;
