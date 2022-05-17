@@ -10,14 +10,17 @@ gsap.config({
 const storyTimeline = gsap.timeline()
 
 // hide all without UFO-men
-gsap.set("section.house", {opacity: 1})
+gsap.set("section.house", {opacity: 0})
 gsap.set("section.scene", {opacity: 0})// this is images mountains, trees etc.
 
 // first img have got style="transform: translate(300vh, 0px);"
-// second img have got style="transform: translate(600vh, 0px);" etc.
+// second img have got style="transform: translate(400vh, 0px);" etc.
+// в результате первая картинка будет перемещаться от 300 к 0,
+// а последняя от 600 к 0 - разная скорость
+// right: 0; свойство картинок + в след. ф-ии .to("section.scene img", {x: "0vh",duration: 10
 gsap.set("section.scene img", {
     x: (idx) => {
-        return (idx * 300 + 300) + "vh"
+        return (idx * 100 + 300) + "vh"
     }
 })
 
@@ -26,10 +29,11 @@ storyTimeline
     .addLabel("startScene") // Adds a label to the timeline
     .to("section.scene", {opacity: 1}, "startScene")
     // after 10 sec all img get transform: translate(0vh, 0px);
-    .to("section.scene img", {x: '0vh', duration: 10, ease: "linear"}, "startScene")
+    .to("section.scene img", {x: "0vh", duration: 10, ease: "linear"}, "startScene")
     .addLabel("endScene")
     .to("section.scene", {opacity: 0}, "endScene")
     .to("section.house", {opacity: 1}, "endScene")
+
 
 // Pauses the instance / ставлю код выше на паузу
 storyTimeline.pause()
@@ -56,29 +60,32 @@ window.addEventListener("scroll", function () {
 const eyesTimeline = gsap.timeline({
     repeat: -1
 })
-const eyeBalls = document.querySelectorAll("path#ball, path#ball_2, path#ball_3, path#ball_4, path#ball_5, path#ball_6")
+
+const eyeballs = document.querySelectorAll("path#ball, path#ball_2, path#ball_3, path#ball_4, path#ball_5, path#ball_6")
 
 eyesTimeline
-    .set(eyeBalls, {y: 0})
-    .to(eyeBalls, {y: 7, duration: 0.25, delay: 2, stagger: 0.25})
-    .to(eyeBalls, {y: 0, duration: 0.25, delay: 4})
+    .set(eyeballs, {y: 0})
+    .to(eyeballs, {y: 7, duration: 0.25, delay: 2, stagger: 0.25})
+    .to(eyeballs, {y: 0, duration: 0.25, delay: 4})
 //****** HAT
-const hat = document.querySelector("g#hat")
-
 const hatTimeline = gsap.timeline({
     repeat: -1,
     repeatDelay: 4
 })
+
+const hat = document.querySelector("g#hat")
+
 hatTimeline
     .set(hat, {y: 0})
     .to(hat, {y: -50, rotation: -10, duration: 0.25, delay: 1})
     .to(hat, {y: 0, rotation: 0, duration: 0.5, delay: 0.1})
 //****** LEFT ARM
-const leftArm = document.querySelector("#left-arm")
-
 const leftArmTimeline = gsap.timeline({
     repeat: -1
 })
+
+const leftArm = document.querySelector("#left-arm")
+
 leftArmTimeline
     .set(leftArm, {rotation: 0})
     .to(leftArm, {rotation: 20, duration: 0.25, delay: 2})
@@ -129,14 +136,18 @@ links.forEach(link => {
     link.addEventListener("mouseleave", function () {
         label.classList.remove("is-visible")
         label.innerHTML = "Label"
+
         gsap.to(links, {opacity: 1})
     })
 })
 // расположение label рядом с курсором
-document.addEventListener("mousemove", function (e) {
-    label.style.left = e.clientX + "px"
-    label.style.top = e.clientY + "px"
+document.addEventListener("mousemove", function (event) {
+    label.style.left = event.clientX + "px"
+    label.style.top = event.clientY + "px"
 })
+
+
+
 
 
 
