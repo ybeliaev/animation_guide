@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Messapia";
+    src: url("./assets/messapia-bold.woff2") format("woff2");
+}
+
+body{
+    margin: 0;
+    font-family: "Messapia";
+    font-size: 18px;
+    line-height: 1.5;
+
+    background-color: #ffff;
+
+    
+}
+
+section{
+    height: 100vh;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    background-image: linear-gradient(120deg, #97ebd6, #9aa6f9);
+
+}
+section.alternate{
+    background-image: linear-gradient(30deg, #dc72ef , #fe0000);
+}
+section img{
+    max-height: 100%;
+}
