@@ -3,30 +3,41 @@
     src: url("./assets/messapia-bold.woff2") format("woff2");
 }
 
-body{
+body {
     margin: 0;
-    font-family: "Messapia";
+    font-family: "Messapia", sans-serif;
     font-size: 18px;
     line-height: 1.5;
 
     background-color: #ffff;
 
-    
+
 }
 
-section{
+section {
+    /* these propertys make effect  */
+    position: sticky;
+    top: 0;
+    /* **** */
     height: 100vh;
     padding: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: #97ebd6;
     background-image: linear-gradient(120deg, #97ebd6, #9aa6f9);
 
+
 }
-section.alternate{
-    background-image: linear-gradient(30deg, #dc72ef , #fe0000);
+
+section.alternate {
+    background-color: red;
+    background-image: linear-gradient(30deg, #dc72ef, #fe0000);
 }
-section img{
+
+section img {
     max-height: 100%;
+}
+section.in-view{
+    background-image: linear-gradient(30deg, violet, red);
 }
