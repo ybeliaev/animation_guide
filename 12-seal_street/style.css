@@ -3,6 +3,17 @@
     src: url("./assets/messapia-bold.woff2") format("woff2");
 }
 
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translate(0, -50%) scale(0.75);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+}
+
 body {
     margin: 0;
     font-family: "Messapia", sans-serif;
@@ -15,7 +26,7 @@ body {
 }
 
 section {
-    /* these propertys make effect  */
+    /* ***these property's make effect***  */
     position: sticky;
     top: 0;
     /* **** */
@@ -37,7 +48,10 @@ section.alternate {
 
 section img {
     max-height: 100%;
+    opacity: 0;
 }
-section.in-view{
-    background-image: linear-gradient(30deg, violet, red);
+
+
+section.in-view img {
+    animation: show 0.4s 0.4s both cubic-bezier(0.68, -0.55, 0.27, 1.55);;
 }
