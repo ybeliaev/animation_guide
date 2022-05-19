@@ -629,3 +629,12 @@ const hatTimeline = gsap.timeline({
 >
 > Gets or sets the amount of time in seconds between repeats.
 
+## Display: none
+
+> The `display` doesn't work with CSS transition or animation.
+>
+>Use `opacity`, `visibility` or `z-index`. You can combine all them.
+>
+>Try to use `visibility: visible` in place `display: block` and `visibility: hidden` in place `display: none`.
+>
+>And finally, combine `z-index: -1` and `z-index: 100` for example.
