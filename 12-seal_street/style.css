@@ -57,9 +57,15 @@ figure {
     height: 100%;
     text-align: center;
     padding: 3%;
+    overflow: hidden;
+    /*отсекается "чужие" figcaption */
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
+    /*  clip-path: polygon( from top left 0%(axis X) 0%(axis Y),
+    100% 0, 100% 100%, 0 100%);   */
 }
 
 figure img {
+    max-width: 100%;
     max-height: 100%;
     display: none
 }
@@ -68,4 +74,22 @@ figure img {
 section.in-view img {
     display: inline-block;
     animation: show 0.4s 0.4s both cubic-bezier(0.68, -0.55, 0.27, 1.55);;
+}
+
+figcaption {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+figcaption h1 {
+    color: #ffffff;
+    font-size: calc(3vw + 20px);
+}
+
+figcaption p {
+    color: #ffffff;
+    font-size: 3.5vh;
 }

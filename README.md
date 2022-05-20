@@ -638,3 +638,10 @@ const hatTimeline = gsap.timeline({
 >Try to use `visibility: visible` in place `display: block` and `visibility: hidden` in place `display: none`.
 >
 >And finally, combine `z-index: -1` and `z-index: 100` for example.
+>
+> `opacity: 0`, `height: 0` and `pointer-events:none` takes you a long way.
+>
+
+### `clip-path`
+
+https://bennettfeely.com/clippy/
