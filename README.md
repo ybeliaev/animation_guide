@@ -645,3 +645,23 @@ const hatTimeline = gsap.timeline({
 ### `clip-path`
 
 https://bennettfeely.com/clippy/
+
+### Реакция картинки на движение мыши
+
+```css
+figure {
+    perspective: 800px;
+}
+```
+
+```js
+sections.forEach((section) => {
+    // make transform for img
+    const divTag = section.querySelector('div');
+    document.addEventListener('mousemove', function (event) {
+        const aimX = (event.pageX - window.innerWidth / 2) / 50;
+        const aimY = (event.pageY - window.innerWidth / 2) / -50;
+        divTag.style.transform = `rotateX(${aimY}deg) rotateY(${aimX}deg)`;
+    });
+});
+```
