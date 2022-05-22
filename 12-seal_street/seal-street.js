@@ -24,13 +24,12 @@ const observer = new IntersectionObserver(
 sections.forEach((section) => {
     // запускаем "слежку" за элементом(ами) в константе target (у меня это section)
     observer.observe(section);
-    console.log('section ', section); // section.alternative for first element
+    //section -  section.alternative for first element
     // make transform for img
     const divTag = section.querySelector('div');
     document.addEventListener('mousemove', function (event) {
         const aimX = (event.pageX - window.innerWidth / 2) / 50;
         const aimY = (event.pageY - window.innerWidth / 2) / -50;
         divTag.style.transform = `rotateX(${aimY}deg) rotateY(${aimX}deg)`;
-        console.log('event.target ', event.target);
     });
 });
