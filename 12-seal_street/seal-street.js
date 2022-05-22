@@ -28,8 +28,8 @@ sections.forEach((section) => {
     // make transform for img
     const divTag = section.querySelector('div');
     document.addEventListener('mousemove', function (event) {
-        const aimX = (event.pageX - window.innerWidth / 2) / 50;
-        const aimY = (event.pageY - window.innerWidth / 2) / -50;
+        const aimX = (event.clientX - window.innerWidth / 2) / 50;
+        const aimY = (event.clientY - window.innerWidth / 2) / -50;
         divTag.style.transform = `rotateX(${aimY}deg) rotateY(${aimX}deg)`;
     });
 });

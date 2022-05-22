@@ -109,7 +109,7 @@ section {
     background-color: #97ebd6;
     background-image: linear-gradient(120deg, #97ebd6, #9aa6f9);
 
-
+    scroll-snap-align: start;
 }
 
 section.alternate {
@@ -143,6 +143,10 @@ figure img {
 /*поэтому все img оборачиваю в div*/
 figure div {
     height: 100%;
+    /* без  свойств ниже картинка вверху div - анимация кривая из-за этого */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section.in-view img {
