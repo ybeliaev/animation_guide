@@ -53,10 +53,26 @@ if (motion.matches && large.matches) {
     changeScroll()
 
 //    **** CURSOR ****
+    let cursorCurrentX = 0
+    let cursorCurrentY = 0
+    let cursorAimX = 0
+    let cursorAimY = 0
+
+    const changeCursor = () => {
+        cursorCurrentX = cursorCurrentX + (cursorAimX - cursorCurrentX) * 0.1
+        cursorCurrentY = cursorCurrentY + (cursorAimY - cursorCurrentY) * 0.1
+
+        cursorTag.style.top = cursorCurrentY + 'px'
+        cursorTag.style.left = cursorCurrentX + 'px'
+
+        requestAnimationFrame(changeCursor)
+    }
+
     document.addEventListener("mousemove", function (event) {
-        cursorTag.style.left = event.pageX + "px"
-        cursorTag.style.top = event.pageY + "px"
+        cursorAimX = event.pageX
+        cursorAimY = event.pageY
     })
+    changeCursor()
 }
 
 
