@@ -169,3 +169,19 @@ figcaption img:nth-child(3) {
 figcaption.in-view img {
     opacity: 1;
 }
+
+@media (prefers-reduced-motion: no-preference) and (min-width: 600px) {
+    body, a, a:hover {
+        cursor: none;
+    }
+
+    div.cursor {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 20px; /* size of the cursor.svg */
+        height: 20px;
+        background-image: url("./assets/cursor.svg");
+        pointer-events: none;
+    }
+}

@@ -7,6 +7,7 @@ console.log(
 const mainTag = document.querySelector("main")
 const bodyTag = document.querySelector("body")
 const figcaptionTags = document.querySelectorAll('figcaption')
+const cursorTag = document.querySelector("div.cursor")
 
 const motion = window.matchMedia("(prefers-reduced-motion: no-preference)")
 const large = window.matchMedia('(min-width: 600px)')
@@ -50,6 +51,13 @@ if (motion.matches && large.matches) {
     })
 
     changeScroll()
+
+//    **** CURSOR ****
+    document.addEventListener("mousemove", function (event) {
+        cursorTag.style.left = event.pageX + "px"
+        cursorTag.style.top = event.pageY + "px"
+    })
 }
+
 
 
