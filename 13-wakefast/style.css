@@ -121,6 +121,7 @@ h2 {
 }
 
 figure {
+    position: relative;
     max-width: 700px; /* ширина картинки 700px */
     margin: 0 auto;
 }
@@ -128,4 +129,25 @@ figure {
 figure img {
     max-width: 100%;
     height: auto;
+}
+
+figcaption {
+    position: absolute;
+    top: 70%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.salmon figcaption {
+    left: 0;
+}
+
+figcaption img {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+figcaption.in-view img {
+    opacity: 1;
 }
