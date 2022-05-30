@@ -101,25 +101,30 @@ header nav {
 }
 
 nav a {
+    padding: 5px 0;
     position: relative;
     text-decoration: none;
     color: #000000;
     margin-left: 2.4rem;
+    overflow: hidden;
 }
 
-nav a:before {
+nav a img {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: tomato;
-    transition: width 1s;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
 }
 
-nav a:hover:before {
-    width: 100%;
+nav a:hover img {
+    transform: translateX(0%);
+}
+
+nav a.animate-out img {
+    /*transition: transform 0.3s easing;*/
+    transform: translateX(100%);
 }
 
 section {

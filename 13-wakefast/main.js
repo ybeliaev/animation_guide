@@ -87,4 +87,15 @@ if (motion.matches && large.matches) {
 }
 
 
-
+//    **** HOVER EFFECT ****
+const linksTag = document.querySelectorAll("nav a")
+linksTag.forEach(link => {
+    link.addEventListener("mouseleave", function () {
+        // add class
+        link.classList.add("animate-out")
+        // remove class
+        setTimeout(() => {
+            link.classList.remove("animate-out")
+        }, 300)
+    })
+})
