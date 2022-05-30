@@ -8,6 +8,7 @@ const mainTag = document.querySelector("main")
 const bodyTag = document.querySelector("body")
 const figcaptionTags = document.querySelectorAll('figcaption')
 const cursorTag = document.querySelector("div.cursor")
+const cursorOuterTag = document.querySelector("div.cursor-outer")
 
 const motion = window.matchMedia("(prefers-reduced-motion: no-preference)")
 const large = window.matchMedia('(min-width: 600px)')
@@ -40,8 +41,9 @@ if (motion.matches && large.matches) {
     const changeScroll = function () {
         bodyTag.style.height = mainTag.offsetHeight + 'px'
 
-        currentScroll = currentScroll + (aimScroll - currentScroll) * 0.05 // плавная прокрутка - smooth scroll
-// плавность достигается частым вызовом функции
+        currentScroll = currentScroll + (aimScroll - currentScroll) * 0.05
+        // плавная прокрутка - smooth scroll
+        // плавность достигается частым вызовом функции
         mainTag.style.top = (-1 * currentScroll) + "px"
         requestAnimationFrame(changeScroll)
     }
@@ -55,6 +57,9 @@ if (motion.matches && large.matches) {
 //    **** CURSOR ****
     let cursorCurrentX = 0
     let cursorCurrentY = 0
+    let cursorOuterCurrentX = 0
+    let cursorOuterCurrentY = 0
+
     let cursorAimX = 0
     let cursorAimY = 0
 
@@ -64,6 +69,12 @@ if (motion.matches && large.matches) {
 
         cursorTag.style.top = cursorCurrentY + 'px'
         cursorTag.style.left = cursorCurrentX + 'px'
+
+        cursorOuterCurrentX = cursorOuterCurrentX + (cursorAimX - cursorOuterCurrentX) * 0.05
+        cursorOuterCurrentY = cursorOuterCurrentY + (cursorAimY - cursorOuterCurrentY) * 0.05
+
+        cursorOuterTag.style.top = cursorOuterCurrentY + 'px'
+        cursorOuterTag.style.left = cursorOuterCurrentX + 'px'
 
         requestAnimationFrame(changeCursor)
     }
