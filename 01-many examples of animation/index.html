@@ -450,7 +450,28 @@
           <code>right</code>. И <code>transform-origin: right;</code>
         </p>
       </div>
+      <div class="alert">
+        <p>Вариант с нижней линией, растущей от середины
+          <code>
+            a:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0%;
+            height: 2px;
+            background-color: tomato;
+            transition: width 1s left 1s;
+            }
+            a:hover:before {
+            width: 100%;
+            }
+          </code>
+        </p>
+      </div>
     </div>
+
+
 
     <div class="container-item">
       <h3 id="23"> Hover-23</h3>
@@ -476,6 +497,7 @@
           бэка менять..
         </p>
       </div>
+
     </div>
 
     <div class="container-item">

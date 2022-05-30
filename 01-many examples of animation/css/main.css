@@ -1,316 +1,316 @@
 body {
-  height: 100vh;
-  font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
 
 }
 
 h1.body {
-  font-size: 8rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  background: url(../img/bg_2.jpg);
-  -webkit-background-clip: text;
-  color: transparent;
-  animation: textbg 15s linear infinite;
+    font-size: 8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    background: url(../img/bg_2.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textbg 15s linear infinite;
 }
 
 h1,
 h2,
 h3 {
-  text-align: center;
-  color: #262626;
+    text-align: center;
+    color: #262626;
 }
 
 .container-item h3 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin: 1rem 0;
-  animation: light-h3 1.5s linear infinite;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 1rem 0;
+    animation: light-h3 1.5s linear infinite;
 }
 
 @keyframes light-h3 {
-  0% {
-    color: #262626;
-    text-shadow: none;
-  }
+    0% {
+        color: #262626;
+        text-shadow: none;
+    }
 
-  90% {
-    color: #262626;
-    text-shadow: none;
-  }
+    90% {
+        color: #262626;
+        text-shadow: none;
+    }
 
-  100% {
-    color: #00bef8;
-    text-shadow: 0 0 7px #00bef8, 0 0 50px #f700ff;
-  }
+    100% {
+        color: #00bef8;
+        text-shadow: 0 0 7px #00bef8, 0 0 50px #f700ff;
+    }
 }
 
 p {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 ul.list-group {
-  width: 40%;
-  list-style: none;
+    width: 40%;
+    list-style: none;
 }
 
 .list-group li {
-  text-align: left;
-  padding: 10px 15px;
+    text-align: left;
+    padding: 10px 15px;
 }
 
 .list-group li:hover {
-  background-color: rgb(224, 224, 224);
+    background-color: rgb(224, 224, 224);
 }
 
 code {
-  font-family: "Cutive Mono", monospace;
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: rgb(0, 0, 255);
-  background: rgb(253, 241, 186);
+    font-family: "Cutive Mono", monospace;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(0, 0, 255);
+    background: rgb(253, 241, 186);
 }
 
 .flex {
-  display: flex;
+    display: flex;
 }
 
 .container {
-  padding: 1rem;
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
-  /* background-color: transparent; */
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    /* background-color: transparent; */
 }
 
 .container-item {
-  background-color: rgba(0, 132, 255, 0.03);
-  box-shadow: 0 1px 2px 0 rgba(255, 251, 2, 0.2),
+    background-color: rgba(0, 132, 255, 0.03);
+    box-shadow: 0 1px 2px 0 rgba(255, 251, 2, 0.2),
     0 1px 5px 0 rgba(29, 5, 250, 0.19);
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  transition: box-shadow 0.3s;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    transition: box-shadow 0.3s;
 
 }
 
 .container-item:hover {
-  box-shadow: 0 4px 10px 0 rgba(0, 190, 248, 0.2),
+    box-shadow: 0 4px 10px 0 rgba(0, 190, 248, 0.2),
     0 4px 30px 0 rgba(243, 1, 252, 0.19);
 }
 
 .box {
-  margin-bottom: 5px;
-  width: 80px;
-  height: 80px;
-  background-color: #0077ff;
-  color: #ffffff;
-  line-height: 80px;
-  text-align: center;
-  font-size: 20px;
-  cursor: pointer;
-  margin-right: 1rem;
+    margin-bottom: 5px;
+    width: 80px;
+    height: 80px;
+    background-color: #0077ff;
+    color: #ffffff;
+    line-height: 80px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 1rem;
 }
 
 .link-style {
-  /* без display ссылки накрывают соседей */
-  display: inline-block;
-  text-decoration: none;
-  color: #3700ff;
-  font-size: 45px;
-  border: 5px solid #3700ff;
-  padding: 20px 40px;
-  position: relative;
-  overflow: hidden;
+    /* без display ссылки накрывают соседей */
+    display: inline-block;
+    text-decoration: none;
+    color: #3700ff;
+    font-size: 45px;
+    border: 5px solid #3700ff;
+    padding: 20px 40px;
+    position: relative;
+    overflow: hidden;
 }
 
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .alert {
-  text-align: left;
-  background-color: rgb(250, 212, 141);
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
-  border-left: 8px solid #ff7301;
-  line-height: 1.3;
+    text-align: left;
+    background-color: rgb(250, 212, 141);
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    border-left: 8px solid #ff7301;
+    line-height: 1.3;
 }
 
 /************ стиллизация скролла *****************/
 html,
 body {
-  scrollbar-color: #843465 #253861;
-  /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: auto;
-  /* толщина */
+    scrollbar-color: #843465 #253861;
+    /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: auto;
+    /* толщина */
 }
 
 /* полоса прокрутки (скроллбар) */
 ::-webkit-scrollbar {
-  width: 24px;
-  /* ширина для вертикального скролла */
-  height: 8px;
-  /* высота для горизонтального скролла */
-  background-color: #143861;
+    width: 24px;
+    /* ширина для вертикального скролла */
+    height: 8px;
+    /* высота для горизонтального скролла */
+    background-color: #143861;
 }
 
 /* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
-  background-color: #0919e1;
-  border-radius: 9em;
-  box-shadow: inset 1px 1px 10px #ffffff;
+    background-color: #0919e1;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #ffffff;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #253861;
+    background-color: #253861;
 }
 
 /* Стрелки */
 
 ::-webkit-scrollbar-button:vertical:start:decrement {
-  background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
     linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
     linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-  background-color: #f6f8f4;
+    background-color: #f6f8f4;
 }
 
 ::-webkit-scrollbar-button:vertical:end:increment {
-  background: linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    background: linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
     linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
     linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-  background-color: #f6f8f4;
+    background-color: #f6f8f4;
 }
 
 ::-webkit-scrollbar-button:horizontal:start:decrement {
-  background: linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    background: linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
     linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
     linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-  background-color: #f6f8f4;
+    background-color: #f6f8f4;
 }
 
 ::-webkit-scrollbar-button:horizontal:end:increment {
-  background: linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    background: linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
     linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
     linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-  background-color: #f6f8f4;
+    background-color: #f6f8f4;
 }
 
 /*******************/
 /****** move-1 *****/
 /*******************/
 .move-1 {
-  transition: transform 1s;
+    transition: transform 1s;
 }
 
 /*must be below class "move-1"*/
 .ease-out {
-  transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 .move-1:hover {
-  transform: translate(5rem, 0);
+    transform: translate(5rem, 0);
 }
 
 /*******************/
 /****** move-2 *****/
 /*******************/
 .move-2 {
-  transition: width 0.3s, color 0.5s 1s;
+    transition: width 0.3s, color 0.5s 1s;
 }
 
 .move-2:hover {
-  width: 150px;
-  color: #c3e73e;
+    width: 150px;
+    color: #c3e73e;
 }
 
 /************************/
 /****** move-3,4,5,6,7 ******/
 /***********************/
 .move-3 {
-  background-color: rgb(29, 206, 13);
-  transform-origin: right;
-  transition: transform 0.3s;
+    background-color: rgb(29, 206, 13);
+    transform-origin: right;
+    transition: transform 0.3s;
 }
 
 .move-3:hover {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .move-4 {
-  background-color: rgb(29, 206, 13);
-  font-size: 14px;
-  transform-origin: right top;
-  transition: transform 0.3s;
+    background-color: rgb(29, 206, 13);
+    font-size: 14px;
+    transform-origin: right top;
+    transition: transform 0.3s;
 }
 
 .move-4:hover {
-  transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .move-5,
 .move-6,
 .move-7 {
-  background-color: rgb(29, 206, 13);
-  transition: transform 0.3s;
+    background-color: rgb(29, 206, 13);
+    transition: transform 0.3s;
 }
 
 .move-5:hover {
-  transform: rotateX(90deg);
+    transform: rotateX(90deg);
 }
 
 .move-6:hover {
-  transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
 }
 
 .move-7:hover {
-  transform: rotateY(45deg);
+    transform: rotateY(45deg);
 }
 
 /************************/
 /****** move-8 ******/
 /***********************/
 .move-8 {
-  /* контейнер для  position: relative; */
-  position: relative;
-  background: #000;
-  color: #6d6b6b;
-  height: 20rem;
+    /* контейнер для  position: relative; */
+    position: relative;
+    background: #000;
+    color: #6d6b6b;
+    height: 20rem;
 }
 
 .titles {
-  position: absolute;
-  width: 18em;
-  height: 20em;
-  bottom: 0;
-  left: 50%;
-  margin-left: -9em;
-  font-size: 2em;
-  line-height: 1.5;
-  text-align: justify;
-  transform-origin: 50% 100%;
-  /* rotateX(25deg) наклоняет плоскость. При 90deg будет развёрнута перпен. глазу и не видно  */
-  transform: perspective(300px) rotateX(25deg);
-  overflow: hidden;
+    position: absolute;
+    width: 18em;
+    height: 20em;
+    bottom: 0;
+    left: 50%;
+    margin-left: -9em;
+    font-size: 2em;
+    line-height: 1.5;
+    text-align: justify;
+    transform-origin: 50% 100%;
+    /* rotateX(25deg) наклоняет плоскость. При 90deg будет развёрнута перпен. глазу и не видно  */
+    transform: perspective(300px) rotateX(25deg);
+    overflow: hidden;
 }
 
 .content {
-  position: absolute;
-  top: 100%;
-  animation: scroll 20s linear infinite;
+    position: absolute;
+    top: 100%;
+    animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
-  from {
-    top: 100%;
-  }
+    from {
+        top: 100%;
+    }
 
-  to {
-    top: -100%;
-  }
+    to {
+        top: -100%;
+    }
 }
 
 /************************/
@@ -318,24 +318,24 @@ body {
 /***********************/
 
 .hover-1:before {
-  content: "";
-  position: absolute;
-  background-color: #fff200;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  /* change transform-origin for some results */
-  transform-origin: bottom left;
-  transform: rotate(-90deg);
-  transition: transform 1s;
+    content: "";
+    position: absolute;
+    background-color: #fff200;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* change transform-origin for some results */
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    transition: transform 1s;
 
 }
 
 .hover-1:hover:before {
-  transform: rotate(0deg);
-  z-index: 1;
+    transform: rotate(0deg);
+    z-index: 1;
 }
 
 /************************/
@@ -343,118 +343,118 @@ body {
 /***********************/
 
 .hover-2 {
-  transition: 1s;
+    transition: 1s;
 }
 
 .hover-2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #262626;
-  transition: 1s;
-  transform: rotateX(90deg);
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    transition: 1s;
+    transform: rotateX(90deg);
+    z-index: -1;
 }
 
 .hover-2::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #262626;
-  transition: 1s;
-  transform: rotateY(90deg);
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    transition: 1s;
+    transform: rotateY(90deg);
+    z-index: -1;
 }
 
 .hover-2:hover {
-  color: whitesmoke;
+    color: whitesmoke;
 }
 
 .hover-2:hover::before {
-  transform: rotateX(0deg);
+    transform: rotateX(0deg);
 }
 
 .hover-2:hover::after {
-  transform: rotateY(0deg);
+    transform: rotateY(0deg);
 }
 
 /************************/
 /********hover-3 *******/
 /***********************/
 .hover-3 {
-  color: #e1332d;
-  border: 3px solid #e1332d;
-  font-weight: 200;
-  letter-spacing: -2px;
-  transition: all 0.5s;
+    color: #e1332d;
+    border: 3px solid #e1332d;
+    font-weight: 200;
+    letter-spacing: -2px;
+    transition: all 0.5s;
 }
 
 .hover-3:hover {
-  font-weight: 600;
-  letter-spacing: 10px;
-  border: 6px solid #e1332d;
+    font-weight: 600;
+    letter-spacing: 10px;
+    border: 6px solid #e1332d;
 }
 
 /************************/
 /********hover-4 *******/
 /***********************/
 .hover-4 {
-  transition: all 1s;
+    transition: all 1s;
 }
 
 .hover-4::before {
-  content: "YES!";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  background-color: #f44336;
-  /* z-index: -1; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s;
-  transform: translateY(-100%);
+    content: "YES!";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #f44336;
+    /* z-index: -1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    transform: translateY(-100%);
 }
 
 .hover-4:hover::before {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 
 /************************/
 /********hover-5 *******/
 /***********************/
 .container_hover-5 a {
-  transition: all 1s;
+    transition: all 1s;
 }
 
 .container_hover-5 a::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #1900ff;
-  transform: translateX(-100%);
-  transition: all 1s;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1900ff;
+    transform: translateX(-100%);
+    transition: all 1s;
+    z-index: -1;
 }
 
 .container_hover-5 a:hover::before {
-  transform: translateX(0);
+    transform: translateX(0);
 }
 
 .container_hover-5 a:hover {
-  color: #fff200;
+    color: #fff200;
 
 }
 
@@ -462,103 +462,103 @@ body {
 /********hover-6 *******/
 /***********************/
 .hover-6 {
-  transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .hover-6:hover {
-  background-color: #ff6347;
+    background-color: #ff6347;
 }
 
 .hover-6::before {
-  content: "";
-  position: absolute;
-  background-color: white;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  transform: translateX(-100%) rotate(45deg);
-  transition: all 0.3s;
+    content: "";
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.3s;
 }
 
 .hover-6:hover::before {
-  transform: translateX(100%) rotate(45deg);
+    transform: translateX(100%) rotate(45deg);
 }
 
 /************************/
 /********hover-7 *******/
 /***********************/
 .hover-7 {
-  transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .hover-7::before {
-  content: "Hello";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #ffff00;
-  color: #262626;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s;
+    content: "Hello";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffff00;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
 }
 
 .hover-7::after {
-  content: "By";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #ffff00;
-  color: #262626;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s;
-  transform: translate(-100%, 100%);
-  /* слева внизу(правый верх край касается ниж. левого родителя) */
+    content: "By";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffff00;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: translate(-100%, 100%);
+    /* слева внизу(правый верх край касается ниж. левого родителя) */
 }
 
 .hover-7:hover::before {
-  transform: translate(100%, -100%);
+    transform: translate(100%, -100%);
 }
 
 .hover-7:hover::after {
-  transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
 }
 
 /************************/
 /********hover-8 *******/
 /***********************/
 .hover-8 {
-  transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .hover-8::before {
-  content: "HOVER";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(0, 195, 255);
-  color: rgb(58, 58, 58);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(5);
-  opacity: 0;
-  transition: all 0.5s;
+    content: "HOVER";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 195, 255);
+    color: rgb(58, 58, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(5);
+    opacity: 0;
+    transition: all 0.5s;
 }
 
 .hover-8:hover::before {
-  transform: scale(1);
-  opacity: 1;
+    transform: scale(1);
+    opacity: 1;
 
 }
 
@@ -566,352 +566,352 @@ body {
 /********hover-9 *******/
 /***********************/
 .hover-9 {
-  display: flex;
-  list-style-type: none;
+    display: flex;
+    list-style-type: none;
 }
 
 .hover-9 li a {
-  display: block;
-  width: 150px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  color: #ff0000;
-  text-transform: capitalize;
-  text-decoration: none;
-  position: relative;
-  transition: all 0.5s;
+    display: block;
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #ff0000;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
 }
 
 .hover-9 li span {
-  position: absolute;
-  width: 33.33%;
-  height: 100%;
-  background-color: #262626;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: all 0.5s;
+    position: absolute;
+    width: 33.33%;
+    height: 100%;
+    background-color: #262626;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.5s;
 }
 
 .hover-9 li span:nth-child(2) {
-  left: 33.33%;
-  transition-delay: 0.25s;
+    left: 33.33%;
+    transition-delay: 0.25s;
 }
 
 .hover-9 li span:nth-child(3) {
-  left: 66.66%;
-  transition-delay: 0.35s;
+    left: 66.66%;
+    transition-delay: 0.35s;
 }
 
 .hover-9 li a:hover span {
-  transform: scaleY(1);
+    transform: scaleY(1);
 }
 
 .hover-9 li a:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 /************************/
 /********hover-10 *******/
 /***********************/
 .hover-10.btn {
-  border: 2px solid tomato;
-  background: none;
-  color: tomato;
-  padding: 25px 50px;
-  font-size: 25px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.5s;
-  position: relative;
-  margin-bottom: 1rem;
-  color: tomato;
-  overflow: hidden;
+    border: 2px solid tomato;
+    background: none;
+    color: tomato;
+    padding: 25px 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+    margin-bottom: 1rem;
+    color: tomato;
+    overflow: hidden;
 }
 
 .hover-10.btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: tomato;
-  z-index: -1;
-  border-radius: 0 0 50% 50%;
-  height: 0%;
-  transition: all 0.5s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: tomato;
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    height: 0%;
+    transition: all 0.5s;
 }
 
 .hover-10.btn:hover {
-  color: white;
+    color: white;
 }
 
 .hover-10.btn:hover::before {
-  height: 200%;
+    height: 200%;
 }
 
 /************************/
 /********hover-11 *******/
 /***********************/
 .hover-11 {
-  display: inline-block;
-  padding: 25px 50px;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: #ffe600;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  font-size: 20px;
-  letter-spacing: 2px;
-  position: relative;
+    display: inline-block;
+    padding: 25px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ffe600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
 }
 
 .hover-11::before {
-  content: "button";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: green;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: rotateX(270deg);
-  transform-origin: top;
-  transition: all 0.5s;
+    content: "button";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
 }
 
 .hover-11:hover::before,
 .hover-11:hover::after {
-  transform: rotateX(0deg);
+    transform: rotateX(0deg);
 }
 
 .hover-11::after {
-  content: "button";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: tomato;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: rotateX(270deg);
-  transform-origin: top;
-  transition: all 0.5s;
-  transition-delay: 0.25s;
+    content: "button";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+    transition-delay: 0.25s;
 }
 
 /************************/
 /********hover-12 *******/
 /***********************/
 a.hover-12 {
-  display: inline-block;
-  background-color: rgb(0, 140, 255);
-  padding: 25px 50px;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 4px;
-  color: transparent;
-  font-size: 30px;
-  border: 3px solid yellow;
-  position: relative;
-  margin-bottom: 1rem;
+    display: inline-block;
+    background-color: rgb(0, 140, 255);
+    padding: 25px 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: transparent;
+    font-size: 30px;
+    border: 3px solid yellow;
+    position: relative;
+    margin-bottom: 1rem;
 }
 
 a.hover-12::before {
-  content: "button";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: grey;
-  color: yellow;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s;
+    content: "button";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
 }
 
 a.hover-12:hover::before {
-  left: 100%;
-  transform: scale(0) rotateY(360deg);
-  opacity: 0;
+    left: 100%;
+    transform: scale(0) rotateY(360deg);
+    opacity: 0;
 }
 
 a.hover-12::after {
-  content: "button";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: grey;
-  color: yellow;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s;
-  transform: scale(0) rotateY(0deg);
-  opacity: 0;
+    content: "button";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: scale(0) rotateY(0deg);
+    opacity: 0;
 }
 
 a.hover-12:hover::after {
-  left: 0;
-  transform: scale(1) rotateY(360deg);
-  opacity: 1;
+    left: 0;
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
 }
 
 /************************/
 /********hover-13 *******/
 /***********************/
 a.hover-13 {
-  width: 220px;
-  height: 80px;
-  color: yellow;
-  padding: 25px 50px;
-  background-color: transparent;
-  font-size: 26px;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 80px;
-  transition: all 0.5s;
-  position: relative;
+    width: 220px;
+    height: 80px;
+    color: yellow;
+    padding: 25px 50px;
+    background-color: transparent;
+    font-size: 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 80px;
+    transition: all 0.5s;
+    position: relative;
 }
 
 a.hover-13::before,
 a.hover-13::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: yellow;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  transition: all 0.3s;
-  z-index: -1;
-  opacity: 0;
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+    z-index: -1;
+    opacity: 0;
 }
 
 a.hover-13::before {
-  left: 0;
-  box-shadow: -100px 0 0 green;
+    left: 0;
+    box-shadow: -100px 0 0 green;
 }
 
 a.hover-13::after {
-  right: 0;
-  box-shadow: 100px 0 0 blue;
+    right: 0;
+    box-shadow: 100px 0 0 blue;
 }
 
 a.hover-13:hover::before {
-  left: 50%;
-  box-shadow: 30px 0 0 yellow;
-  transform: translateX(-50%) translateY(-50%);
-  opacity: 1;
+    left: 50%;
+    box-shadow: 30px 0 0 yellow;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
 }
 
 a.hover-13:hover::after {
-  right: 50%;
-  box-shadow: -30px 0 0 yellow;
-  transform: translateX(50%) translateY(-50%);
-  opacity: 1;
+    right: 50%;
+    box-shadow: -30px 0 0 yellow;
+    transform: translateX(50%) translateY(-50%);
+    opacity: 1;
 }
 
 a.hover-13 span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: yellow;
-  border-radius: 8px;
-  transform: scale(0);
-  transition: all 0.3s;
-  z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    border-radius: 8px;
+    transform: scale(0);
+    transition: all 0.3s;
+    z-index: -1;
 }
 
 a.hover-13:hover span {
-  transform: scale(1);
-  transition-delay: 0.4s;
+    transform: scale(1);
+    transition-delay: 0.4s;
 }
 
 .hover-13:hover {
-  color: grey;
-  transition-delay: 0.4s;
+    color: grey;
+    transition-delay: 0.4s;
 }
 
 /************************/
 /********hover-14 *******/
 /***********************/
 a.hover-14 {
-  display: inline-block;
-  width: 150px;
-  height: 40px;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: transparent;
-  text-align: center;
-  line-height: 40px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  position: relative;
-  padding: 25px 50px;
-  transition: all 0.2s;
-  margin-bottom: 1rem;
-  color: white;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 25px 50px;
+    transition: all 0.2s;
+    margin-bottom: 1rem;
+    color: white;
 }
 
 a.hover-14::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  width: 100%;
-  height: 100%;
-  background-color: #20caff;
-  z-index: -1;
-  mix-blend-mode: multiply;
-  transition: all 0.2s;
-  transform-origin: top;
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    background-color: #20caff;
+    z-index: -1;
+    mix-blend-mode: multiply;
+    transition: all 0.2s;
+    transform-origin: top;
 }
 
 a.hover-14::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 100%;
-  height: 100%;
-  background-color: #ff2075;
-  z-index: -1;
-  mix-blend-mode: multiply;
-  transition: all 0.2s;
-  transform-origin: bottom;
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 100%;
+    height: 100%;
+    background-color: #ff2075;
+    z-index: -1;
+    mix-blend-mode: multiply;
+    transition: all 0.2s;
+    transform-origin: bottom;
 }
 
 a.hover-14:hover::before {
-  top: -6px;
-  left: 0;
-  transform: perspective(1000px) rotateX(75deg);
+    top: -6px;
+    left: 0;
+    transform: perspective(1000px) rotateX(75deg);
 }
 
 a.hover-14:hover::after {
-  top: 6px;
-  left: 0;
-  transform: perspective(1000px) rotateX(-75deg);
+    top: 6px;
+    left: 0;
+    transform: perspective(1000px) rotateX(-75deg);
 }
 
 a.hover-14:hover {
-  color: grey;
+    color: grey;
 }
 
 /************************/
@@ -919,1338 +919,1337 @@ a.hover-14:hover {
 /***********************/
 
 .container_hover-15 {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 1rem;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .container_hover-15 img {
-  width: 100%;
-  transition: all 0.5s;
+    width: 100%;
+    transition: all 0.5s;
 }
 
 .container_hover-15 .caption {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  opacity: 0;
-  transition: all 0.5s;
-  background: rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    background: rgba(0, 0, 0, 0);
 }
 
 .container_hover-15 .caption h1 {
-  text-transform: uppercase;
-  margin: 0;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .container_hover-15 .caption p {
-  font-size: 18px;
-  text-transform: capitalize;
+    font-size: 18px;
+    text-transform: capitalize;
 }
 
 .container_hover-15:hover .caption {
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .container_hover-15:hover img {
-  transform: scale(1.2) rotate(5deg);
+    transform: scale(1.2) rotate(5deg);
 }
 
 /************************/
 /********hover-16 *******/
 /***********************/
 .container_hover-16 {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 1rem;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .container_hover-16 img {
-  width: 100%;
-  transition: all 0.5s;
+    width: 100%;
+    transition: all 0.5s;
 }
 
 .container_hover-16 .caption {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  transition: all 0.5s;
-  background: rgba(0, 0, 0, 0);
-  transform: translateX(-100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.5s;
+    background: rgba(0, 0, 0, 0);
+    transform: translateX(-100%);
 }
 
 .container_hover-16 .caption h1 {
-  text-transform: uppercase;
-  margin: 0;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .container_hover-16 .caption p {
-  font-size: 18px;
-  text-transform: capitalize;
+    font-size: 18px;
+    text-transform: capitalize;
 }
 
 .container_hover-16:hover .caption {
-  background-color: rgba(255, 255, 255, 0.4);
-  transform: translateX(0);
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateX(0);
 }
 
 /************************/
 /********hover-17 *******/
 /***********************/
 .container_hover-17 {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 1rem;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .container_hover-17 img {
-  width: 100%;
-  transition: all 0.5s;
+    width: 100%;
+    transition: all 0.5s;
 }
 
 .container_hover-17 .caption {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  transition: all 0.5s;
-  background-color: rgba(0, 0, 0);
-  transform: translateX(-100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0);
+    transform: translateX(-100%);
 }
 
 .container_hover-17 .caption h1 {
-  text-transform: uppercase;
-  margin: 0;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .container_hover-17 .caption p {
-  font-size: 18px;
-  text-transform: capitalize;
+    font-size: 18px;
+    text-transform: capitalize;
 }
 
 .container_hover-17:hover .caption {
-  transform: translateX(0);
+    transform: translateX(0);
 }
 
 .container_hover-17:hover img {
-  transform: translateX(100%);
+    transform: translateX(100%);
 }
 
 /************************/
 /********hover-18 *******/
 /***********************/
 .container_hover-18 {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 1rem;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .container_hover-18 img {
-  width: 100%;
-  transition: all 0.5s;
+    width: 100%;
+    transition: all 0.5s;
 }
 
 .container_hover-18 .caption {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 30%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  transition: all 0.5s;
-  background-color: rgba(0, 0, 0);
-  transform: translateY(100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0);
+    transform: translateY(100%);
 }
 
 .container_hover-18 .caption h1 {
-  text-transform: uppercase;
-  margin: 0;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .container_hover-18 .caption p {
-  font-size: 18px;
-  text-transform: capitalize;
+    font-size: 18px;
+    text-transform: capitalize;
 }
 
 .container_hover-18:hover .caption {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 
 .container_hover-18:hover img {
-  transform: translateY(-30%);
+    transform: translateY(-30%);
 }
 
 /************************/
 /********hover-19 *******/
 /***********************/
 .container_hover-19 {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
 .container_hover-19 img {
-  width: 100%;
+    width: 100%;
 }
 
 .container_hover-19::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0);
-  opacity: 0.5;
-  transform: translateY(100%);
-  transition: all 0.25s;
-  transition-delay: 0.25s;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    opacity: 0.5;
+    transform: translateY(100%);
+    transition: all 0.25s;
+    transition-delay: 0.25s;
 }
 
 .container_hover-19:hover::before {
-  transform: translateY(0);
-  transition-delay: 0s;
+    transform: translateY(0);
+    transition-delay: 0s;
 }
 
 .container_hover-19 .caption {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(-30px);
-  opacity: 0;
-  transition: all 0.25s;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 0.25s;
 }
 
 .container_hover-19:hover .caption {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.3s;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
 }
 
 .container_hover-19 h1,
 .container_hover-19 h4 {
-  margin: 0;
-  letter-spacing: 1px;
+    margin: 0;
+    letter-spacing: 1px;
 }
 
 .container_hover-19 h1 {
-  text-transform: uppercase;
-  font-weight: 400px;
-  margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 400px;
+    margin-bottom: 5px;
 }
 
 .container_hover-19 h4 {
-  background-color: #ae895dce;
-  padding: 3px 5px;
+    background-color: #ae895dce;
+    padding: 3px 5px;
 }
 
 /************************/
 /********hover-20 *******/
 /***********************/
 .container_hover-20 {
-  display: flex;
+    display: flex;
 }
 
 .container_hover-20 li {
-  list-style-type: none;
-  color: rgb(0, 68, 255);
-  font-size: 100px;
-  font-weight: bold;
-  transition: all 2s;
+    list-style-type: none;
+    color: rgb(0, 68, 255);
+    font-size: 100px;
+    font-weight: bold;
+    transition: all 2s;
 }
 
 .container_hover-20:hover li {
-  transform: rotate(45deg) translateY(-200px);
-  opacity: 0;
-  filter: blur(20px);
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(20px);
 }
 
 .container_hover-20 li:nth-child(1) {
-  transition-delay: 0;
+    transition-delay: 0;
 }
 
 .container_hover-20 li:nth-child(2) {
-  transition-delay: 0.4s;
+    transition-delay: 0.4s;
 }
 
 .container_hover-20 li:nth-child(3) {
-  transition-delay: 0.8s;
+    transition-delay: 0.8s;
 }
 
 .container_hover-20 li:nth-child(4) {
-  transition-delay: 1.2s;
+    transition-delay: 1.2s;
 }
 
 .container_hover-20 li:nth-child(5) {
-  transition-delay: 1.6s;
+    transition-delay: 1.6s;
 }
 
 /************************/
 /********hover-21 *******/
 /***********************/
 h1.container_hover-21 {
-  display: inline-block;
-  font-size: 120px;
-  color: rgba(58, 6, 248, 0.281);
-  text-transform: uppercase;
-  position: relative;
-  padding: 0;
-  margin: 0;
+    display: inline-block;
+    font-size: 120px;
+    color: rgba(58, 6, 248, 0.281);
+    text-transform: uppercase;
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 h1.container_hover-21:before {
-  content: "text";
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  color: #0400ff;
-  width: 0%;
-  overflow: hidden;
-  transition: all 0.5s;
+    content: "text";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: #0400ff;
+    width: 0%;
+    overflow: hidden;
+    transition: all 0.5s;
 }
 
 h1.container_hover-21:hover::before {
-  width: 100%;
+    width: 100%;
 }
 
 /************************/
-/********hover-21 *******/
+/********hover-22 *******/
 /***********************/
 
 ul.container_hover-21 {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 ul.container_hover-21 li {
-  list-style: none;
+    list-style: none;
 }
 
 ul.container_hover-21 li a {
-  text-decoration: none;
-  color: #2f00ff;
-  font-size: 22px;
-  display: block;
-  padding: 10px 15px;
-  position: relative;
+    text-decoration: none;
+    color: #2f00ff;
+    font-size: 22px;
+    display: block;
+    padding: 10px 15px;
+    position: relative;
 }
 
 ul.container_hover-21 li a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #00d7fd;
-  transform: scaleX(0);
-  transition: all 0.5s;
-  transform-origin: left;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00d7fd;
+    transform: scaleX(0);
+    transition: all 0.5s;
+    transform-origin: left;
 }
 
 ul.container_hover-21 li a:hover::before {
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 ul.container_hover-21 li a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #ea00ff;
-  transform: scaleX(0);
-  transition: all 0.5s;
-  transform-origin: right;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ea00ff;
+    transform: scaleX(0);
+    transition: all 0.5s;
+    transform-origin: right;
 }
 
 ul.container_hover-21 li a:hover::after {
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 /************************/
 /********hover-23 *******/
 /***********************/
 ul.container_hover-23 {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 ul.container_hover-23 li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #2f00ff;
-  font-size: 22px;
-  display: block;
-  padding: 10px 15px;
-  margin: 0px 15px;
-  position: relative;
-  transition: all 0.5s;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2f00ff;
+    font-size: 22px;
+    display: block;
+    padding: 10px 15px;
+    margin: 0px 15px;
+    position: relative;
+    transition: all 0.5s;
 }
 
 ul.container_hover-23 li a:hover {
-  background-color: #ea00ff;
-  color: #ffffff;
+    background-color: #ea00ff;
+    color: #ffffff;
 }
 
 ul.container_hover-23 li a::before {
-  content: "";
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  width: 12px;
-  height: 12px;
-  border: 3px solid #ea00ff;
-  border-width: 0 0 3px 3px;
-  opacity: 0;
-  transition: all 0.3s;
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #ea00ff;
+    border-width: 0 0 3px 3px;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
 ul.container_hover-23 li a:hover::before {
-  opacity: 1;
-  bottom: -8px;
-  left: -8px;
+    opacity: 1;
+    bottom: -8px;
+    left: -8px;
 }
 
 ul.container_hover-23 li a::after {
-  content: "";
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 12px;
-  height: 12px;
-  border: 3px solid #ea00ff;
-  border-width: 3px 3px 0 0;
-  opacity: 0;
-  transition: all 0.3s;
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #ea00ff;
+    border-width: 3px 3px 0 0;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
 ul.container_hover-23 li a:hover::after {
-  opacity: 1;
-  top: -8px;
-  right: -8px;
+    opacity: 1;
+    top: -8px;
+    right: -8px;
 }
 
 /************************/
 /********hover-24 *******/
 /***********************/
 .container_hover-24 {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .container_hover-24 a {
-  display: block;
-  text-decoration: none;
-  width: 90px;
-  height: 90px;
-  background-color: #f1f1f1;
-  border-radius: 30%;
-  margin: 10px;
-  color: #10ac84;
-  box-shadow: 0 5px 15px -5px #00000070;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s;
+    display: block;
+    text-decoration: none;
+    width: 90px;
+    height: 90px;
+    background-color: #f1f1f1;
+    border-radius: 30%;
+    margin: 10px;
+    color: #10ac84;
+    box-shadow: 0 5px 15px -5px #00000070;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
 }
 
 .container_hover-24 a i {
-  line-height: 90px;
-  font-size: 25px;
-  transition: all 0.2s;
+    line-height: 90px;
+    font-size: 25px;
+    transition: all 0.2s;
 }
 
 .container_hover-24 a:hover i {
-  transform: scale(1.3);
-  color: #f1f1f1;
+    transform: scale(1.3);
+    color: #f1f1f1;
 }
 
 .container_hover-24 a::before {
-  content: "";
-  position: absolute;
-  background-color: #10ac84;
-  width: 120%;
-  height: 120%;
-  left: -110%;
-  top: 90%;
-  transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    background-color: #10ac84;
+    width: 120%;
+    height: 120%;
+    left: -110%;
+    top: 90%;
+    transform: rotate(45deg);
 }
 
 .container_hover-24 a:hover::before {
-  animation: animation 0.7s 1 forwards;
+    animation: animation 0.7s 1 forwards;
 }
 
 @keyframes animation {
-  0% {
-    left: -110%;
-    top: 90%;
-  }
+    0% {
+        left: -110%;
+        top: 90%;
+    }
 
-  50% {
-    left: 15%;
-    top: -30%;
-  }
+    50% {
+        left: 15%;
+        top: -30%;
+    }
 
-  100% {
-    left: -10%;
-    top: -10%;
-  }
+    100% {
+        left: -10%;
+        top: -10%;
+    }
 }
 
 /************************/
 /********hover-30 *******/
 /***********************/
 .container_hover-30 h1 {
-  text-align: center;
-  color: tomato;
-  font-family: arial;
-  font-size: 90px;
-  line-height: 90px;
-  letter-spacing: 15px;
-  text-shadow: 0 1px 0 #efefef,
+    text-align: center;
+    color: tomato;
+    font-family: arial;
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: 15px;
+    text-shadow: 0 1px 0 #efefef,
     0 2px 0 #efefef,
     0 3px 0 #efefef,
     0 4px 0 #efefef,
     0 30px 5px rgba(0, 0, 0, 0.1);
-  animation: float 3s linear infinite;
-  animation-direction: alternate;
+    animation: float 3s linear infinite;
+    animation-direction: alternate;
 
 }
 
 @keyframes float {
-  from {
-    transform: rotate(5deg)
-  }
+    from {
+        transform: rotate(5deg)
+    }
 
-  to {
-    transform: rotate(-5deg)
-  }
+    to {
+        transform: rotate(-5deg)
+    }
 }
 
 /************************/
 /********hover-31 *******/
 /***********************/
 .container_hover-31 {
-  perspective: 200px;
+    perspective: 200px;
 }
 
 .container_hover-31 .loading {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  background-color: rgb(0, 255, 234);
-  border-radius: 12px;
-  margin-bottom: 1rem;
-  animation: loading 2s linear infinite;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: rgb(0, 255, 234);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    animation: loading 2s linear infinite;
 }
 
 @keyframes loading {
-  0% {
-    transform: rotateX(0deg) rotateY(0deg)
-  }
+    0% {
+        transform: rotateX(0deg) rotateY(0deg)
+    }
 
-  50% {
-    transform: rotateX(0deg) rotateY(180deg)
-  }
+    50% {
+        transform: rotateX(0deg) rotateY(180deg)
+    }
 
-  100% {
-    transform: rotateX(180deg) rotateY(180deg)
-  }
+    100% {
+        transform: rotateX(180deg) rotateY(180deg)
+    }
 }
 
 /************************/
 /********hover-32 *******/
 /***********************/
 .container_hover-32 {
-  position: relative;
-  height: 80vh;
-  background: url(../img/bg.jpg);
-  background-position: bottom left;
-  animation: driving 15s linear infinite;
+    position: relative;
+    height: 80vh;
+    background: url(../img/bg.jpg);
+    background-position: bottom left;
+    animation: driving 15s linear infinite;
 }
 
 .container_hover-32 .car {
-  position: absolute;
-  left: 300px;
-  bottom: -50px;
-  width: 200px;
+    position: absolute;
+    left: 300px;
+    bottom: -50px;
+    width: 200px;
 }
 
 .container_hover-32 .motobike {
-  position: absolute;
-  left: 700px;
-  bottom: 55px;
-  width: 150px;
+    position: absolute;
+    left: 700px;
+    bottom: 55px;
+    width: 150px;
 }
 
 @keyframes driving {
-  from {
-    background-position: bottom left;
-  }
+    from {
+        background-position: bottom left;
+    }
 
-  to {
-    background-position: bottom right;
-  }
+    to {
+        background-position: bottom right;
+    }
 }
 
 /************************/
 /********hover-33 *******/
 /***********************/
 .container_hover-33 h1 {
-  color: rgb(255, 0, 170);
-  font-size: 50px;
+    color: rgb(255, 0, 170);
+    font-size: 50px;
 
 }
 
 .container_hover-33 span::before {
-  content: "TRANSITIONS";
-  text-transform: uppercase;
-  color: #0c42b8;
+    content: "TRANSITIONS";
+    text-transform: uppercase;
+    color: #0c42b8;
 
-  animation: word-switch 5s infinite;
+    animation: word-switch 5s infinite;
 }
 
 @keyframes word-switch {
-  0% {
-    content: "transitions"
-  }
+    0% {
+        content: "transitions"
+    }
 
-  50% {
-    content: "animations"
-  }
+    50% {
+        content: "animations"
+    }
 
-  100% {
-    content: "transitions"
-  }
+    100% {
+        content: "transitions"
+    }
 }
 
 /************************/
 /********hover-34 *******/
 /***********************/
 .container_hover-34 {
-  height: 50vh;
-  background: url(../img/bg_1.png);
-  background-position: 0 0;
-  margin-bottom: 1rem;
-  animation: animated-pattern 10s linear infinite;
+    height: 50vh;
+    background: url(../img/bg_1.png);
+    background-position: 0 0;
+    margin-bottom: 1rem;
+    animation: animated-pattern 10s linear infinite;
 }
 
 @keyframes animated-pattern {
-  from {
-    background-position: 0 0;
-  }
+    from {
+        background-position: 0 0;
+    }
 
-  to {
-    background-position: 0 600px;
-  }
+    to {
+        background-position: 0 600px;
+    }
 }
 
 /************************/
 /********hover-35 *******/
 /***********************/
 .container_hover-35 a {
-  display: inline-block;
-  position: relative;
-  margin-bottom: 1rem;
-  text-decoration: none;
-  color: teal;
-  font-size: 40px;
-  border: 3px solid teal;
-  padding: 25px 50px;
-  overflow: hidden;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: teal;
+    font-size: 40px;
+    border: 3px solid teal;
+    padding: 25px 50px;
+    overflow: hidden;
 }
 
 .container_hover-35 a::before {
-  content: "";
-  background: linear-gradient(to right, #ffffff00 0%, #ff6347 50%, #ffffff00 100%);
-  top: 0;
-  left: 0px;
-  width: 120px;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  /* transform: skew(-15deg); */
-  animation: moving-hover-35 1.2s linear infinite;
-  transition: all 0.5s;
+    content: "";
+    background: linear-gradient(to right, #ffffff00 0%, #ff6347 50%, #ffffff00 100%);
+    top: 0;
+    left: 0px;
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    /* transform: skew(-15deg); */
+    animation: moving-hover-35 1.2s linear infinite;
+    transition: all 0.5s;
 }
 
 .container_hover-35 a:hover::before {
-  width: 100%;
-  animation: none;
-  background: tomato;
+    width: 100%;
+    animation: none;
+    background: tomato;
 }
 
 @keyframes moving-hover-35 {
-  from {
-    left: -120px
-  }
+    from {
+        left: -120px
+    }
 
-  to {
-    left: 100%
-  }
+    to {
+        left: 100%
+    }
 }
 
 /************************/
 /********hover-36 *******/
 /***********************/
 .container_hover-36 a {
-  display: inline-block;
-  padding: 25px 50px;
-  color: tomato;
-  border: 3px solid tomato;
-  font-size: 40px;
-  margin-bottom: 1rem;
-  text-decoration: none;
-  position: relative;
-  transition: all 0.3s;
+    display: inline-block;
+    padding: 25px 50px;
+    color: tomato;
+    border: 3px solid tomato;
+    font-size: 40px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s;
 }
 
 .container_hover-36 a:hover {
-  border: 3px solid rgb(194, 1, 253);
-  color: rgb(194, 1, 253);
-  animation: shake 0.3s linear 1;
+    border: 3px solid rgb(194, 1, 253);
+    color: rgb(194, 1, 253);
+    animation: shake 0.3s linear 1;
 }
 
 @keyframes shake {
-  33% {
-    transform: rotate(10deg)
-  }
+    33% {
+        transform: rotate(10deg)
+    }
 
-  66% {
-    transform: rotate(-10deg)
-  }
+    66% {
+        transform: rotate(-10deg)
+    }
 
-  100% {
-    transform: rotate(10deg)
-  }
+    100% {
+        transform: rotate(10deg)
+    }
 }
 
 /************************/
 /********hover-37*******/
 /***********************/
 .container_hover-37 {
-  background-color: #272727;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .container_hover-37 ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .container_hover-37 ul li {
-  list-style-type: none;
-  color: #484848;
-  font-size: 80px;
-  letter-spacing: 15px;
-  animation: lighting 1.4s linear infinite;
+    list-style-type: none;
+    color: #484848;
+    font-size: 80px;
+    letter-spacing: 15px;
+    animation: lighting 1.4s linear infinite;
 }
 
 @keyframes lighting {
-  0% {
-    color: #484848;
-    text-shadow: none;
-  }
+    0% {
+        color: #484848;
+        text-shadow: none;
+    }
 
-  90% {
-    color: #484848;
-    text-shadow: none;
-  }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
 
-  100% {
-    color: #fff900;
-    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
-  }
+    100% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    }
 }
 
 /************************/
 /********hover-37_1*******/
 /***********************/
 .container_hover-37_1 {
-  background-color: #272727;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .container_hover-37_1 ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .container_hover-37_1 ul li {
-  list-style-type: none;
-  color: #484848;
-  font-size: 80px;
-  letter-spacing: 15px;
-  animation: lighting-1 1.4s linear infinite;
+    list-style-type: none;
+    color: #484848;
+    font-size: 80px;
+    letter-spacing: 15px;
+    animation: lighting-1 1.4s linear infinite;
 }
 
 @keyframes lighting-1 {
-  0% {
-    color: #484848;
-    text-shadow: none;
-  }
+    0% {
+        color: #484848;
+        text-shadow: none;
+    }
 
-  90% {
-    color: #484848;
-    text-shadow: none;
-  }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
 
-  100% {
-    color: #fff900;
-    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
-  }
+    100% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    }
 }
 
 .container_hover-37_1 ul li:nth-child(1) {
-  animation-delay: 0s;
+    animation-delay: 0s;
 }
 
 .container_hover-37_1 ul li:nth-child(2) {
-  animation-delay: 0.1s;
+    animation-delay: 0.1s;
 }
 
 .container_hover-37_1 ul li:nth-child(3) {
-  animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 
 .container_hover-37_1 ul li:nth-child(4) {
-  animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
 .container_hover-37_1 ul li:nth-child(5) {
-  animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 .container_hover-37_1 ul li:nth-child(6) {
-  animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
 .container_hover-37_1 ul li:nth-child(7) {
-  animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 .container_hover-37_1 ul li:nth-child(8) {
-  animation-delay: 0.7s;
+    animation-delay: 0.7s;
 }
 
 /************************/
 /********hover-38*******/
 /***********************/
 .container_hover-38 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_hover-38 .heart {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  background-color: tomato;
-  transform: rotate(45deg);
-  margin: 2.5rem 0;
-  animation: heartbeat 1.4s linear infinite;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    transform: rotate(45deg);
+    margin: 2.5rem 0;
+    animation: heartbeat 1.4s linear infinite;
 }
 
 .container_hover-38 .heart::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: tomato;
-  transform: translateY(-50%);
-  border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    transform: translateY(-50%);
+    border-radius: 50%;
 }
 
 .container_hover-38 .heart::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: tomato;
-  transform: translateX(-50%);
-  border-radius: 50%
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    transform: translateX(-50%);
+    border-radius: 50%
 }
 
 @keyframes heartbeat {
-  0% {
-    transform: rotate(45deg) scale(1);
-  }
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
 
-  25% {
-    transform: rotate(45deg) scale(1);
-  }
+    25% {
+        transform: rotate(45deg) scale(1);
+    }
 
-  30% {
-    transform: rotate(45deg) scale(1.4);
-  }
+    30% {
+        transform: rotate(45deg) scale(1.4);
+    }
 
-  50% {
-    transform: rotate(45deg) scale(1.2);
-  }
+    50% {
+        transform: rotate(45deg) scale(1.2);
+    }
 
-  70% {
-    transform: rotate(45deg) scale(1.4);
-  }
+    70% {
+        transform: rotate(45deg) scale(1.4);
+    }
 
-  100% {
-    transform: rotate(45deg) scale(1);
-  }
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
 }
 
 /************************/
 /********hover-39*******/
 /***********************/
 .container_hover-39 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_hover-39 h1 {
-  font-size: 8rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  background: url(../img/wave.png);
-  -webkit-background-clip: text;
-  color: transparent;
-  animation: textbg 15s linear infinite;
+    font-size: 8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    background: url(../img/wave.png);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textbg 15s linear infinite;
 }
 
 @keyframes textbg {
-  from {
-    background-position: 0 0;
-  }
+    from {
+        background-position: 0 0;
+    }
 
-  to {
-    background-position: 100% 100%;
-  }
+    to {
+        background-position: 100% 100%;
+    }
 }
 
 /************************/
 /********hover-40*******/
 /***********************/
 .container_hover-40 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_hover-40 ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  border-bottom: 10px solid rgb(0, 248, 186);
-  ;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 10px solid rgb(0, 248, 186);;
 }
 
 .container_hover-40 ul li {
-  list-style: none;
-  width: 30px;
-  height: 30px;
-  background-color: rgb(0, 248, 186);
-  margin: 0 10px;
-  border-radius: 50%;
-  animation: jumping 0.8s linear infinite;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(0, 248, 186);
+    margin: 0 10px;
+    border-radius: 50%;
+    animation: jumping 0.8s linear infinite;
 }
 
 @keyframes jumping {
-  0% {
-    transform: translateY(0)
-  }
+    0% {
+        transform: translateY(0)
+    }
 
-  50% {
-    transform: translateY(-150%)
-  }
+    50% {
+        transform: translateY(-150%)
+    }
 
-  100% {
-    transform: translateY(0)
-  }
+    100% {
+        transform: translateY(0)
+    }
 }
 
 .container_hover-40 ul li:nth-child(1) {
-  animation-delay: 0.45s;
+    animation-delay: 0.45s;
 }
 
 .container_hover-40 ul li:nth-child(2) {
-  animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 .container_hover-40 ul li:nth-child(3) {
-  animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
 .container_hover-40 ul li:nth-child(4) {
-  animation-delay: 0s;
+    animation-delay: 0s;
 }
 
 .container_hover-40 ul li:nth-child(5) {
-  animation-delay: 0.15s;
+    animation-delay: 0.15s;
 }
 
 /************************/
 /********hover-41*******/
 /***********************/
 .container_hover-41 {
-  height: 65vh;
-  background-image: url(../img/castle.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 1rem;
+    height: 65vh;
+    background-image: url(../img/castle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
 }
 
 .container_hover-41 .rain {
-  height: 100%;
-  background: url(../img/rain.png);
-  animation: rain 0.3s linear infinite;
+    height: 100%;
+    background: url(../img/rain.png);
+    animation: rain 0.3s linear infinite;
 }
 
 @keyframes rain {
-  0% {
-    background-position: 0% 0%;
-  }
+    0% {
+        background-position: 0% 0%;
+    }
 
-  100% {
-    background-position: 20% 100%;
-  }
+    100% {
+        background-position: 20% 100%;
+    }
 }
 
 /************************/
 /********hover-42*******/
 /***********************/
 .container_hover-42 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .container_hover-42 ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
+    padding: 0;
+    margin: 0;
+    display: flex;
 
 }
 
 .container_hover-42 ul li {
-  list-style: none;
-  width: 120px;
-  height: 120px;
-  margin: 0 20px;
-  border: 2px solid #10ac84;
-  border-radius: 50%;
-  transition: all 0.5s;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    list-style: none;
+    width: 120px;
+    height: 120px;
+    margin: 0 20px;
+    border: 2px solid #10ac84;
+    border-radius: 50%;
+    transition: all 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_hover-42 ul li i {
-  font-size: 48px;
-  color: #10ac84;
-  transition: all 0.5s;
+    font-size: 48px;
+    color: #10ac84;
+    transition: all 0.5s;
 }
 
 .container_hover-42 ul li::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #10ac84;
-  border-radius: 50%;
-  transition: all 0.5s;
-  opacity: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #10ac84;
+    border-radius: 50%;
+    transition: all 0.5s;
+    opacity: 0;
 }
 
 .container_hover-42 ul li:hover::before {
-  opacity: 1;
-  transform: scale(0.8)
+    opacity: 1;
+    transform: scale(0.8)
 }
 
 .container_hover-42 ul li:hover i {
-  color: #ffffff;
-  z-index: 1;
+    color: #ffffff;
+    z-index: 1;
 }
 
 .container_hover-42 ul li::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border-radius: 50%;
-  transition: all 0.5s;
-  opacity: 0;
-  border: 2px dashed #2e86de;
-  box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: all 0.5s;
+    opacity: 0;
+    border: 2px dashed #2e86de;
+    box-sizing: border-box;
 }
 
 .container_hover-42 ul li:hover::after {
-  opacity: 1;
-  animation: rotation 10s linear infinite;
+    opacity: 1;
+    animation: rotation 10s linear infinite;
 }
 
 @keyframes rotation {
-  0% {
-    transform: scale(0.92) rotate(0deg)
-  }
+    0% {
+        transform: scale(0.92) rotate(0deg)
+    }
 
-  100% {
-    transform: scale(0.92) rotate(360deg)
-  }
+    100% {
+        transform: scale(0.92) rotate(360deg)
+    }
 }
 
 /************************/
 /********hover-43*******/
 /***********************/
 .container_hover-43 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_hover-43 ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .container_hover-43 ul li {
-  list-style: none;
-  font-size: 80px;
-  letter-spacing: 20px;
-  animation: loading-43 3s linear infinite
+    list-style: none;
+    font-size: 80px;
+    letter-spacing: 20px;
+    animation: loading-43 3s linear infinite
 }
 
 
 @keyframes loading-43 {
-  0% {
-    color: tomato;
-    transform: translateX(-50px);
-    letter-spacing: 20px;
-    opacity: 0;
-  }
+    0% {
+        color: tomato;
+        transform: translateX(-50px);
+        letter-spacing: 20px;
+        opacity: 0;
+    }
 
-  10% {
-    opacity: 1;
-  }
+    10% {
+        opacity: 1;
+    }
 
-  50% {
-    letter-spacing: -20px;
-    opacity: 1;
-  }
+    50% {
+        letter-spacing: -20px;
+        opacity: 1;
+    }
 
-  100% {
-    color: blueviolet;
-    transform: translateX(50px);
-    letter-spacing: 20px;
-    opacity: 0;
-  }
+    100% {
+        color: blueviolet;
+        transform: translateX(50px);
+        letter-spacing: 20px;
+        opacity: 0;
+    }
 }
 
 .container_hover-43 ul li:nth-child(1) {
-  animation-delay: 0s;
+    animation-delay: 0s;
 }
 
 .container_hover-43 ul li:nth-child(2) {
-  animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 
 .container_hover-43 ul li:nth-child(3) {
-  animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 .container_hover-43 ul li:nth-child(4) {
-  animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
 .container_hover-43 ul li:nth-child(5) {
-  animation-delay: 0.8s;
+    animation-delay: 0.8s;
 }
 
 .container_hover-43 ul li:nth-child(6) {
-  animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 .container_hover-43 ul li:nth-child(7) {
-  animation-delay: 1.2s;
+    animation-delay: 1.2s;
 }
 
 /************************/
 /********hover-44*******/
 /***********************/
 .container_hover-44 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_hover-44 .pulse {
-  position: relative;
-  margin-bottom: 1rem;
-  height: 100px;
-  width: 100px;
-  color: white;
-  font-size: 48px;
-  background-color: rgb(0, 255, 128);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+    height: 100px;
+    width: 100px;
+    color: white;
+    font-size: 48px;
+    background-color: rgb(0, 255, 128);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_hover-44 .pulse::before,
 .container_hover-44 .pulse::after {
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: -20px;
-  bottom: -20px;
-  right: -20px;
-  border: 1px solid rgb(0, 255, 128);
-  border-radius: 50%;
-  animation: pulsing 1.5s linear infinite;
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    bottom: -20px;
+    right: -20px;
+    border: 1px solid rgb(0, 255, 128);
+    border-radius: 50%;
+    animation: pulsing 1.5s linear infinite;
 }
 
 .container_hover-44 .pulse::before {
-  animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
 @keyframes pulsing {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
 
-  50% {
-    transform: scale(1);
-    opacity: 1;
-  }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
 
-  100% {
-    transform: scale(1.2);
-    opacity: 0;
-  }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
 }
 
 /************************/
 /********hover-45*******/
 /***********************/
 .container_hover-45 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .container_hover-45 .slider {
-  width: 800px;
-  height: 400px;
-  background: url(../img/bg_1.jpg);
-  animation: change-bg 10s linear infinite;
+    width: 800px;
+    height: 400px;
+    background: url(../img/bg_1.jpg);
+    animation: change-bg 10s linear infinite;
 }
 
 @keyframes change-bg {
-  0% {
-    background: url(../img/bg_1.jpg);
-  }
+    0% {
+        background: url(../img/bg_1.jpg);
+    }
 
-  17% {
-    background: url(../img/bg_2.jpg);
-  }
+    17% {
+        background: url(../img/bg_2.jpg);
+    }
 
-  35% {
-    background: url(../img/bg_3.jpg);
-  }
+    35% {
+        background: url(../img/bg_3.jpg);
+    }
 
-  52% {
-    background: url(../img/bg_4.jpg);
-  }
+    52% {
+        background: url(../img/bg_4.jpg);
+    }
 
-  75% {
-    background: url(../img/bg_5.jpg);
-  }
+    75% {
+        background: url(../img/bg_5.jpg);
+    }
 
-  83% {
-    background: url(../img/bg_6.jpg);
-  }
+    83% {
+        background: url(../img/bg_6.jpg);
+    }
 
-  100% {
-    background: url(../img/bg_7.jpg);
-  }
+    100% {
+        background: url(../img/bg_7.jpg);
+    }
 }
 
 /************************/
@@ -2258,351 +2257,350 @@ ul.container_hover-23 li a:hover::after {
 /***********************/
 
 .container_hover-46 {
-  min-height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  animation: bgchanged 10s infinite;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    animation: bgchanged 10s infinite;
 }
 
 .container_hover-46 h2 {
-  text-align: center;
-  text-transform: capitalize;
-  color: white
+    text-align: center;
+    text-transform: capitalize;
+    color: white
 }
 
 @keyframes bgchanged {
-  0% {
-    background-color: rgb(39, 39, 39);
-  }
+    0% {
+        background-color: rgb(39, 39, 39);
+    }
 
-  20% {
-    background-color: rgb(0, 0, 255);
-  }
+    20% {
+        background-color: rgb(0, 0, 255);
+    }
 
-  40% {
-    background-color: rgb(0, 255, 64);
-  }
+    40% {
+        background-color: rgb(0, 255, 64);
+    }
 
-  60% {
-    background-color: rgb(0, 153, 255);
-  }
+    60% {
+        background-color: rgb(0, 153, 255);
+    }
 
-  80% {
-    background-color: rgb(255, 0, 200);
-  }
+    80% {
+        background-color: rgb(255, 0, 200);
+    }
 
-  100% {
-    background-color: rgb(39, 39, 39);
-  }
+    100% {
+        background-color: rgb(39, 39, 39);
+    }
 }
 
 /************************/
 /********hover-47*******/
 /***********************/
 .container_hover-47 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .container_hover-47 .cradle {
-  display: flex;
-  border-top: 10px solid rgb(25, 0, 255);
-  ;
+    display: flex;
+    border-top: 10px solid rgb(25, 0, 255);;
 }
 
 .container_hover-47 span {
-  display: block;
-  position: relative;
-  width: 3px;
-  height: 300px;
-  background-color: rgb(25, 0, 255);
-  margin: 0px 30px;
-  transform-origin: top;
+    display: block;
+    position: relative;
+    width: 3px;
+    height: 300px;
+    background-color: rgb(25, 0, 255);
+    margin: 0px 30px;
+    transform-origin: top;
 }
 
 .container_hover-47 .cradle span::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: rgb(25, 0, 255);
-  transform: translateX(-50%)
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(25, 0, 255);
+    transform: translateX(-50%)
 }
 
 .container_hover-47 .cradle span:first-child {
-  animation: left-arm 2s ease-in infinite;
+    animation: left-arm 2s ease-in infinite;
 }
 
 .container_hover-47 .cradle span:last-child {
-  animation: right-arm 2s ease-in infinite 1s;
+    animation: right-arm 2s ease-in infinite 1s;
 }
 
 @keyframes left-arm {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  25% {
-    transform: rotate(60deg);
-  }
+    25% {
+        transform: rotate(60deg);
+    }
 
-  50% {
-    transform: rotate(0deg);
-  }
+    50% {
+        transform: rotate(0deg);
+    }
 
-  100% {
-    transform: rotate(0deg);
-  }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 @keyframes right-arm {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  25% {
-    transform: rotate(-60deg);
-  }
+    25% {
+        transform: rotate(-60deg);
+    }
 
-  50% {
-    transform: rotate(0deg);
-  }
+    50% {
+        transform: rotate(0deg);
+    }
 
-  100% {
-    transform: rotate(0deg);
-  }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 /************************/
 /********hover-48*******/
 /***********************/
 .container_hover-48 {
-  position: relative;
-  min-height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_hover-48 .span-container {
 
-  width: 100px;
-  height: 100px;
-  /* background-color: tomato; */
-  position: absolute;
-  margin-bottom: 1rem;
-  animation: animate-box 1s linear infinite;
-  transform: rotate(45deg)
+    width: 100px;
+    height: 100px;
+    /* background-color: tomato; */
+    position: absolute;
+    margin-bottom: 1rem;
+    animation: animate-box 1s linear infinite;
+    transform: rotate(45deg)
 }
 
 .container_hover-48 span {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  animation: rotate-box 1s linear infinite;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    animation: rotate-box 1s linear infinite;
 }
 
 .container_hover-48 span:nth-child(1) {
-  top: 0;
-  left: 0;
-  background-color: rgb(255, 187, 0);
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 187, 0);
 }
 
 .container_hover-48 span:nth-child(2) {
-  top: 0;
-  right: 0;
-  background-color: rgb(0, 183, 255);
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 183, 255);
 }
 
 .container_hover-48 span:nth-child(3) {
-  bottom: 0;
-  left: 0;
-  background-color: rgb(0, 255, 55);
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 255, 55);
 }
 
 .container_hover-48 span:nth-child(4) {
-  bottom: 0;
-  right: 0;
-  background-color: rgb(255, 0, 234);
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255, 0, 234);
 }
 
 @keyframes animate-box {
-  0% {
-    width: 100px;
-    height: 100px;
-  }
+    0% {
+        width: 100px;
+        height: 100px;
+    }
 
-  10% {
-    width: 100px;
-    height: 100px;
-  }
+    10% {
+        width: 100px;
+        height: 100px;
+    }
 
-  50% {
-    width: 150px;
-    height: 150px;
-  }
+    50% {
+        width: 150px;
+        height: 150px;
+    }
 
-  90% {
-    width: 100px;
-    height: 100px;
-  }
+    90% {
+        width: 100px;
+        height: 100px;
+    }
 
-  100% {
-    width: 100px;
-    height: 100px;
-  }
+    100% {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @keyframes rotate-box {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  10% {
-    transform: rotate(0deg);
-  }
+    10% {
+        transform: rotate(0deg);
+    }
 
-  50% {
-    transform: rotate(90deg);
-  }
+    50% {
+        transform: rotate(90deg);
+    }
 
-  90% {
-    transform: rotate(90deg);
-  }
+    90% {
+        transform: rotate(90deg);
+    }
 
-  100% {
-    transform: rotate(90deg);
-  }
+    100% {
+        transform: rotate(90deg);
+    }
 }
 
 /************************/
 /********hover-49*******/
 /***********************/
 .container_hover-49 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_hover-49 .loader {
-  width: 150px;
-  height: 150px;
-  position: relative;
+    width: 150px;
+    height: 150px;
+    position: relative;
 }
 
 .container_hover-49 span {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  background-color: rgb(0, 255, 157);
-  border-radius: 4px;
-  animation: chase 2s linear infinite;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 255, 157);
+    border-radius: 4px;
+    animation: chase 2s linear infinite;
 }
 
 .container_hover-49 span:nth-child(2) {
-  animation-delay: 0.7s;
+    animation-delay: 0.7s;
 }
 
 .container_hover-49 span:nth-child(3) {
-  animation-delay: 1.4s;
+    animation-delay: 1.4s;
 }
 
 @keyframes chase {
-  0% {
-    top: 0;
-    left: 0;
-  }
+    0% {
+        top: 0;
+        left: 0;
+    }
 
-  12.5% {
-    top: 0;
-    left: 50%;
-  }
+    12.5% {
+        top: 0;
+        left: 50%;
+    }
 
-  25% {
-    top: 0;
-    left: 50%;
-  }
+    25% {
+        top: 0;
+        left: 50%;
+    }
 
-  37.5% {
-    top: 50%;
-    left: 50%;
-  }
+    37.5% {
+        top: 50%;
+        left: 50%;
+    }
 
-  50% {
-    top: 50%;
-    left: 50%;
-  }
+    50% {
+        top: 50%;
+        left: 50%;
+    }
 
-  62.5% {
-    top: 50%;
-    left: 0;
-  }
+    62.5% {
+        top: 50%;
+        left: 0;
+    }
 
-  75% {
-    top: 50%;
-    left: 0;
-  }
+    75% {
+        top: 50%;
+        left: 0;
+    }
 
-  87.5% {
-    top: 0;
-    left: 0;
-  }
+    87.5% {
+        top: 0;
+        left: 0;
+    }
 
-  100% {
-    top: 0;
-    left: 0;
-  }
+    100% {
+        top: 0;
+        left: 0;
+    }
 }
 
 /************************/
 /********hover-50*******/
 /***********************/
 .container_hover-50 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .container_hover-50 h1 {
-  font-size: 40px;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 10px;
-  color: tomato;
-  text-transform: uppercase;
-  position: relative;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 10px;
+    color: tomato;
+    text-transform: uppercase;
+    position: relative;
 }
 
 .container_hover-50 h1::before {
-  content: "loading..";
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  color: rgb(255, 196, 0);
-  overflow: hidden;
-  border-right: 4px solid rgb(255, 196, 0);
-  animation: animate-loading 5s linear infinite;
+    content: "loading..";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    color: rgb(255, 196, 0);
+    overflow: hidden;
+    border-right: 4px solid rgb(255, 196, 0);
+    animation: animate-loading 5s linear infinite;
 }
 
 @keyframes animate-loading {
-  0% {
-    width: 0;
-  }
+    0% {
+        width: 0;
+    }
 
-  50% {
-    width: 100%;
-  }
+    50% {
+        width: 100%;
+    }
 
-  100% {
-    width: 0;
-  }
+    100% {
+        width: 0;
+    }
 }
