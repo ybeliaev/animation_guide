@@ -54,6 +54,15 @@ table {
 }
 
 /********************** end reset css *******************************/
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 html {
     font-size: 62.5%;
 }
@@ -170,12 +179,17 @@ figcaption.in-view img {
     opacity: 1;
 }
 
+div.cursor, div.cursor-outer {
+    display: none;
+}
+
 @media (prefers-reduced-motion: no-preference) and (min-width: 600px) {
     body, a, a:hover {
         cursor: none;
     }
 
     div.cursor {
+        display: block;
         position: absolute;
         top: 30px;
         left: 30px;
@@ -187,6 +201,7 @@ figcaption.in-view img {
     }
 
     div.cursor-outer {
+        display: block;
         position: absolute;
         top: 30px;
         left: 30px;
@@ -196,5 +211,6 @@ figcaption.in-view img {
         background-size: 100px 100px;
         pointer-events: none;
         transform: translate(-50%, -50%);
+        animation: rotate 20s infinite linear;
     }
 }
