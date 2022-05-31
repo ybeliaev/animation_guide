@@ -237,7 +237,7 @@ div.cursor, div.cursor-outer {
     }
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     html {
         font-size: 32.5%;
     }

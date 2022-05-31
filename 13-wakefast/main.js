@@ -45,6 +45,20 @@ const runScripts = function () {
             // плавная прокрутка - smooth scroll
             // плавность достигается частым вызовом функции
             mainTag.style.top = (-1 * currentScroll) + "px"
+// ----------------------create parallax effect
+            figcaptionTags.forEach(caption => {
+                const box = caption.getBoundingClientRect()
+                const midY = box.y
+                const midScreen = window.innerHeight / 2
+                const diff = midY - midScreen
+
+                const images = caption.querySelectorAll('img')
+                images.forEach((image, idx) => {
+                    const speed = 0.1 + 0.1 * idx
+                    image.style.top = (diff * speed) + 'px'
+                })
+            })
+
             requestAnimationFrame(changeScroll)
         }
         window.addEventListener("scroll", function () {
