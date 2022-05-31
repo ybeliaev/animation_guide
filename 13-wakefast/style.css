@@ -110,20 +110,21 @@ nav a {
 }
 
 nav a img {
-    content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    display: block;
     transform: translateX(-100%);
-    transition: transform 0.5s;
+    /*если оставить это свойство будет виден откат влево*/
+    /*transition: transform 0.5s;*/
 }
 
 nav a:hover img {
     transform: translateX(0%);
+    transition: transform 0.3s linear;
 }
 
 nav a.animate-out img {
-    /*transition: transform 0.3s easing;*/
+    transition: transform 0.3s linear;
     transform: translateX(100%);
 }
 
