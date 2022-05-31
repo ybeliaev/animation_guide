@@ -236,3 +236,17 @@ div.cursor, div.cursor-outer {
         animation: rotate 20s infinite linear;
     }
 }
+
+@media (max-width: 700px) {
+    html {
+        font-size: 32.5%;
+    }
+
+    header h1 img {
+        max-width: 75%;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+}
